@@ -12,6 +12,8 @@ const { writeJson } = require("fs-extra");
 
     const languageData = [];
     for (let line of response.split("\n")) {
+        if (line.match("LangID")) continue;
+
         let components, code, country, status, name;
         try {
             components = line.split("\t");
@@ -20,7 +22,6 @@ const { writeJson } = require("fs-extra");
             status = components.shift();
             name = components[0].replace("\r", "");
             if (name && code) {
-                // console.log(code, country, name);
                 languageData.push({
                     "@type": "Language",
                     "@id": `@language-${code}-${name}`,
