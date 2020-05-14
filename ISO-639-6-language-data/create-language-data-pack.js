@@ -24,7 +24,7 @@ const { writeJson } = require("fs-extra");
             if (name && code) {
                 languageData.push({
                     "@type": "Language",
-                    "@id": `@language-${code}-${name}`,
+                    "@id": `#language-iso639-6-${code}`,
                     name,
                     alternateName: code,
                 });
