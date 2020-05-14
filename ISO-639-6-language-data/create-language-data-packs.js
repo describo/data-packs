@@ -19,13 +19,15 @@ const { writeJson } = require("fs-extra");
             country = components.shift();
             status = components.shift();
             name = components[0].replace("\r", "");
-            // console.log(code, country, name);
-            languageData.push({
-                "@type": "Language",
-                "@id": `@language-${code}-${name}`,
-                name,
-                alternateName: code,
-            });
+            if (name && code) {
+                // console.log(code, country, name);
+                languageData.push({
+                    "@type": "Language",
+                    "@id": `@language-${code}-${name}`,
+                    name,
+                    alternateName: code,
+                });
+            }
         } catch (error) {
             console.log(error.message, components);
         }
