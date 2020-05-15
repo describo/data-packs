@@ -23,8 +23,8 @@ const { writeJson } = require("fs-extra");
             if (name && code) {
                 // console.log(code, country, name);
                 countryData.push({
-                    "@type": "Language",
-                    "@id": `#language-iso639-6-${code}`,
+                    "@type": "Country",
+                    "@id": `https://www.ethnologue.com/country/${code}`,
                     name,
                     alternateName: code,
                 });

@@ -24,7 +24,7 @@ const { writeJson } = require("fs-extra");
             if (name && code) {
                 languageData.push({
                     "@type": "Language",
-                    "@id": `#language-iso639-6-${code}`,
+                    "@id": `https://www.ethnologue.com/language/${code}`,
                     name,
                     alternateName: code,
                 });
