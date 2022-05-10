@@ -100,7 +100,7 @@ function CSVtoArray(strData, strDelimiter) {
     
 	responseArray = CSVtoArray(response, ",")
 	
-	console.log(responseArray)
+	//console.log(responseArray)
     const languageData = [];
 
 
@@ -124,8 +124,8 @@ function CSVtoArray(strData, strDelimiter) {
                 languageData.push({
                     "@type": "Language",
 					"@id": `https://collection.aiatsis.gov.au/austlang/language/${code}`,
-					"@latitude": latitude,
-					"@longitude": longitude,
+					"latitude": latitude,
+					"longitude": longitude,
                     name,
                     alternateName: alternativeNames,
                 });

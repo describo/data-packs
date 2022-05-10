@@ -24,6 +24,7 @@ const { writeJson } = require("fs-extra");
 			longitude = components.shift()
 			glottocode = components.shift()
 			
+			// add iso 639 codes as links to the ethnologue source
 			iso639Code = components.shift()
 			sameAsList = []
 			if (iso639Code) {
@@ -43,7 +44,7 @@ const { writeJson } = require("fs-extra");
 					name,
 					geojson: {"latitude": latitude, "longitude": longitude},
 					source: "Glottolog",
-					containtInPlace: country,
+					containtInPlace: macroarea,
 					sameAs: sameAsList,
                     alternateName: iso639Code,
                 });
