@@ -28,7 +28,7 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 		  if (data_country[j]["alternateName"] == iso_2) {
 			  
 			data_country[j]['iso_3'] = iso_3;
-            data_country[j]['geoShape'] = geoData;
+            data_country[j]['GeoShape'] = geoData;
 
 		  }   		  
 	  } 
