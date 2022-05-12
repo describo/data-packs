@@ -18,7 +18,7 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 	  // add iso3 code to countries
 	  // add geodata to countries 
 	  
-	  geoData = geoJSON["features"][i]["geometry"]
+	  geoData = geoJSON["features"][i]//["geometry"]
 	  
 	  iso_3 = geoJSON["features"][i]["properties"]["ISO_A3"]
 	  iso_2 = countryISOMapping[iso_3]
