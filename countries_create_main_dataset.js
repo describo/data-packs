@@ -26,13 +26,13 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 	  for (let j = 0; j< data_country.length; j++) {
 
 		  if (data_country[j]["alternateName"] == iso_2) {
-			  
+			
 			data_country[j]['iso_3'] = iso_3;
-            data_country[j]['GeoShape'] = geoData;
-
+            data_country[j]['geojson'] = JSON.stringify(geoData);
+            
 		  }   		  
 	  } 
   };
-
+  console.log(data_country)
   writeJson(countryPack, data_country);
 });

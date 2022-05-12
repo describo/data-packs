@@ -17,7 +17,7 @@ function updateSameAs(glottologItem, element) {
 }
 
 function addMatchingItem(glottologItem, element) {
-	if (element["name"].includes(glottologItem["name"])) {
+	if (element["name"] == glottologItem["name"]) {
 				
 		//console.log(glottologItem["name"]);
 		updateSameAs(glottologItem, element)					
