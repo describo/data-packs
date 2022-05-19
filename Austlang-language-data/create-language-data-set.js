@@ -108,32 +108,40 @@ function CSVtoArray(strData, strDelimiter) {
     for (let item of responseArray) {
 		if (item[0] == "language_code") continue;
 
-        let components, code, country, status, name, alternativeNames, thesaurus_heading_language, thesaurus_heading_people, latitude, longitude;
+        let code, name, alternativeNames, latitude, longitude, geojson, geoLocation;
         try {
 
             code = item[0];
             name = item[1].trim();
 			alternativeNames = item[2];
-			thesaurus_heading_language = item[3];
-			thesaurus_heading_people = item[4];
-			latitude = item[5]
-			longitude = item[6]
+			latitude = "";
+			
+			latitude = item[5] || ""   // some languages don't have a latitude property
+			longitude = item[6] || ""  // some languages don't have a longitude property
+			
+			geoLocation = {
+			  "type": "Feature",
+			  "geometry": {
+				"type": "Point",
+				"coordinates": [latitude, longitude]
+			}};
             
-            //name = components[0]//.replace("\r", "");
             if (name && code) {
                 languageData.push({
-                    "@type": "Language",
 					"@id": `https://collection.aiatsis.gov.au/austlang/language/${code}`,
-					"latitude": latitude,
-					"longitude": longitude,
-                    name,
-                    alternateName: alternativeNames,
+					"@type": "Language",
+					languageCode: code,
+					name,
+					geojson: JSON.stringify(geoLocation),
+					source: "Austlang",
+					sameAs: [],
+					alternateName: alternativeNames,
                 });
             }
         } catch (error) {
-            console.log(error.message, components);
+            console.log(error.message);
         }
     }
 
-    await writeJson(languagePack, languageData);
+    await writeJson(languagePack, languageData, {"spaces":4});
 })();

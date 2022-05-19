@@ -1,7 +1,28 @@
 const data = "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master/cldf/languages.csv"
+var alternativeNames = "./alternativeNames.csv"
+
 const languagePack = "./glottolog-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
+const fs = require('fs');
+
+
+
+function get_alternative_names() {
+	var altDict = {}
+	var alternativeList = fs.readFileSync(alternativeNames)
+		.toString() // convert Buffer to string
+		.split('\n') // split string to lines
+		.map(e => e.trim()) // remove white spaces for each line
+		.map(e => e.split('\t').map(e => e.trim())); // split each line to array
+
+	for (let i = 0; i < alternativeList.length; i++) {
+		
+		altDict[alternativeList[i][0]] = alternativeList[i][1]
+	}
+	return altDict
+}
+
 
 (async () => {
     let response = await fetch(data, { cache: "reload" });
@@ -9,6 +30,10 @@ const { writeJson } = require("fs-extra");
         throw new Error(response);
     }
     response = await response.text();
+
+    var alternativeNameDict  = get_alternative_names()
+	
+    console.log(alternativeNameDict);
 
     const languageData = [];
     for (let line of response.split("\n")) {
@@ -23,6 +48,20 @@ const { writeJson } = require("fs-extra");
 			latitude = components.shift()
 			longitude = components.shift()
 			glottocode = components.shift()
+			
+			if (name in alternativeNameDict) {
+				alternateName = alternativeNameDict[name].replaceAll(",", ", ")
+			} else {
+				alternateName = "";
+			}
+			
+			
+			var geoLocation = {
+			  "type": "Feature",
+			  "geometry": {
+				"type": "Point",
+				"coordinates": [latitude, longitude]
+			}};
 			
 			// add iso 639 codes as links to the ethnologue source
 			iso639Code = components.shift()
@@ -42,11 +81,11 @@ const { writeJson } = require("fs-extra");
 					"@type": "Language",
 					languageCode: code,
 					name,
-					geojson: {"latitude": latitude, "longitude": longitude},
+					geojson: JSON.stringify(geoLocation),
 					source: "Glottolog",
 					containtInPlace: macroarea,
 					sameAs: sameAsList,
-                    alternateName: iso639Code,
+                    alternateName,
                 });
             }
         } catch (error) {
@@ -54,5 +93,5 @@ const { writeJson } = require("fs-extra");
         }
     }
 
-    await writeJson(languagePack, languageData);
+    await writeJson(languagePack, languageData, {"spaces":4});
 })();

@@ -1,12 +1,10 @@
 //We get the mapping from AIATSIS to Glottolog from Chirila:
 //http://chirila.yale.edu/
 
-
 const dataHTML = "http://chirila.yale.edu/languages"
 const languagePack = "./chirilla_mapping.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
-var http = require('http');
 
 
 (async () => {
@@ -31,15 +29,12 @@ var http = require('http');
 		
 		console.log(name, iso, glotto, austlang)
 		
-
 		languageData.push({
 			"name": name,
 			"iso": iso,
 			"glotto": glotto,
 			"austlang": austlang,
-		});
-            
-		
+		});	
 	}
 
     await writeJson(languagePack, languageData);
