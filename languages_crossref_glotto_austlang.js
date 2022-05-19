@@ -22,6 +22,11 @@ for (let i = 0; i < glottolog.length; i++) {
 				
 				austlang[j]["sameAs"].push({"@id": glottolog[i]["@id"]})  // add glottolog to austlang language
 				
+				if (glottolog[i]["sameAs"].length > 0) {
+					
+					austlang[j]["sameAs"].push(glottolog[i]["sameAs"][0])
+					
+				}
 				console.log(glottolog[i])
 			}	
 		}
@@ -34,5 +39,5 @@ for (let m = 0; m < austlang.length; m++) {
 	glottolog.push(austlang[m])
 	
 }
-console.log(glottolog.length)
+//console.log(glottolog.length)
 writeJson(allLanguages, glottolog, {"spaces":4});
