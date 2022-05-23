@@ -43,7 +43,7 @@ export function lookup(packName, find, quantity) {
 	    }  			
 	}
 	
-	return foundMatch
+	return matchedItems
 };
 
 var matchedLanguages = lookup(languages, "A", 10)
