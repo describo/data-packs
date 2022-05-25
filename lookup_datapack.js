@@ -1,52 +1,64 @@
-
-//  * packName: name of the data pack: e.g. countries, languages, camera's etc
-//  * find: query string - lookup in @id and name fields
-  
-  
-
-//export function lookup({ packName, find }) {
 const languages = require("./languages-main-data-pack.json")
 const countries = require("./country-main-data-pack.json")
+var _ = require('lodash');
 
-export function lookup(packName, find, quantity) {
-	// find substring in items in datapack
-
+export function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
+	// find a substring within the objects in the data pack and list the matches
+	// packName: data pack
+	// find: string 
+	// fields: Array list where should be searched
+	// filter: dictionary of filters
+	
+	console.log(fields)
 	var matchedItems = []
 	
+	
+	// add matched items to matchedItems
 	function itemFound(item) {
-		if (!(item in matchedItems)) {
+		if (!matchedItems.includes(item)) {	
 		    matchedItems.push(item);
-		}
+		}	
 	}
 	
-	for (let i = 0; i < packName.length; i++) {
-		
-	    var item = packName[i];
-		
-		// look in names
-		if (item["name"].startsWith(find)) {
-			itemFound(item);
-			
-		// look in IDs
-		} else if (item["@id"].includes(find)) {
-			itemFound(item);
-		
-		// look in alternate Names
-		} else if (("alternateName" in item) && 
-		    (typeof item["alternateName"] !== 'undefined') && 
-			(item["alternateName"].includes(find))) {
-				itemFound(item);		
-		}
- 
-		if (matchedItems.length >= quantity) {
-			return matchedItems;	
-	    }  			
+	
+	function itemFinder(item, field) {
+		// find items that match
+		if (
+		   (field in item) &&
+		   (typeof item[field] !== 'undefined') &&
+		   (item[field].includes(find))
+		   ) {
+                itemFound(item)
+		   }	   
 	}
 	
-	return matchedItems
-};
+	
+	// filter data pack for each of the set key, value pairs in filter
+	if (typeof filter !== 'undefined') {
+		for (const [key, value] of Object.entries(filter)) {
+			if (key in packName) {
+				packName = _.filter(packName, function(o) { return o[key] == value; });
+			}
+		}
+	}
 
-var matchedLanguages = lookup(languages, "A", 10)
-var matchedCountries = lookup(countries, "An", 2)
-//console.log(matchedLanguages)
-//console.log(matchedCountries)
+    
+	// for each field in each data item
+	for (let i = 0; i < packName.length; i++) {
+
+		// search fields in datapack
+		for (let j = 0; j < fields.length; j++) {
+			itemFinder(packName[i], fields[j]);
+		}				
+	}
+	
+	return matchedItems;
+}
+
+//foundItems  = lookup({ packName: languages, find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
+//foundItems  = lookup({ packName: languages, find: "alu", filter: {"source": "Austlang"}})
+//foundItems  = lookup({ packName: languages, find: "Matukar (Mel"})
+//foundItems  = lookup({ packName: countries, find: "Papu"})
+//foundItems  = lookup({ packName: countries, find: "PNG", fields: ["iso_3"]})
+//console.log(foundItems)
+//console.log(foundItems.length)
