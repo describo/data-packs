@@ -2,7 +2,7 @@ const languages = require("./languages-main-data-pack.json")
 const countries = require("./country-main-data-pack.json")
 var _ = require('lodash');
 
-export function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
+function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
 	// find a substring within the objects in the data pack and list the matches
 	// packName: data pack
 	// find: string 
@@ -60,5 +60,6 @@ export function lookup({ packName, find, fields = ['@id', 'name', 'alternateName
 //foundItems  = lookup({ packName: languages, find: "Matukar (Mel"})
 //foundItems  = lookup({ packName: countries, find: "Papu"})
 //foundItems  = lookup({ packName: countries, find: "PNG", fields: ["iso_3"]})
-//console.log(foundItems)
+foundItems  = lookup({ find: "PNG", fields: ["iso_3"], packName: countries})
+console.log(foundItems)
 //console.log(foundItems.length)

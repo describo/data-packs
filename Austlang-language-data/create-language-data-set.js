@@ -1,4 +1,5 @@
 const data = "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"
+
 const languagePack = "./austlang-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
@@ -92,12 +93,14 @@ function CSVtoArray(strData, strDelimiter) {
 
 
 (async () => {
+	
+
     let response = await fetch(data, { cache: "reload" });
     if (response.status !== 200) {
         throw new Error(response);
     }
     response = await response.text();
-    
+
 	responseArray = CSVtoArray(response, ",")
 	
 	//console.log(responseArray)
@@ -108,7 +111,7 @@ function CSVtoArray(strData, strDelimiter) {
     for (let item of responseArray) {
 		if (item[0] == "language_code") continue;
 
-        let code, name, alternativeNames, latitude, longitude, geojson, geoLocation;
+        let code, name, alternativeNames, latitude, geojson, longitude;
         try {
 
             code = item[0];
@@ -119,12 +122,16 @@ function CSVtoArray(strData, strDelimiter) {
 			latitude = item[5] || ""   // some languages don't have a latitude property
 			longitude = item[6] || ""  // some languages don't have a longitude property
 			
-			geoLocation = {
-			  "type": "Feature",
+			var geoj = {"type": "Feature",
 			  "geometry": {
 				"type": "Point",
 				"coordinates": [latitude, longitude]
-			}};
+			  }}			
+			
+			var geoLocation = {
+			  "@id": "#" + name,
+			  "@type": "GeoCoordinates",
+			  "geojson": JSON.stringify(geoj)};
             
             if (name && code) {
                 languageData.push({
@@ -132,7 +139,7 @@ function CSVtoArray(strData, strDelimiter) {
 					"@type": "Language",
 					languageCode: code,
 					name,
-					geojson: JSON.stringify(geoLocation),
+					geojson: geoLocation,
 					source: "Austlang",
 					sameAs: [],
 					alternateName: alternativeNames,

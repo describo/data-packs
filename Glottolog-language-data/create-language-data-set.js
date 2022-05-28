@@ -49,19 +49,30 @@ function get_alternative_names() {
 			longitude = components.shift()
 			glottocode = components.shift()
 			
-			if (name in alternativeNameDict) {
+			if ((name in alternativeNameDict) && (!alternativeNameDict == "undefined")) {
 				alternateName = alternativeNameDict[name].replaceAll(",", ", ")
 			} else {
 				alternateName = "";
 			}
 			
+			/*
+			"geojson": {
+             @id: "#{name},
+             @type: "GeoCoordinates",
+             geojson: "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.475977159965\",\"144.59443977457\"]}}",
+	},
+    */
 			
-			var geoLocation = {
-			  "type": "Feature",
+			var geojson = {"type": "Feature",
 			  "geometry": {
 				"type": "Point",
 				"coordinates": [latitude, longitude]
-			}};
+			  }}			
+			
+			var geoLocation = {
+			  "@id": "#" + name,
+			  "@type": "GeoCoordinates",
+			  "geojson": JSON.stringify(geojson)};
 			
 			// add iso 639 codes as links to the ethnologue source
 			iso639Code = components.shift()
@@ -81,7 +92,7 @@ function get_alternative_names() {
 					"@type": "Language",
 					languageCode: code,
 					name,
-					geojson: JSON.stringify(geoLocation),
+					geojson: geoLocation,
 					source: "Glottolog",
 					containtInPlace: macroarea,
 					sameAs: sameAsList,

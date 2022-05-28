@@ -20,6 +20,8 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 	  
 	  geoData = geoJSON["features"][i]//["geometry"]
 	  
+	  
+	  
 	  iso_3 = geoJSON["features"][i]["properties"]["ISO_A3"]
 	  iso_2 = countryISOMapping[iso_3]
 	  
@@ -27,12 +29,18 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 
 		  if (data_country[j]["alternateName"] == iso_2) {
 			
-			data_country[j]['iso_3'] = iso_3;
-            data_country[j]['geojson'] = JSON.stringify(geoData);
+			var name = data_country[j]['name']
+			var geoLocation = {
+			  "@id": "#" + name,
+			  "@type": "GeoShape",
+			  "geojson": JSON.stringify(geoData)};
+			
+			//data_country[j]['iso_3'] = iso_3;
+            data_country[j]['geojson'] = geoLocation;
             
 		  }   		  
 	  } 
   };
   console.log(data_country)
-  writeJson(countryPack, data_country);
+  writeJson(countryPack, data_country, {"spaces":4});
 });
