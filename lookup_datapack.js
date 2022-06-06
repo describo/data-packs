@@ -1,3 +1,7 @@
+const fetch = require("cross-fetch");
+const _ = require("lodash")
+const links = require("./index")
+const datapacks = links.datapacks
 
 
 async function datapackLookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
@@ -6,13 +10,9 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   // find: string to be found
   // fields: list where should be searched
   // filter: dictionary of filters 
-  const fetch = require("cross-fetch");
-  const _ = require("lodash")
-  const links = require("./index")
-  const datapacks = links.datapacks
-  
     
   let matchedItems = []
+  
   packName = datapacks[packName]
 
   function getDataLinks(datapack) {
@@ -22,7 +22,6 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   };
 
   
-
   async function getDataJson(packName) {
     // get json data from files
     let response = await fetch(packName, { cache: "default" });  //default checks in cache first
