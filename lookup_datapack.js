@@ -1,65 +1,104 @@
-const languages = require("./languages-main-data-pack.json")
-const countries = require("./country-main-data-pack.json")
-var _ = require('lodash');
 
-function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
-	// find a substring within the objects in the data pack and list the matches
-	// packName: data pack
-	// find: string 
-	// fields: Array list where should be searched
-	// filter: dictionary of filters
-	
-	console.log(fields)
-	var matchedItems = []
-	
-	
-	// add matched items to matchedItems
-	function itemFound(item) {
-		if (!matchedItems.includes(item)) {	
-		    matchedItems.push(item);
-		}	
-	}
-	
-	
-	function itemFinder(item, field) {
-		// find items that match
-		if (
-		   (field in item) &&
-		   (typeof item[field] !== 'undefined') &&
-		   (item[field].includes(find))
-		   ) {
-                itemFound(item)
-		   }	   
-	}
-	
-	
-	// filter data pack for each of the set key, value pairs in filter
-	if (typeof filter !== 'undefined') {
-		for (const [key, value] of Object.entries(filter)) {
-			if (key in packName) {
-				packName = _.filter(packName, function(o) { return o[key] == value; });
-			}
-		}
-	}
 
+async function datapackLookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
+  // find a substring within the objects in the data pack and list the matches
+  // packName: data pack
+  // find: string to be found
+  // fields: list where should be searched
+  // filter: dictionary of filters 
+  const fetch = require("cross-fetch");
+  const _ = require("lodash")
+  const links = require("./index")
+  const datapacks = links.datapacks
+  
     
-	// for each field in each data item
-	for (let i = 0; i < packName.length; i++) {
+  let matchedItems = []
+  packName = datapacks[packName]
 
-		// search fields in datapack
-		for (let j = 0; j < fields.length; j++) {
-			itemFinder(packName[i], fields[j]);
-		}				
-	}
+  function getDataLinks(datapack) {
+	// returns list of one or more links
+    let datapackList = _.flatten([datapack]);
+	return datapackList.map(pack => datapacks[pack] ||= pack);
+  };
+
+  
+
+  async function getDataJson(packName) {
+    // get json data from files
+    let response = await fetch(packName, { cache: "default" });  //default checks in cache first
+    
+	if (response.status !== 200) {
+	  throw new Error(response);
+    };
 	
-	return matchedItems;
-}
+    response = await response.text();
+    let dataJson = JSON.parse(response);
+    return dataJson;
+  };
 
-//foundItems  = lookup({ packName: languages, find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
-//foundItems  = lookup({ packName: languages, find: "alu", filter: {"source": "Austlang"}})
-//foundItems  = lookup({ packName: languages, find: "Matukar (Mel"})
-//foundItems  = lookup({ packName: countries, find: "Papu"})
-//foundItems  = lookup({ packName: countries, find: "PNG", fields: ["iso_3"]})
-foundItems  = lookup({ find: "PNG", fields: ["iso_3"], packName: countries})
-console.log(foundItems)
-//console.log(foundItems.length)
+
+  async function lookupDataFiles(linkList) {
+    // get content of all linked json files into one array
+    let dataCollection = [];
+    
+    for (const file of linkList) {
+	  dataCollection.push(await getDataJson(file));
+    };
+
+    return _.flatten(dataCollection);
+  };
+
+
+  async function filterData(dataset, filter) {
+    // filter data pack for each of the set key, value pairs in filter
+	
+    if (typeof filter !== 'undefined') {
+		
+	  for (const [key, value] of Object.entries(filter)) {
+	    dataset = _.filter(dataset, function(o) { return o[key] == value; });
+	  };
+    };
+  return dataset;
+  };
+  
+ 
+  function itemMatcher(item, field) {
+    // find items that match, add item if not already in matchedItems
+    if (item[field].includes(find)) {
+	  matchedItems.push(item)  
+    };
+  };
+  
+  
+  function fieldFinder(item, field) {	
+	// check first if fields exist and are not undefined
+	if ((field in item) && (!_.isNil(item[field])))	{
+	  itemMatcher(item, field)
+	};	   
+  };
+
+
+  async function finder(fields, filteredData) {
+    // compare all fields of all dataitems
+	_.forEach(filteredData, function(data) {
+		_.forEach(fields, function(field) {
+			fieldFinder(data, field);
+		});
+	});
+  return matchedItems;
+  };
+  
+
+  let linkList = getDataLinks(packName);
+  let dataset = await lookupDataFiles(linkList);
+  let filteredData = await filterData(dataset, filter);
+  let matches = _.uniq(await finder(fields, filteredData)) //
+  console.log(matches);
+  return matches
+};
+
+module.exports = datapackLookup
+
+//datapackLookup({ packName: datapacks["Languages"], find: "Matukar", filter: {"source": "Austlang", "@type": "Language"}})
+//datapackLookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
+//datapackLookup({ packName: datapacks["Languages"], find: "atuk", filter: {"source": "Glottolog", "@type": "Language"}})
