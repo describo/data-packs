@@ -101,3 +101,5 @@ module.exports = datapackLookup
 //datapackLookup({ packName: datapacks["Languages"], find: "Matukar", filter: {"source": "Austlang", "@type": "Language"}})
 //datapackLookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
 //datapackLookup({ packName: datapacks["Languages"], find: "atuk", filter: {"source": "Glottolog", "@type": "Language"}})
+//datapackLookup({ packName: "Glottolog", find: "Ger"})
+datapackLookup({ packName: "Country", find: "Aus"})
