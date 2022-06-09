@@ -31,12 +31,11 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
     };
 	
     response = await response.text();
-    let dataJson = JSON.parse(response);
-    return dataJson;
+    return JSON.parse(response);
   };
 
 
-  async function lookupDataFiles(linkList) {
+  async function getDataFiles(linkList) {
     // get content of all linked json files into one array
     let dataCollection = [];
     
@@ -60,11 +59,11 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   return dataset;
   };
   
- 
+
   function itemMatcher(item, field) {
     // find items that match, add item if not already in matchedItems
     if (item[field].includes(find)) {
-	  matchedItems.push(item)  
+	  matchedItems.push(item); 
     };
   };
   
@@ -72,7 +71,7 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   function fieldFinder(item, field) {	
 	// check first if fields exist and are not undefined
 	if ((field in item) && (!_.isNil(item[field])))	{
-	  itemMatcher(item, field)
+	  itemMatcher(item, field);
 	};	   
   };
 
@@ -84,17 +83,18 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
 			fieldFinder(data, field);
 		});
 	});
-  return matchedItems;
+  return _.uniq(matchedItems);
   };
   
 
   let linkList = getDataLinks(packName);
-  let dataset = await lookupDataFiles(linkList);
+  let dataset = await getDataFiles(linkList);
   let filteredData = await filterData(dataset, filter);
-  let matches = _.uniq(await finder(fields, filteredData)) //
-  console.log(matches);
+  let matches = finder(fields, filteredData) //
+  
   return matches
 };
+
 
 module.exports = datapackLookup
 
@@ -102,4 +102,4 @@ module.exports = datapackLookup
 //datapackLookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
 //datapackLookup({ packName: datapacks["Languages"], find: "atuk", filter: {"source": "Glottolog", "@type": "Language"}})
 //datapackLookup({ packName: "Glottolog", find: "Ger"})
-datapackLookup({ packName: "Country", find: "Aus"})
+//datapackLookup({ packName: "Country", find: "Aus"})
