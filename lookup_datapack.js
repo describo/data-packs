@@ -10,7 +10,7 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   // find: string to be found
   // fields: list where should be searched
   // filter: dictionary of filters 
-    
+
   let matchedItems = []
   
   packName = datapacks[packName]
@@ -87,7 +87,7 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
   };
   
 
-  let linkList = getDataLinks(packName);
+  let linkList = await getDataLinks(packName);
   let dataset = await getDataFiles(linkList);
   let filteredData = await filterData(dataset, filter);
   let matches = finder(fields, filteredData) //
@@ -98,8 +98,8 @@ async function datapackLookup({ packName, find, fields = ['@id', 'name', 'altern
 
 module.exports = datapackLookup
 
-//datapackLookup({ packName: datapacks["Languages"], find: "Matukar", filter: {"source": "Austlang", "@type": "Language"}})
+//datapackLookup({ packName: "Languages", find: "Matukar", filter: {"source": "Austlang", "@type": "Language"}})
 //datapackLookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}})
-//datapackLookup({ packName: datapacks["Languages"], find: "atuk", filter: {"source": "Glottolog", "@type": "Language"}})
+//datapackLookup({ packName: "Languages", find: "atuk", filter: {"source": "Glottolog", "@type": "Language"}})
 //datapackLookup({ packName: "Glottolog", find: "Ger"})
 //datapackLookup({ packName: "Country", find: "Aus"})

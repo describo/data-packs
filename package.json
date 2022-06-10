@@ -4,6 +4,7 @@
   "description": "A set of data packs for describo to load content from.",
   "main": "index.js",
   "dependencies": {
+    "async": "^3.2.4",
     "cross-fetch": "^3.0.4",
     "csv-parser": "^3.0.0",
     "fs-extra": "^9.0.0",
