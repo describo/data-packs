@@ -3,16 +3,18 @@ const _ = require("lodash")
 const links = require("./index")
 const datapacks = links.datapacks
 
-function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
-  // find a substring within the objects in the data pack and list the matches
-  // packName: data pack
-  // find: string to be found
-  // fields: list where should be searched
-  // filter: dictionary of filters 
+function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], filter = {}} ) {
+  /** 
+   * find a substring within the objects in the data pack and list the matches
+   * packName: name of dataset in json format 
+   * find: string to be found in the object
+   * fields: list of fields where "find" should be searched
+   * filter: dictionary of filters:  {"field":"value"}
+   */
 
-
-  function fieldFinder(item, field) {	
-	// check first if fields exist and are not undefined
+  
+  function findInField(item, field) {	
+	// fields need to exist and need to be defined to be searched
 	if ((field in item) && (!_.isNil(item[field])))	{
       if (item[field].includes(find)) {
 		matchedItems.push(item); 
@@ -21,30 +23,25 @@ function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], fi
   };
 	
 
-  let matchedItems = []
+  let matchedItems = []  // for search results
   
-  packName = datapacks[packName]
-
   // get array into consistent type: list of strings
-  let datapackList = _.flatten([packName]);
-  
-  // get all urls 
+  let datapackList = _.flatten([datapacks[packName]]); 
   let urls = datapackList.map(pack => datapacks[pack] ||= pack);
 
   // open each file
-  let dataJSON = Promise.all(urls.map(url => fetch(url)
-  
   // get the actual JSON data out of each file
+  let dataJSON = Promise.all(urls.map(url => fetch(url)
   .then(e => e.json())))
-
+  
   // flatten the data into a single list object
   .then(data => {return data.flat()})
 
   // filter data pack for each of the set key, value pairs in filter
-  .then(function(result) {
+  .then(function(dataFull) {
     if (typeof filter !== 'undefined') {
 	  for (const [key, value] of Object.entries(filter)) {
-	    result = _.filter(result, function(o) { return o[key] == value; });
+	    result = _.filter(dataFull, function(o) { return o[key] == value; });
 	  };
 	};
     return result
@@ -52,9 +49,9 @@ function lookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], fi
   
   // find each field where the query string is searched
   .then(function(result) {
-	_.forEach(result, function(data) {
+	_.forEach(result, function(item) {
 	  _.forEach(fields, function(field) {
-		fieldFinder(data, field);
+		findInField(item, field);
 	  });
 	});	
 	return _.uniq(matchedItems);
