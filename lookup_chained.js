@@ -1,7 +1,7 @@
 const fetch = require("cross-fetch");
 const _ = require("lodash")
-const links = require("./index")
-const datapacks = links.datapacks
+const { datapacks } = require("./index.js")
+
 
 function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], filter = {}} ) {
   /** 
@@ -23,7 +23,7 @@ function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], f
   };
 	
 
-  let matchedItems = []  // for search results
+  let matchedItems = [];  // for search results
   
   // get array into consistent type: list of strings
   let datapackList = _.flatten([datapacks[packName]]); 
@@ -41,10 +41,12 @@ function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], f
   .then(function(dataFull) {
     if (typeof filter !== 'undefined') {
 	  for (const [key, value] of Object.entries(filter)) {
-	    result = _.filter(dataFull, function(o) { return o[key] == value; });
+	    result = _.filter(dataFull, function(o) { 
+		  return o[key] == value; 
+		});
 	  };
 	};
-    return result
+    return result;
   })
   
   // find each field where the query string is searched
@@ -56,8 +58,8 @@ function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], f
 	});	
 	return _.uniq(matchedItems);
   });	  
-  return dataJSON	
-}
+  return dataJSON;	
+};
 
 /*
 let promise = Promise.resolve(lookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}}))

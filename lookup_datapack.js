@@ -1,7 +1,6 @@
 const fetch = require("cross-fetch");
 const _ = require("lodash")
-const links = require("./index")
-const datapacks = links.datapacks
+const { datapacks } = require("./index.js")
 
 
 async function datapackLookup({ packName, find, fields = ['@id', 'name', 'alternateName' ], filter}) {
