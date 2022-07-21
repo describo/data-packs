@@ -113,38 +113,41 @@ function CSVtoArray(strData, strDelimiter) {
 
         let code, name, alternativeNames, latitude, geojson, longitude;
         try {
+			if (item[0]) {  // ignore empty line in the dataset
 
-            code = item[0];
-            name = item[1].trim();
-			alternativeNames = item[2];
-			latitude = "";
-			
-			latitude = item[5] || ""   // some languages don't have a latitude property
-			longitude = item[6] || ""  // some languages don't have a longitude property
-			
-			var geoj = {"type": "Feature",
-			  "geometry": {
-				"type": "Point",
-				"coordinates": [latitude, longitude]
-			  }}			
-			
-			var geoLocation = {
-			  "@id": "#" + name,
-			  "@type": "GeoCoordinates",
-			  "geojson": JSON.stringify(geoj)};
-            
-            if (name && code) {
-                languageData.push({
-					"@id": `https://collection.aiatsis.gov.au/austlang/language/${code}`,
-					"@type": "Language",
-					languageCode: code,
-					name,
-					geojson: geoLocation,
-					source: "Austlang",
-					sameAs: [],
-					alternateName: alternativeNames,
-                });
-            }
+				code = item[0];
+				console.log(item[1])
+				name = item[1].trim();
+				alternativeNames = item[2];
+				latitude = "";
+				
+				latitude = item[5] || ""   // some languages don't have a latitude property
+				longitude = item[6] || ""  // some languages don't have a longitude property
+				
+				var geoj = {"type": "Feature",
+				  "geometry": {
+					"type": "Point",
+					"coordinates": [latitude, longitude]
+				  }}			
+				
+				var geoLocation = {
+				  "@id": "#" + name,
+				  "@type": "GeoCoordinates",
+				  "geojson": JSON.stringify(geoj)};
+				
+				if (name && code) {
+					languageData.push({
+						"@id": `https://collection.aiatsis.gov.au/austlang/language/${code}`,
+						"@type": "Language",
+						languageCode: code,
+						name,
+						geojson: geoLocation,
+						source: "Austlang",
+						sameAs: [],
+						alternateName: alternativeNames,
+					});
+				}
+			}
         } catch (error) {
             console.log(error.message);
         }

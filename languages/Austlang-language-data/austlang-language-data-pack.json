@@ -2400,9 +2400,9 @@
         "@id": "https://collection.aiatsis.gov.au/austlang/language/D10",
         "@type": "Language",
         "languageCode": "D10",
-        "name": "Wiradjuri",
+        "name": "Wiradyuri",
         "geojson": {
-            "@id": "#Wiradjuri",
+            "@id": "#Wiradyuri",
             "@type": "GeoCoordinates",
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.909180160775\",\"147.25734640665\"]}}"
         },

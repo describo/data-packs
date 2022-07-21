@@ -4,8 +4,8 @@
 const fs = require('fs');
 const { writeJson } = require("fs-extra");
 const allLanguages = "./languages-main-data-pack.json";
-const glottolog = require("./Glottolog-language-data/glottolog-language-data-pack.json")
-const austlang = require("./Austlang-language-data/austlang-language-data-pack.json")
+const glottolog = require("./languages/Glottolog-language-data/glottolog-language-data-pack.json")
+const austlang = require("./languages/Austlang-language-data/austlang-language-data-pack.json")
 
 //console.log(glottolog)
 //console.log(austlang)
