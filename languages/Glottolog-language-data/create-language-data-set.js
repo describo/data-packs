@@ -1,6 +1,6 @@
 const data = "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master/cldf/languages.csv"
+//var alternativeNames = "./languages/Glottolog-language-data/alternativeNames.csv"
 var alternativeNames = "./alternativeNames.csv"
-
 const languagePack = "./glottolog-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");

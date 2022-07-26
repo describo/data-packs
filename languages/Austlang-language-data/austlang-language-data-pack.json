@@ -107,7 +107,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nang1258"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A106",
@@ -120,7 +124,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/naja1241"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A107",
@@ -133,7 +141,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nawu1241"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A108",
@@ -344,7 +356,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rxd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1288"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A122",
@@ -410,7 +429,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.593308271869\",\"117.18532487362\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bia"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/badi1246"
+            }
+        ],
         "alternateName": "Parti maya, Badimaia, Badimara, Barimaia, Nanakari, Patimara, Patimay, Baadeemaia, Badimala, Bardimaia, Bidungu, Padimaia, Padinaia, Parimaia, Waadal, Wallawe, WardalBadi maia, Yamadgee, Yamaji, Yamatji, Patimaya, Bardimaya, Badimay, Yamadyis, Wardal, Badimia"
     },
     {
@@ -659,7 +685,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.117955474616\",\"120.56642240741\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/tjup1235"
+            }
+        ],
         "alternateName": "Tjupany, Madoitja, Tjubanba, Tjubanba, Djuban, Tjupan, Jupan, Thuradha (Bates), Tjuparn Wangka, Tjupany"
     },
     {
@@ -757,7 +787,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.80043240336\",\"127.35345751349\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ntj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngaa1240"
+            }
+        ],
         "alternateName": "Ngaanjatjarra, Nana, I:nabadanggural, Jumudjara, Kalgonei, Kalgoneidjara, Kalguni, Kuwaratjara, Nangandjara, Nangaridjara, Ngaanjadjara, Ngan:adjara, Ngana, Nganadjara, Ngatari, Nona, Warburton Ranges, Ngadadjara, Ngaanyatjara, Warburton Ranges Dialect, Jabungadja, Ku:rara, Nadadjara, Nga:da, Nga:dapitjardi, Ngad adara, Ngadatara, Ngadatjara, Ngadawongga, Ngadjatara, Ngatatara, Ngatatjara, Rumudjara, Teitudjara, Wan:udjara, Warara, Wirtjandja, Witjandja"
     },
     {
@@ -785,7 +822,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.100230390261\",\"116.99308252226\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wbv"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/waja1257"
+            }
+        ],
         "alternateName": "Watjarri, Bidungu, Irawadjari, Mulyara, Nokaan, Wadjari, Waiawonga, Baialdju, Batiga, Cheangwa, Dhauerngu, Iirrawadari, Jamadji, Kurduwonga, Kurduwongga, Maliara, Miliara, Miliarra, Pidong, Wadari, Wadarri, Wadgaree, Wadhari, Wadjeri, Wadyari, Waian, Waianwonga, Wajari, Wajeri, Wajjari, Wajjiri, Wanmala, Wardal, Watjari, Wodjeri, Yabbaroo, Yabbooroo, Yajeri, Yamadgee, Yamaidyi, Yamaji, Wadyarri, Witjari, Waian wonga, Iirrawad ari"
     },
     {
@@ -896,7 +940,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.799711855686\",\"117.60738836527\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nrk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1296"
+            }
+        ],
         "alternateName": "Ngarlawangga, Yinhawangka, Panytyima, Inawonga, Inawangga, Inawonga for Inawongga, Ngaunmardi, Nalawonga, Ngalawongga, Ngalawonga, Ngarla warngga, Southern Padima for Ninanu, Ngaala Warngga "
     },
     {
@@ -952,7 +1003,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.282962677149\",\"122.06253619927\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kart1247"
+            }
+        ],
         "alternateName": "Kartutjarra, Martu Wangka, Katutjara, Katudjara, Katatjara, Kardudjara, Gadudjara, Wal mala, Orailku, Ngadari"
     },
     {
@@ -1050,7 +1105,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.220189379259\",\"120.02940899496\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nly"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nyam1271"
+            }
+        ],
         "alternateName": "Pundju, Widagari, Witukari, Gnamo, Ibarga, Ibargo, Ibarrga, Namal, Namarl, Namel, Njalmal, Njamal, Njamarl, Njamat, Nyamarl, Nyamel, Pundju Njamal, Pundu Namal, Tjingkai Njamal, Wanbarda, Weedokarry, Weedookary, Widagaree, Wirdakarri"
     },
     {
@@ -1162,7 +1224,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.639949066406\",\"123.96774721505\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/mem"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mang1383"
+            }
+        ],
         "alternateName": "Mangarla, Djualin, Djuwali, Djuwalia, Jiwali, Koalgurdi, Manala, Mangai, Mangal, Mangula, Mangunda, Minala, Mungala, Yalmbau, Marrngu"
     },
     {
@@ -1176,7 +1245,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.467373171132\",\"126.15125175949\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wmt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/walm1241"
+            }
+        ],
         "alternateName": "Walmatjarri, Walmadjari, Wolmatjeri, Wolmeri, Bililuna dialect, Djiwalinj, Djiwalinja, Djualin, Djuwali, Jiwarliny, Juwaliny, Ngadjukura, Ngainan, Nganang, Pitangu, Tjiwali, Tjiwalindja, Tjiwaling, Tjiwarlin, Walmadere, Walmadjeri, Walmadyari, Walmadyeri, Walmaharri, Walmaharry, Walmajai, Walmajari, Walmajeri, Walmatjari, Walmatjeri, Walmatjiri, Walmeri, Wanaeka, Waneiga, Wanmadjari, Warinari Pundur, Warmala, Wolmadjari, Wolmaharry, Wolmaijari, Wolmera, Wulumarai, Wulumari, Walmad jeri, Wariari Pundur, Dju alin"
     },
     {
@@ -1190,7 +1266,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.183997145606\",\"124.954501252\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yulp1239"
+            }
+        ],
         "alternateName": "Yulparitja, Martu Wangka, Julbaridja, Nangatara, Yurlparija, Julbarida, Julbre, Julbri, Yulaparitya, Yulbari dja, Yulbaridja, Yulbaridya, Yulbarija, Yulbri, Yurlbaridya, YulapaRitya, Yulbaradja, Jülbre, Yuria, Yulparirra, Nangadjara, Njangadjara, Julbaritja, Ilbaridja, Nanidjara, Nangi, Mangai, Mangi"
     },
     {
@@ -1204,7 +1284,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.489447500567\",\"127.02387041488\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/kux"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kuka1246"
+            }
+        ],
         "alternateName": "Gugadja, Gogodj, Kokatja, Gogada, Gogadja, Gogadya, Gogoda, Gogodja, Gugada, Gugadji, Gugudja, Kokata, Koonggada, Kukacha, Kukada, Kukadja, Kukaja, Kukata, Kukatji, Kukuruba, Ku kuruba, Pardoo, Julbaritja, Julbre, Ilbaridja, Nambulatji, Bedengo, Bidong, Bidungo, Peedona, Peedong, Pidung, Pidunga, Manggai, Wangkatjunga, Wangatjunga, Wangatunga, Wangkatunga, Wangkadjungga, Wankutjunga, Wanaeka, Wangu, Panara, Bunara, Boonara"
     },
     {
@@ -1327,7 +1414,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.557802405153\",\"118.50425378261\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pant1254"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A77",
@@ -1340,7 +1431,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.999689368036\",\"118.14527522302\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mija1241"
+            }
+        ],
         "alternateName": "Mitjaranjpa"
     },
     {
@@ -1368,7 +1463,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-24.455778426304\",\"119.07826408524\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ywg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yinh1234"
+            }
+        ],
         "alternateName": "Ngarluwangka, Panytyima, Ngalawonga"
     },
     {
@@ -1478,7 +1580,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.350911655789\",\"123.66842240336\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/mpj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mart1256"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/A87",
@@ -1491,7 +1600,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.576465858871\",\"126.50323359633\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wang1288"
+            }
+        ],
         "alternateName": "Wangkatjungka, Martu Wangka, Wanggadjunga"
     },
     {
@@ -1533,7 +1646,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-31.29303041962\",\"128.15349327077\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gmr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mirn1245"
+            }
+        ],
         "alternateName": "Meening, Mining, Minninng, Mirniny, Ba:duk, Baaduk, Bardok, East Meening, East Mining, Eucla, Ikala, Ikula, Jirkala Mining, Jirkla mirning, Julbara, Julbari, Jurgala, Jurgula, Minal njunga, Mininj, Minnal yungar, Minning, Mirin, Mirningj, Murram, Ngadjadjara, Ngadjudjara, Ngadjuwonga, Ngandada, Ngandatha, Wanbiri, Wanmaraing, Warnabinnie, Warnabirri, Warnabirrie, Wonbil, Wonburi, Wonunda meening, Wonunda minung, Wonunda Mirning, Yerkla Mining, Yircla, Yirkala Mining, Yirkla, Yirkla Mining, Yurgala, Mirnin, Mirninj, Warna birrie, Wonbil also Wonburi, Jirkala Mining has another explanation for the name, Yerkla mining"
     },
     {
@@ -1683,7 +1803,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-31.535987723207\",\"133.5220740691\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wgu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wira1265"
+            }
+        ],
         "alternateName": "Hilleri, Jilbara, Naljara, Ngoleiadjara, Nonga, Tidni, Tidnie, Titnie, Wanbiri, Wangon, Warrangoo, Willeuroo, Windakan, Wirangga, Wirongu, Wirrongu, Wirrung, Wirrunga, Yilrea, Weerung, Wanggan, Yulbara, Julbari Wonnga, Yulbara wonga, Ulbarara, Youlbara, Willuro, Wilyaru, Kartawongulta, Nhangga, Hillery, Illarie, Ngadha Wangga, Ngadhu wangga, Warna biri, Wambira"
     },
     {
@@ -1739,7 +1866,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.019874087248\",\"134.06950250849\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gbb"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kayt1238"
+            }
+        ],
         "alternateName": "Kaytetj, Kayteye, Kaytej, Gaidij, Kaititja, Kaititja; Gaididj, Kadda kie, Kaitidji, Kaitije, Kaitiji, Kaitish, Kaititj, Kaititje, Kat tit ya, Kat titch a, Katitch a, Katitja, Kaititj; Gaididj, Kaddakie, Katitcha, Katitya, Kaiditj, Kaytej; Gaididj, Keytetye, Kaititj; Kaititja, Gaididj, Kattitch a, Kaitej"
     },
     {
@@ -1753,7 +1887,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.94837099764\",\"135.53444633563\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/aly"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/alya1239"
+            }
+        ],
         "alternateName": "Aljawarra, Alyawarre, Iliaura, Aliawara, Aliwara, Aljawara, Alyawara, Ilawara, Iliama, Iljauara, Iljawara, Illiaura, Illura, Illyowra, Ilyauarra, Ilyowra, Jajuwara, Yalyuwara, Iliaura, Ilja:wara, Iljaura, Ilyaurra, Ja:wara, Aljawara, Ilaurainya, Udnla, Ilyuarra, Alyawarra, Aliawara, Alja:wara, Alyuwara, Illaura, Iloura, Ilyawara, Ilywara, Jaljuwara, Yalyuwara , Alyawerr, Alja:wara, Alyawarri, Arandic"
     },
     {
@@ -1809,7 +1950,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.249626535773\",\"132.87100726782\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wrl"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/warl1255"
+            }
+        ],
         "alternateName": "Walmanba, Wanmampa, Walmamba, Warlmanpa; Walmanba, Walmunba, Wanmanpa, Warlmanba, Walmala, Walmanpa, Walpiri, Albura, Alpira, Alpiri, Elpira, Ilpara, Ilpira, Ilpirra, Nam bulatji, Njambalatji, Ulperra, Wailbri, Walbiri, Walbrai, Wal bri, Waljbiri, Waljpiri, Walpari, Wanaeka, Wanajaga, Wanajaka, Wanajeka, Waneiga, Waringari, Warrabri, Wolperi, Wolpirra"
     },
     {
@@ -1823,7 +1971,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.602712664845\",\"134.50518184842\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wrm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/waru1265"
+            }
+        ],
         "alternateName": "Waramanga, Waramungu, Waramanga; Airamanga, Leenaranunga, Uriminga, Waramunga, Warimunga, Warramonga, Warramunga, Warrumunga, Wurmega, Warumungu; Waramanga, Warramanga, Warumunga, Warumungu; Warramunga, Airamanga, Warrmunga, Aira manga"
     },
     {
@@ -1837,7 +1992,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.173055306326\",\"135.43105010266\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nucl1328"
+            }
+        ],
         "alternateName": "Wambaia, Wombaya, Wambaia; Umbaia, Umbia, Wambaja, Wampaja, Wom by a, Wombaia, Wombya, Wonbaia, Yumpia, Wambaya; Umbaia, Wampaya; Umbaia, Wampaya, Wobya, Wambaya; Wambaia, Umbaia, Wailwan, Wailwin, Wailwun, Waljwan, Wamgaja, Wilwan, Ympia, Won baia"
     },
     {
@@ -1893,7 +2052,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.350765267549\",\"133.70151286316\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jig"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djin1251"
+            }
+        ],
         "alternateName": "Djingulu, Djingili, Jingili, Tjingili, Tjingilu, Tjinggili, Tjingilli, Tjingali, Tjingalli, Chingalee, Chingalli, Tjingale, Tchingalee, Djingali, Djinggili, Tingalie, Leechunguloo"
     },
     {
@@ -1949,7 +2115,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.980617001904\",\"135.25565304117\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guda1243"
+            }
+        ],
         "alternateName": "Gudandji, Ngandji, Gurdanji, Kotandji, Kurdanji, Kotandji; Anga, Angee, Gnanji, Godangee, Gundangee, Kakaringa, Koodangie, Koodanjee, Kudanji, Kudenji, Kutandji, Kutanjtjii, Kutandji; Anjee, Goarango, Goodanji, Gurandji, Koodanjie, Kuarandji, Kurandji, Kutanji; Gudandji, Kutanji, Gurdanydji, Gurdanydja; Kotandji, Anga, Anjee, Garindjari, Gudendji, Gurdandji, Gurendji, Kauarindarri, Kauarndhari, Kawarandari, Kawarandjari, Kawarindjara, Kawarindjari, Kudandji, Kudandyi, Kurtanji, Kwarandji, Nandi, Ngangi, Nganji"
     },
     {
@@ -1977,7 +2147,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.842506668901\",\"135.36299175014\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/akar1244"
+            }
+        ],
         "alternateName": "Arrarnta, Western, Akara"
     },
     {
@@ -2117,7 +2291,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.341585810998\",\"129.64782407529\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wurl1241"
+            }
+        ],
         "alternateName": "Gurinji"
     },
     {
@@ -2158,7 +2336,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.623693675417\",\"132.26055292732\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/kdd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yank1247"
+            }
+        ],
         "alternateName": "Yankuntjatjarra, Yankuntjatjara, Alinjera, Ankundjara, Everard Range Tribe, Jan gundjara, Janggunadjara, Janggundjara, Jangkudjara, Jangkuntjarra, Jangkundjadjara, Jangkundjara, Jangundjara, Jangwundjara, Jankundjadjara, Jankundjara, Jankundjindjara, Jankuntjatara, Jankuntjatjara, Jankunzazara, Jankunzazzara, Kaltjilandjara, Nankundjara, Wirtjapakandja, Wirtjapokandja, Yangkuntjatjara, Yangundjadjara, Yangundyadyara, Yankundyari, Yankunjara, Yangundjara, Yankuntjara, Yangkundjara, Everard Range Tribe', Jan kundjadjara, Jan kundjindjara, Nan kundjara"
     },
     {
@@ -2269,7 +2454,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/are"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/west2441"
+            }
+        ],
         "alternateName": "Aranda, Tyuretye Arrernte, Western Aranda, Arrarnta, Western Aranta, Arinta, Arranda, Arrinda, Arrundta, Arrunta, Arunda, Arunndta, Arunta, Urrundie, Western Arrernte, Ur rundie, Arandic"
     },
     {
@@ -2310,7 +2502,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.664115063165\",\"130.065503849\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/pjt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pitj1243"
+            }
+        ],
         "alternateName": "Pitjantjatjarra, Bidjandjadjara, Pitjantjara, Bidjandja, Bidjandjara, Bidjuwongga, Bidyandyadyara, Bindjandjadjara, Gunggawara, Ituarre, Jabu, Kalgonei, Mamoo, Mamu, Mangawara, Mulatara, Nangatadjara, Njangadjadjara, Nyangatjatjara, Partutu, Peechintarra, Pidjandja, Pidjandjara, Pidzandza, Pijandarra, Pintularapi, Pitchentara, Pitdjandjara, Pitindjatjara, Pitjandara, Pitjandjadjara, Pitjandjara, Pitjanjarra, Pitjanzazara, Pitjendadjara, Pitjentara, Pitjindjatjara, Pitjindjiara, Pitjinjara, Pitjinjiara, Pitjintara, Pitjintjitjira, Pitkindjara, Pituari, Tjitiadjara, Tjurti, Wankawinan, Wanudjara, Widanda, Widjandja, Wirtjapakandja, Wongapitcha, Wongapitja, Wongapitjira, Bidjandjadjara/Njangadadjara, Pid jandjara, Woga pitja"
     },
     {
@@ -2324,7 +2523,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-24.042795063161\",\"131.42806771716\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/kux"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kuka1246"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/C7.1",
@@ -2379,7 +2585,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wnm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wang1289"
+            }
+        ],
         "alternateName": "Wongkamala, Wonkamudla, Wonggaman, Wonggawan, Wonkamala, Wanggamanha, Wangkamana, Wangkamala"
     },
     {
@@ -2393,16 +2606,23 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.341221572939\",\"144.14190504669\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xww"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wemb1241"
+            }
+        ],
         "alternateName": "Wamba Wamba, Wembawemba, Wambawamba, Womba, Weumba, Waamba, Yambayamba, Yamba, Wiembar, Wamba wamba, Yamba yamba, Swan Hill tribe, Moulmein dialect Moolamiin, Lake Boga dialect, The neighbourhood of Lake Boga, probably Moorebat, the Lower Loddon dialect, Kerang, Loddon R, dialect, Wa amba, Wamba, Wemba wemba, Lake Boga tribe, Waimbi waimbi, Wambo wambo, Waimbu Waimbu, Boga tribe, Wemberwemba, Waimbiwaimbi, WembaWemba, Jambajamba, Gourrmjanyuk, Gorrmjanyuk, Kulin"
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/D10",
         "@type": "Language",
         "languageCode": "D10",
-        "name": "Wiradyuri",
+        "name": "Wiradyuri/Wiradjuri",
         "geojson": {
-            "@id": "#Wiradyuri",
+            "@id": "#Wiradyuri/Wiradjuri",
             "@type": "GeoCoordinates",
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.909180160775\",\"147.25734640665\"]}}"
         },
@@ -2477,7 +2697,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-31.083766201393\",\"149.59996165307\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guyi1237"
+            }
+        ],
         "alternateName": "Gunjbaraay, Kamilaroi, Guyinbaray, Euahlayi, Gamilaroi, Juwalarai, Ualarai, Walarai, Weraerai, Wirajarai, Gunjbarai, Gunjbarri, Koinberi, Koinberri, Kawambarai, Cooinburri, Kawamparai, Koinbere, Gawambarai, Goin berai, Guinbrai, Guinberai, Mole tribe, Coo in bur ri, Wirriri, Wirriwirri, Wooratherie"
     },
     {
@@ -2547,7 +2771,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-36.093929709321\",\"145.26357989848\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xyy"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yort1237"
+            }
+        ],
         "alternateName": "Yota Yota, Bangerang, Jotijota, Yoda Yoda, Arramouro, Benhedore, Jabulajabula, Jodajoda, Moira, Narinari, Ngarimawuru, Ngarrimouro, Ngarrimowra, Wollithiga, Woollathura, Yabulayabula, Yoorta, Yorta yorta, Yotayota, Joda Joda, Yotta Yotta, Yabola, Yota yota, Yota, Gunbowers, Gunbowerooranditchgoole, Loddon tribe, Ngarrimowro, Wol lithiga, Echuca tribe"
     },
     {
@@ -2561,7 +2792,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-31.01810658386\",\"148.02682045035\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wayi1238"
+            }
+        ],
         "alternateName": "Wailwan, Ngiyarnbaa, Walywan, Wilwan, Wallwan, Wailwun, Wilawun, Weilwun, Waal won, Wile Wan, Wali, Waljwan, Ngiumba, Wahoon"
     },
     {
@@ -2645,7 +2880,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.780229344439\",\"146.26865590139\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/barr1252"
+            }
+        ],
         "alternateName": "Barranbinja, Baranbinja, Barren binya, Barrumbinya, Barrunbarga, Burrabinya, Burranbinga, Burranbinya, Burrumbinya, Burrunbinya, Parran binye, Barabinja, Baranbinya, Burrun binya, Burrunbinia, Burrunbinya"
     },
     {
@@ -2659,7 +2898,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.313148522145\",\"148.27553456003\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yuwa1242"
+            }
+        ],
         "alternateName": "Kamilaroi, Juwalarai/Ualarai, Euahlayi, Gamilaroi, Guyinbaray, Juwalarai, Ualarai, Walarai, Weraerai, Wirajarai, Yuwalarai, Jualrai, Yualarai, Yualloroi, Yowaleri, Uollaroi, Youallerie, Yualari, Yualai, Yualeai, Yerraleroi, Yowairi, Yuolary, Eu ahlayi, Yourilri, Youahlayi, Jualjai, Juwaljai, Yuwalyai, Wallarai, Wolleroi, Walleri, Woleroi, Wollaroi, Gingi, Brewarrana tribe, yuwalaray, yuwalaraay"
     },
     {
@@ -2757,7 +3000,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.414552287234\",\"147.72491882974\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gwu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guwa1243"
+            }
+        ],
         "alternateName": "Kooma, Guwamu, Koamu, Culgoa, Goamu, Gowamu, Gruwamu, Guamu, Kaombal, Kuam, Kuamu, Oamu"
     },
     {
@@ -2785,7 +3035,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.340515876202\",\"151.24860194364\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guya1250"
+            }
+        ],
         "alternateName": "Ngarabal, Kwiambal, Yugambal, Cambooble, Gambabwal, Gwaimbal, Kaoambal, Kwaimbal, Koi, Kweembul, Quieumble, Queenbulla"
     },
     {
@@ -2841,7 +3095,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.621930704733\",\"150.32489560325\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gawa1249"
+            }
+        ],
         "alternateName": "Coo in bur ri, Gawambarai, Ginniebal, Goinberai, Guinberai, Guinbrai, Juwalarai, Kawambarai, Kawamparai, Koinbere, Koinberi, Koinberri, Kwambarai\"Mole tribe\", Mooran Mooran, Waholari, Walarai, Walari, Warlarai, Weraerai, Weraiari, Wiraiarai, Wirra:arai, Wirri Wirri, Wirriri, Wirriwirri, Wolaroi, Wolaroo, Wolleri, Wolroi, Woolaroi, Wooratherie, Gawambaray, Goin berai, Mole tribe"
     },
     {
@@ -2855,7 +3113,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.086643095474\",\"143.37045705255\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xwd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wadi1260"
+            }
+        ],
         "alternateName": "Wati Wati, Biangil, Dacournditch, Darty Darty, Nimp mam wern, Ta ta thi, Ta tathi, Taa tatty, Tar tarthee, Tatatha, Tataty, Tatitati, Tunggut, Wadiwadi, Wathiwathi, Wathi Wathi, Watiwati, Wattewatte, Watthiwatthi, Watty watty, Wattywatty, Withaija, Woani, Wodiwodi, Wohdi Wohdi, Woonyi, Wotowotti, Wotti wotti, Wottowotti, Watte, Watte Watte, Watte watte, Wotte Wotte, Watty Watty, Wot te Wot te, Wa thi wa thi, Wati wati, Wathi wathi, Ouotti Ouotti, Wathie Waithie, Wattee Wattee, Wathi Watthi, Watthi watthi, Watthi Watthi, Watty tribe, Wattu Wattu, Waddi Waddi"
     },
     {
@@ -2897,7 +3162,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.2729476198\",\"144.57741054857\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/zmc"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/marg1253"
+            }
+        ],
         "alternateName": "Marrganj, Maranganji, Maranj, Marganj, Marnganji, Marukanji, Murgoan, Murgoin, Murngain, Marngany, Mardigan "
     },
     {
@@ -2911,7 +3183,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.784742672206\",\"146.16134361506\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gyy"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guny1241"
+            }
+        ],
         "alternateName": "Gunja, Kunja, Kunya, Gu:nja, Kurnja"
     },
     {
@@ -3009,7 +3288,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.673702896047\",\"144.61137635412\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rbp"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bara1404"
+            }
+        ],
         "alternateName": "Baraba Baraba, Baraba baraba, Baraparapa, Barappur, Bareber Bareber, Barraba barraba, Barrababarraba, Birraba birraba, Boora boora, Boorabirraba, Booraboora, Boort, Burabura, Burappa, Burapper, Burrabura ba, Burraburburaba, Burreba burreba, Karraba, Beraba Beraba, Berrapper dialect, Barrappur, Baraber, Boraipar, Boora Boora, Lower Loddon tribe, Boort tribe"
     },
     {
@@ -3079,7 +3365,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.604408334401\",\"147.54034422807\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yuwa1243"
+            }
+        ],
         "alternateName": "Yuwaaliyaay, Euahlayi, Kamilaroi, Gamilaroi, Guyinbaray, Juwalarai, Ualarai, Walarai, Weraerai, Wirajarai, Yuwaalaraay, Yualyai, Ualari, Yualarai, Uollaroi, Yualai, Yerraleroi, Yuwalyay, Yualeai, Yualloroi, Yowaleri, Youallerie, Yualari, Yowairi, Yuolary, Eu ahlayi, Yourilri, Youahlayi, Jualjai, Juwaljai, Yuwalyai, Wallarai, Wolleroi, Walleri, Woleroi, Wollaroi, Gingi, Brewarrana tribe"
     },
     {
@@ -3093,7 +3383,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/waal1237"
+            }
+        ],
         "alternateName": "Walaraay, Kamilaroi, Walarai, Euahlayi, Gamilaroi, Guyinbaray, Juwalarai, Ualarai, Weraerai, Wirajarai"
     },
     {
@@ -3177,7 +3471,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.23140408313\",\"142.42165314347\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kure1240"
+            }
+        ],
         "alternateName": "Keramin, etc, Gureinji, Karin, Kerinma, Karinma, Karingma, Orangema, Kemendok, Pintwa, Gure:ndji, Gurendji, Kureinyi, Kareingi, Ka rinma, Grangema, Garnghes, Kinenekinene, Kianigane, Jungeegatchere"
     },
     {
@@ -3327,7 +3625,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.873186078177\",\"143.94091280464\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xth"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yith1234"
+            }
+        ],
         "alternateName": "Jitu Jitu, Yida Yida, Bayangil, Eetha Eetha, Eethanaeetha, Eethee Eethee, Eethie Eethie, i7a Yida, Ita ita, Itaiithi, Itaita, Ithi ithi, Iti iti, Jida Jida, Jitajita, Tjuop, Yetho, Yit tha, Yitha, Yitsa, Ithiithi, Eethaeetha, Yitayita"
     },
     {
@@ -3381,7 +3686,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.418687133543\",\"144.4000270644\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rnr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nari1241"
+            }
+        ],
         "alternateName": "Narinari, none"
     },
     {
@@ -3423,7 +3735,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.757441239373\",\"151.05011430544\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yub"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yuga1244"
+            }
+        ],
         "alternateName": "Yugambal: Ngarrabul, Ngarrbal, Ngarabal, Kwiambal, Jugambal, Jukambal, Jukambil, Marbul, Narbul, Ngarabul, Ngarrabul, Pregalgh, Ucumble, Ukumbil, Yacambal, Yirimbil, Yoocomble, Yoocumbill, Yookambul, Yookumbil, Yookumbill, Yookumble, Yookumbul, Yucomble, Yugarabul, Yugumbil, Yukambal, Yukambil, Yukumba, Yukumbil, Yukumbul, Yurimbil"
     },
     {
@@ -3451,7 +3770,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rkw"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/arak1254"
+            }
+        ],
         "alternateName": "Aragwal, Arakawal, Coo al, Gundurima, Jahwun Jere, Jawjumjeri, Kagung, Kahwul, Kogung, Lismore tribe, Naiang, Njung, Nyung, Tugurimba, Yawkum yore, Gundurimba, Jawhumjeri, Yawkum yere"
     },
     {
@@ -3479,7 +3805,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.533264350058\",\"152.86681397041\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gali1267"
+            }
+        ],
         "alternateName": "Galival, Kalibal, Moorung moobar, Murwillumbah"
     },
     {
@@ -3493,7 +3823,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.732615276778\",\"153.23610975968\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wiya1239"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/E16",
@@ -3506,7 +3840,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.308028778101\",\"152.22822492229\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://collection.aiatsis.gov.au/austlang/language/E15.1"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wiya1239"
+            }
+        ],
         "alternateName": "Wudjeebal, Buggula, Ettrick tribe, Noowidal, Nowgyjul, Waibra, Wailbra, Watchee, Watji, Widjabal, Widje, Wijabal, Wuje, Wudjebal"
     },
     {
@@ -3520,7 +3861,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.737752812117\",\"152.28443782047\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ding1241"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/E16.2",
@@ -3575,7 +3920,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.772890083261\",\"153.39910442668\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jan"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/jand1248"
+            }
+        ],
         "alternateName": "Janday, Coobenpil, Djandai, Djandawal, Djendewal, Dsandai, Goenpul, Jendairwal, Jundai, Koenpal, Koenpel, Noogoon, Tchandi, Tschandi, Quandamooka"
     },
     {
@@ -3603,7 +3955,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.973148636344\",\"152.57414043031\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/duun1241"
+            }
+        ],
         "alternateName": "Wakawaka, Dungidjau, Dalla, Ngoera, Jarbu, Jinibara, Jinibarra, Djunggidjau"
     },
     {
@@ -3687,7 +4043,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.167686536092\",\"153.4003410629\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guwa1244"
+            }
+        ],
         "alternateName": "Yuggera, Gowar, Jagara, Koenpul, Ngugi, Nunukul, Turrubul, Yagara, Booroo geen merrie, Chunchiburri, Coowar, Gnoogee, Gooar, Goowar, Gowr burra, Guar, Mugee, Nooghi, Wodji, Wogee, Quandamooka"
     },
     {
@@ -3813,7 +4173,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.599573240252\",\"148.64372520145\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gyf"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gung1248"
+            }
+        ],
         "alternateName": "Kongabula, Gongabula, Khungabula, Khungabulal, Kungalburra, Ongabula"
     },
     {
@@ -3869,7 +4236,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-24.808523639971\",\"148.57335257653\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wdu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wadj1255"
+            }
+        ],
         "alternateName": "Wadja, Wadju, Maudalgo, Wadjainggo, Waindjago, Wainggo, Wainjago, Wainjigo, Wadya, Watjigu"
     },
     {
@@ -3897,7 +4271,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-24.186069748369\",\"150.15143203191\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gnl"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gang1268"
+            }
+        ],
         "alternateName": "Kaangooloo, Kangulu, Kanolu, Cangoolootha, Gangu, Kangalo, Kangool lo, Khangalu, Kongalu, Konguli, Kongulu, Khang, Ghangulu, Ka ngool lo"
     },
     {
@@ -4163,7 +4544,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.40181798643\",\"148.46292086792\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/giya1234"
+            }
+        ],
         "alternateName": "Bumbarra, Gia, Ngaro, Ngaru, Bumbara, Bumburra Burra, Kia, Bumburra"
     },
     {
@@ -4205,7 +4590,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.707543255479\",\"145.43599558371\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gudj1237"
+            }
+        ],
         "alternateName": "Warungu, Gudjala, Gudjali, Koochul bura, Kutjala"
     },
     {
@@ -4233,7 +4622,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.827166873033\",\"147.67455317982\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ljx"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yuru1264"
+            }
+        ],
         "alternateName": "Mouths of the Burdekin River, Nyawaygi, Arwur angkana, Euronbba, Juru, Mal Mal, Malmal, South Murri, Arwur angkana"
     },
     {
@@ -4372,7 +4768,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bary1234"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/E72",
@@ -4467,7 +4867,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.351553657393\",\"153.30360703492\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngan1309"
+            }
+        ],
         "alternateName": "Ngahnduwal, Gurgun Mibinyah"
     },
     {
@@ -4823,7 +5227,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.393810830516\",\"137.41542686257\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/axe"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ayer1246"
+            }
+        ],
         "alternateName": "Bularnu, Jaroinga, Yaroinga, Jaroinga; Jurangka, Manda, Yaringa, Yarroinga, Yarrowin, Yorrawinga, Jaroinga; Jarionga, Yaro inga, Yarrowinga, Juruwinga, Yaruwinga, Ayerrerenge, Yorrowinga, Yuruwinga, Yaruwinga, Bulanja, Bulanu, Jarionga, Jurangka, Pulanja, Ayerrereng, Arandic"
     },
     {
@@ -4837,7 +5248,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.656688662129\",\"138.2747458112\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bula1255"
+            }
+        ],
         "alternateName": "Warluwarra Bularnu, Yindjilandji, Bulanu, Manda, Pulanja, Bulanja"
     },
     {
@@ -4879,7 +5294,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.538891965327\",\"139.06481892321\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wwb"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/waka1282"
+            }
+        ],
         "alternateName": "Workoboongo, Kabikabi, Wagabunga, Waggaboonyah, Waggabundi, Wake bunge, Wakobungo, Waukaboonia, Workabunga, Wakapunga, Worgabunga, Wurgabunga"
     },
     {
@@ -4907,7 +5329,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.913112577322\",\"141.8532552202\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wnn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wunu1234"
+            }
+        ],
         "alternateName": "Maykulan, Wunamara, Oonoomurra, Wanamara, Quippen bura, Unamara, Woonamurra, Woonomurra, Wunamora"
     },
     {
@@ -4921,7 +5350,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.802685135729\",\"141.96286370505\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nxn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngaw1240"
+            }
+        ],
         "alternateName": "Ngewin, Naungaun, Nga:wun, Ngaon, Ngaun, Nounun, Nouun"
     },
     {
@@ -4977,7 +5413,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-19.075646079751\",\"140.44722075423\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xyj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mayi1235"
+            }
+        ],
         "alternateName": "Maykulan, Maijabi, Maiabi, Maippe, Majabi, Mayapi, Mayappe, Miappe, Miappi, Miubbi, Miulbi, Myabi, Myappa, Myappe, Mayabi, Miuibi"
     },
     {
@@ -5047,7 +5490,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.780357582714\",\"141.81241533473\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xyk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mayi1236"
+            }
+        ],
         "alternateName": "Maykulan, Mayi kulan, Maikulan, Maigudina, Maigudung, Maigulung, Maikolon, Maikudun, Maikudung, Maikudunu, Maikulung, Makulu, Mayagoondoon, Mayagulan, Mayhulan, Miccoolin, Micoolan, Mikadoon, Mikkoolan, Mikoodoono, Mikoolun, Mycoolon, Mygoodan, Mygoodano, Mygoolan, Mykoolan, Mykulau, Mykoo lan"
     },
     {
@@ -5201,7 +5651,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.030578639892\",\"139.489223589\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gyd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kaya1319"
+            }
+        ],
         "alternateName": "Gayardilt, Kaiadilt, Bentinck Islanders, Gaiardilt, Gaja, dilt, Gajadild, Gajardild, Gajardilt, Gaya, Gayadilt, Kaiadil, Kaiadilt Madunun, Maldanunda, Malununda, Malununde, Mardunung, Marlanunda, Gayardild, Guyadilt, Madunun, Kayardilt"
     },
     {
@@ -5215,7 +5672,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.885734161982\",\"141.93473152078\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wala1263"
+            }
+        ],
         "alternateName": "Bugulmara, Karan, Wahlongman, Wallankammer, Wallenkammer, Wollangama, Wollongurmee, Wallan kammer"
     },
     {
@@ -5229,7 +5690,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.904906665987\",\"138.98114341286\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nny"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nyan1300"
+            }
+        ],
         "alternateName": "Gananggalinda, Balumbant, Janggal, Janggaral, Janggaralda, Janggura, Mangaralda, Nemarang, Njangga:l, Jangaralda"
     },
     {
@@ -5243,7 +5711,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.56431398137\",\"139.45889134492\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/lbz"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/lard1243"
+            }
+        ],
         "alternateName": "Lardiil, Layardilda, Damin, Demin, Demiin, Gunana, Jungarl, Kare wa, Kunana, La:dil, Ladil, Laierdila, Lardi:i, Lardill, Leedil, Mornington Island tribe, Nemarang"
     },
     {
@@ -5490,7 +5965,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.628422569678\",\"139.72474432995\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/pit"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pitt1247"
+            }
+        ],
         "alternateName": "Pitha Pitha, Karanja, Kungkalenja, Pitapita, Rakkaia, Ringaringa, Bida Bida, Bidabida, Bitta Bitta, Bittha Bittha, Narrinyeri, Paruru, PittaPitta, Pittapitta, Ramindjerar, Ramindjeri, Ramingara, Raminjeri, Raminyeri, Ramong, Rormear, Tarbanawalun, Wangkahicho, Wangkahichs, Wangkapit:a, Wirramu mejo, Bidha Bidha, Bidhabidha"
     },
     {
@@ -5518,7 +6000,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.82184420257\",\"139.71327081736\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ylr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yala1262"
+            }
+        ],
         "alternateName": "Yalarrnga, Jalanga, Jalannga, Wonganja, Yalannga, Yelina, Yellanga, Yellunga, Yallunga, Jalarnnga, Yalarnga"
     },
     {
@@ -5532,7 +6021,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.084736311002\",\"140.73881736939\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yda"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yand1251"
+            }
+        ],
         "alternateName": "Jangaa, Janda, Yunda"
     },
     {
@@ -5546,7 +6042,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.036939228068\",\"142.31935154191\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xgw"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guwa1242"
+            }
+        ],
         "alternateName": "Goa, Koa, Goamulgo, Coa, Coah"
     },
     {
@@ -5560,7 +6063,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.943893293162\",\"122.62530039145\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ywr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yawu1244"
+            }
+        ],
         "alternateName": "Yawur, Djauor, Jauor, Jawuru, Yawoorroo, Gawor, Jaoro, Jauro, Jauur, Kakudu Kakudu, Nawudu, Yaora, Yaoro, Yaoru, Yaroro, Yauera, Yauor, Yauro, Yawur, Yawuri, Yawurr"
     },
     {
@@ -5574,7 +6084,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.275981416455\",\"124.01362597767\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wwr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/warr1258"
+            }
+        ],
         "alternateName": "Kimberley Area Languages, Warwa, Kolaruma, Warrwai, Waruwa, Warwai, Wa:rwa"
     },
     {
@@ -5602,7 +6119,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.517289717411\",\"128.22757747316\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ddj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/jaru1254"
+            }
+        ],
         "alternateName": "Djaru, Jaruru, Jaroo, Djaro, Jarroo, Jarrou, Jarrau, Charrau, Jaruo, Djara, Deharu, Njining, Njinin, Nyinin, Nining, Neening, Meening, Ka:biri, Karbery, Kodjangana, Ruby Creek tribe, Karjaganujaru people"
     },
     {
@@ -5616,7 +6140,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.028028750801\",\"122.70572928387\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nyv"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nyul1247"
+            }
+        ],
         "alternateName": "Njul Njul, Kimberley Area Languages, Nyulnyul, Njulnjul, Ngulnyul, Niol Niol, Njolnjol, Nyolnyol, Nyool Nyool, NyulNyul, Nyul nyul, Yowera"
     },
     {
@@ -5630,7 +6161,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.088781372512\",\"124.86911767694\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xgu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ungg1243"
+            }
+        ],
         "alternateName": "Worora, Ong Komi, Wongkomi, Ongaranjan, Ungumi, Ungami, Ngarangari, Worrorran, Ungkami"
     },
     {
@@ -5644,7 +6182,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.668163920215\",\"122.90225739947\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bcj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bard1255"
+            }
+        ],
         "alternateName": "Baardi, Baard, Baada, Ba:d, Ba:di, Baad, Bad, Bard, Barda, Board"
     },
     {
@@ -5658,7 +6203,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.442415702498\",\"123.26757774432\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/jawi1238"
+            }
+        ],
         "alternateName": "Djawi, Djaui, Towahi, Tohawi, Ewenu, Ewenyoon, Chowie, Djaw, Djau, Djaoi, Tohau i, Ewanji, I:wanja"
     },
     {
@@ -5672,7 +6221,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.621326448715\",\"124.87587090613\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wro"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/worr1237"
+            }
+        ],
         "alternateName": "Worora, Jaudibaia, Maialnga, Worara, Wororra, Worrara, Wurara, Wo`rora, Worrora, Wurora, Wurura, Variants of the language name:, Yangibaia, Kularri/Gularri south westerners, Woddordda"
     },
     {
@@ -5686,7 +6242,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.003849061029\",\"126.00543286652\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ung"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1284"
+            }
+        ],
         "alternateName": "Ngarinyin, Ungarinjin, Guwij, Munumburru, Ngarinjin, Ngarnawu, Wilawila, Wolyamidi, Andedja, Andidja, Angarinjin, Arawari, Arkarinjindja, Arkarrinyinjia, Gular, Ingarinjindja, Kandjalngari, Marangana, Molyamidi, Narrinyina, Narrinyind, Narrinyindi, Ngaring ngyan, Ngerringun, Njingarinjanja, Ogarinyan, Oladjau, Ungarinin, Ungarinjen, Ungarinyin, Unggarinjin, Unjarinjin, Unnarinjin, Walmidi, Wangarinjinu, Warnarinjin, WolJamidi, Wulanggu, Unarinjin, Arkarin jindja, Ungarin jen, Worrorran"
     },
     {
@@ -5742,7 +6305,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.105865666511\",\"129.70591481233\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wany1244"
+            }
+        ],
         "alternateName": "Wanjdjirra, Gurinji, Wandjira, Wadshara, Manu, Manoo"
     },
     {
@@ -5756,7 +6323,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.879395710842\",\"125.46376386735\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wub"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wuna1249"
+            }
+        ],
         "alternateName": "Wunambul, Unambal, Jamindjal, Jarmindjal, Kanaria, Laiau, Peremanggurei, Unambalnge, Wanambal, Wardana, Winjai, Wonambul, Wumnabal, Wunambullu, Wunambulu, Kularri/Gularri south westerners, Wulanggu, Wunambal ngarri, Worrorran"
     },
     {
@@ -5812,7 +6386,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.636884022902\",\"127.36442252052\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/woly1239"
+            }
+        ],
         "alternateName": "Ngarinyin, Woljamidi, Woljamiri, Molyamidi, Kuluwara, Kulu waran, Guluwarin, Kolaia, Arawari, Arawodi, Yamandil, Worrorran"
     },
     {
@@ -5882,7 +6460,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.235153811703\",\"129.35371644187\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/maln1239"
+            }
+        ],
         "alternateName": "Gurinji, Gurindji, Kartangarurru, Korindji, Kurintji, Tjial, Wandjira, Maialnga, Mailnga, Malgin, Malngjin, Western"
     },
     {
@@ -5952,7 +6534,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.077980095294\",\"127.02311686831\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wil"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wila1240"
+            }
+        ],
         "alternateName": "Ngarinyin, Guwij, Munumburru, Ngarinjin, Ngarnawu, Ungarinjin, Wolyamidi, Andadja, Andedja, Andidja, Kalari, Kandjanan, Kundjanan, Munumbara, Munumburu, Piarngongo, Taib, Taibange, Ullumbuloo, WilaWila, Wular, Wulu, Wila Wila, Wular:, Kalari:, Worrorran"
     },
     {
@@ -5994,7 +6583,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.293006956048\",\"129.27469359968\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gdh"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gadj1243"
+            }
+        ],
         "alternateName": "Gajirrawung, Kimberley Area Languages, Gadjerawang, Kadjerong, Gadjerong, Gadyerong, Kadjerawang, Kadjeroen, Kadpjeroen, Kajirrawung, Gadyarawang, Gajerong, Ginmu, Kadjarong, Kujera Gajirrawoong  the Mirrawoong name for Gajirrabeng, Gajirrebeng, Kujera"
     },
     {
@@ -6036,7 +6632,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.515180917297\",\"122.49150473245\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xnm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngum1253"
+            }
+        ],
         "alternateName": "Ngombal, Ngormbal, Ngombaru, Ngoombal, Ngormbal Ngormbal, Numbal, Numbanbor, Numbol"
     },
     {
@@ -6104,7 +6707,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.127304137837\",\"127.04181562118\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vmi"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/miwa1242"
+            }
+        ],
         "alternateName": "Bagu, Arnhem Land, Daly River Region Languages, Pela, Boola, Caloombooroo, Galumburu, Gonin, Gunan, Kaianu, Kalumbura, Kianu, Konan, Konin, Konun, Koonange, Kuna, Kunange, Kyanoo, Manda, Mande, Manunggu, Manungu, Murgura, Pago, Pelange, Ulangu, Umari, Walar, Wulanggur, Wulangu, Miwi, Oombulgurri, Ulagu Wulau, Worrorran"
     },
     {
@@ -6215,7 +6825,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.270335061883\",\"127.85010162062\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djar1244"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/K52",
@@ -6228,7 +6842,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.187649916373\",\"127.2888468636\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1285"
+            }
+        ],
         "alternateName": "Ngarinyin, Guwij, Munumburru, Ngarinjin, Ungarinjin, Wilawila, Wolyamidi, Nganau, Nganaw, Worrorran"
     },
     {
@@ -6242,7 +6860,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.030656726266\",\"124.14875457827\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jbw"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yawi1239"
+            }
+        ],
         "alternateName": "Yawidjibara, Yawuru, Yawijibara, Worora, Jaudjibaia, Jaudibaia, Jaudjibara, Jawdjibaia, Jawdjibara, Yaudjibara, Yaudjibaia, Alternative names:, Jawadjag, Winjawindjagu, Yawjibarra, Yaujibaia, Jawutjubar, Jadjibaia, Jaudji bara, Jadjiba, Bergalgu, Montgomery Islanders, Worrorran"
     },
     {
@@ -6283,7 +6908,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.302436425011\",\"124.25940097655\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/winj1235"
+            }
+        ],
         "alternateName": "Windjarumi, Djaruma, Worrorran"
     },
     {
@@ -6323,7 +6952,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gulu1236"
+            }
+        ],
         "alternateName": "Wenambal, Worrorran"
     },
     {
@@ -6337,7 +6970,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.590969909165\",\"126.17902403966\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gni"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/goon1238"
+            }
+        ],
         "alternateName": "Guniyandi, Guniyan, Gunian, Gunijan, Konejandi, Kunian, Cowrana, Goonien, Gunan, Guniandi, Gunin, Gunyari, Konajan, Konean, Konejanu, Koneyandi, Kunan, Kuniandu, Wadeawulu, Guniyan, Gun ian, Wadea wulu, Bunuban family"
     },
     {
@@ -6456,7 +7096,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.06933982657\",\"128.58567265067\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nyin1247"
+            }
+        ],
         "alternateName": "Njininj, Jaru, Nyinin, Djaro, Jarroo, Jarrou, Jarrau, Charrau, Jaruo, Djara, Deharu, Jaruru, Njining, Njinin, Nining, Neening, Meening, Ka:biri, Karbery, Kodjangana, Ruby Creek tribe"
     },
     {
@@ -6504,15 +7148,15 @@
         "@id": "https://collection.aiatsis.gov.au/austlang/language/L1",
         "@type": "Language",
         "languageCode": "L1",
-        "name": "Narungga",
+        "name": "Narungga/Nharangga",
         "geojson": {
-            "@id": "#Narungga",
+            "@id": "#Narungga/Nharangga",
             "@type": "GeoCoordinates",
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.481869129775\",\"137.5910412494\"]}}"
         },
         "source": "Austlang",
         "sameAs": [],
-        "alternateName": "Narangka, Narangga, Adjabdurah, Adjadura, Adjahdurah, Adjahdural, Moor in nunjie, Murinandji, Nanunga, Naranga, Narrang gu, Narrang u, Narranga, Narrangga, Narranggu, Narrangu, Narunga, Narrunga, Turra, Wallaroo tribe, Nar anga"
+        "alternateName": "Nharangga, Narangka, Narangga, Adjabdurah, Adjadura, Adjahdurah, Adjahdural, Moor in nunjie, Murinandji, Nanunga, Naranga, Narrang gu, Narrang u, Narranga, Narrangga, Narranggu, Narrangu, Narunga, Narrunga, Turra, Wallaroo tribe, Nar anga"
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/L10",
@@ -6525,7 +7169,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-30.350211730328\",\"138.88257707454\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/adt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/adny1235"
+            }
+        ],
         "alternateName": "Adnymathanha, Adjnjamathanha, Adynyamathanha, Adnjamathanha, Jadliaura, Ngudlawara, Wailpi, Walypi, Adnamadana, Adjnjamatana, Adnamatana, Adnjamadana, Adnjamadhanha, Adnjamatana, Adnjamathera, Adnjmadhanha, Adnjnjamathanha, Adyamatana, Andjama Dana, Andyamatana, Anjamatana, Anjamutina, Anjimatana, Anjiwatana, Anjiwatina, Anyamatana, Archualda, Atjualda, Benbakanjamata, Benbakanjamatana, Binbarnja, Binbarnya, Gadjnjamada, Gadjnjamadja, Ganjamadna, Imatjara, Kanjamata, Kanjimata, Keidnamutha, Keydnjamarda, Keydnjmarda, Kudjamuther, Kudjchnamootha, Kudnamietha, Kutchhamootha, Kutchnamoota, Kutchnamootha, Mardala, Mardula, Ngatjuwalda, Nimalda, Nimbalda, Nimbaldi, Nuralda, Umbertana, Unyamatana, Unyamootha, Wadla, Wailbi, Wajalpi, Waljbi, Wipie, Adnyamathana, Adnjamadana Wailbi, Adnyamatana, Aḋṅa-mat̂-n̂a"
     },
     {
@@ -6539,7 +7190,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.839384635069\",\"140.10042482577\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bxi"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pirl1238"
+            }
+        ],
         "alternateName": "Pilardapa, Biladapa, Pilatapa, Berluppa, Biladepa, Biladhaba, Billidapa, Jarikuna, Pidlatapa, Piladapa, Pilladapa, Pillatapa, Pilliapp, Pillitapa, Pulladapa, Yarrikuna, Biladaba, Bilatappa, Billatapa, Yarri kuna"
     },
     {
@@ -6623,7 +7281,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.228091015572\",\"139.05841514417\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dif"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dier1241"
+            }
+        ],
         "alternateName": "Diyari, Tirari, Diari, Diyeri, Dieyerie, Deerie, Dieyrie, Dthee eri, Dayerrie, Dickeri, Kunari, Koonarie, Wongkadieri, Wonkadieri, Ti:ari, Urrominna, Jarawurga, Wanggainara"
     },
     {
@@ -6707,7 +7372,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.94377210402\",\"138.9611802331\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngam1284"
+            }
+        ],
         "alternateName": "Ngameni, Ominee, A:mini, Agamini, Agaminni, Ahminie, Ahminnie, Amini, Aumine, Aumini, Auminie, Awmani, Gnameni, Ngamani, Ngaminni, Ngnaminni, Uminnie, Aurnini"
     },
     {
@@ -6749,7 +7418,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.570485377228\",\"141.8854183686\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xwk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wong1246"
+            }
+        ],
         "alternateName": "Ngura, Bundamara, Diraila, Jarumarra, Karendala, Kungatutji, Mamwura, Ngandangara, Ngurawola, Punthamara, Thiraila, Wankumara, Balpamadramadra, Jaramarala, Papagunu, Wanggamara, Wanggumara, Wankgumara, Wongkumara, Wonkamara, Wonkamarra, Wonkamura, Wonkamurra, Wonkomarra, Wonkubara, Modern Wangkumara, Wonko marra, Wonku bara"
     },
     {
@@ -6763,7 +7439,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.342914265873\",\"143.50243514014\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xpt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/punt1240"
+            }
+        ],
         "alternateName": "Ngura, Wangkumara, Bundamara, Diraila, Jarumarra, Karendala, Kungatutji, Mamwura, Ngandangara, Ngurawola, Thiraila, Wankumara, Bantha murra, Banthamurra, Boontha Murra, Boonthamurra, Bunka Burra, Buntamara, Buntamurra, Buntha burra, Bunthomarra, Puntamara, Bunthaburra, Bunthamara, Bundhamara"
     },
     {
@@ -6791,7 +7474,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.974874926463\",\"138.73380121149\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kara1508"
+            }
+        ],
         "alternateName": "Ngamini, Karanguru, Andrawilla, Kararngura, Kurangooroo, Garanguru"
     },
     {
@@ -6819,7 +7506,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.427147187685\",\"138.40846624591\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/zku"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kaur1267"
+            }
+        ],
         "alternateName": "Nantuwara, Adelaide tribe, Coorna, Gaurna, Jaitjawar:a, Karnuwarra, Kaura, Koornawarra, Kurumidlanta, Medaindi, Medaindie, Meljurna, Merelde, Merildekald, Meyu, Midlanta, Milipitingara, Nantuwaru, Nganawara, Padnaindi, Padnayndie, Wakanuwan, Warra, Warrah, Widninga, Winaini, Winnaynie, Winnay nie, Medain die"
     },
     {
@@ -6846,7 +7540,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.823467775668\",\"143.23893989363\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yaru1254"
+            }
+        ],
         "alternateName": "Other Australian Indigenous Languages, Wangkumara, Bundamara, Diraila, Jarumarra, Karendala, Kungatutji, Mamwura, Ngurawola, Punthamara, Thiraila, Wankumara, Ngandangura, Jarumarda, Unda Gnoora, Eromarra"
     },
     {
@@ -6860,7 +7558,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.904464315313\",\"139.49872761898\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yry"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yarl1238"
+            }
+        ],
         "alternateName": "Yaluyandi, Dieri, Jeljendi, Jelujendi, Yarlijandi, Yelyuyendi, Jeljujendi, Yarleeyandee, Yelyayendi, Yarluyardi, Yelyendi"
     },
     {
@@ -6902,7 +7607,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.272959343953\",\"139.73829641458\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mith1236"
+            }
+        ],
         "alternateName": "Midhaga, Dieri, Mittaka, Mittuka, Marunga, Marrala, Marranda, Murunuta, Mi daga"
     },
     {
@@ -6930,7 +7639,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.491615917922\",\"142.49024118311\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xpa"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pirr1240"
+            }
+        ],
         "alternateName": "Bidia, Kunggari, Birria, Bidia, Kulumali, Kungadutji, Marulta, Biria, Piria"
     },
     {
@@ -7056,7 +7772,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-24.656333529029\",\"145.61087168823\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xyb"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yand1261"
+            }
+        ],
         "alternateName": "Yanjdjibara, Kuungkari, Yangeeberra, Gungari, Koongerri"
     },
     {
@@ -7084,7 +7807,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.955304630626\",\"140.84024685516\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/hrp"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nhir1234"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/L47",
@@ -7137,7 +7867,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-32.930160660336\",\"139.08123163651\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jui"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngad1257"
+            }
+        ],
         "alternateName": "Aluri, Alury, Boanawari, Burra Burra, Abercrombie tribe, Doora, Eeleeree, Eura, Hillary, Hilleri, Manu, Manuley, Manuri, Mimbara, Monnoo, Ngadhuri, Ngadluri, Ngaluri, Ngarluri, Weera, Werra, Wiramaya, Wirameju, Wirameyu, Wirra, Wirramaya, Wirramayo, Wirrameyu, Yilrea, Youngye, Eeeleeree, Wirra maya, Boanawari Doora, Ngajuri"
     },
     {
@@ -7151,7 +7888,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-29.186705329018\",\"135.38377154392\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/midl1244"
+            }
+        ],
         "alternateName": "Midlaliri"
     },
     {
@@ -7165,7 +7906,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.730188325148\",\"137.14385554347\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/miki1244"
+            }
+        ],
         "alternateName": "Mungathirri nganha from the high sandhills"
     },
     {
@@ -7179,7 +7924,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-28.914306879886\",\"136.16043806138\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wang1303"
+            }
+        ],
         "alternateName": "Pularingunganha"
     },
     {
@@ -7193,7 +7942,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-27.722172662351\",\"136.02587596123\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pilt1234"
+            }
+        ],
         "alternateName": "Pilta Palta"
     },
     {
@@ -7397,7 +8150,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xwk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wong1246"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/L69",
@@ -7450,7 +8210,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-30.556220950407\",\"141.56727580899\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yga"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/maly1234"
+            }
+        ],
         "alternateName": "Maljangapa, Malyangaba, Ngurunta, Bulali, Bulalli, Karikari, Malgaaljangaba, Malja:pa, Maljanapa, Maljangaba, Malya napa, Malyanapa, Malyapa, Malynapa, Milya uppa, Milyauppa, Muliaarpa, Mullia arpa, Multyerra, Mulya napa, Mulya nappa, Mulyanapa, Mulyanappa, Nalyanapa, Malgangara"
     },
     {
@@ -7506,7 +8273,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/garm1242"
+            }
+        ],
         "alternateName": "Jarnango, Garmalangga, Karmalanga, Kokolango, Kokolangomala"
     },
     {
@@ -7520,7 +8291,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/liya1242"
+            }
+        ],
         "alternateName": "Dhuwal, Leyagawumirr, Liagaomir, Laigajomir, Laigojomir, Galbanuk, Galwanuk, Galwangug"
     },
     {
@@ -7618,7 +8393,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/liya1241"
+            }
+        ],
         "alternateName": "Dhuwal, Leyagalawumirr, Liaalaomir, Laigala wumiri, Laigulawulmiree"
     },
     {
@@ -7646,7 +8425,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.377337923711\",\"130.44673432206\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/pung1239"
+            }
+        ],
         "alternateName": "Kandjerramalh, Pungu Pungu, Wadiginy, Pongo pongo, Djiramo, Amijangal, Ami, Worgait, Worgite, Worgaid, Wa gait, Wagaidj, Wagite, Waggait, Waggite, Waggote, Waggute, Wagatsch, Wogite, Wargad, Murinwargad, Daly River language."
     },
     {
@@ -7674,7 +8457,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mada1281"
+            }
+        ],
         "alternateName": "Gupapuyngu, Mararba, Maderpa, Jithuwa, Jiduwa, Malarbardjuradj, Malarrbartjuray"
     },
     {
@@ -7688,7 +8475,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.041258414509\",\"135.41162976555\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/mec"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mara1385"
+            }
+        ],
         "alternateName": "Marranbala, Mara, Warndarang, Leelalwarra, Leelawarra, Mala, Walkonda, Mara; Leelalwarra, Mara; Leelawarra, Ma:ra, Maarra, Walkonda"
     },
     {
@@ -7744,7 +8538,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/djr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djam1256"
+            }
+        ],
         "alternateName": "Djambarbuyngu, Duwal, Djambarbino, Djambarwingu, Djambarpingu, Tjambarpoing, Djambarbwingu, Jambarboinga, Jum bapoingo, Djambarbingo, Djambarbwingo, Djambar pinga, Tchambarupi, Gujula, Gwiyula, Ngaladharr, Naladaer, Ngalado"
     },
     {
@@ -7758,7 +8559,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.266106095863\",\"136.870097825\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dwy"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhuw1250"
+            }
+        ],
         "alternateName": "Dhuwal/Dhuwala, possibly also Dhuwaya, Dhuwal"
     },
     {
@@ -7965,7 +8773,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/marr1259"
+            }
+        ],
         "alternateName": "Dhuwal, Marangu, Marra°u, Marrango, Duwal, Marrakuli, Merango"
     },
     {
@@ -8061,7 +8873,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngay1242"
+            }
+        ],
         "alternateName": "Ngayimil, Dhangu, Ngeimil, Makkanaimulmi"
     },
     {
@@ -8089,7 +8905,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djar1245"
+            }
+        ],
         "alternateName": "Dayi, Daii, Taii Tai, Dalwango, Dalwongo, Dalwongu, Darlwongo, Dhalwangu, Djawark, Djarlwa:g"
     },
     {
@@ -8173,7 +8993,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.451671365113\",\"134.82627684886\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nji"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1283"
+            }
+        ],
         "alternateName": "Ngarnga, Ngarndji, Gudanji, Ngewin, Gnuin, Leeillawarrie, Ngarngu, Ngarndji"
     },
     {
@@ -8201,7 +9028,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/guf"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gupa1247"
+            }
+        ],
         "alternateName": "Gobabingo, Gobabuinga, Gobabwingo, Gobabwingu, Gobabwinnggu, Gobawingu, Gubabingu, Gubabuyngu, Gubawingu, Gupabwingu, Gupapuy°u, Kopapiugo, Kupapuingu, Kupapuyungu, Kupapuyngu, Duwala, Gababoinu, Kopapingo, Kopapoingo, Koparpingu, Dajoror, Gupapuynyngu"
     },
     {
@@ -8271,7 +9105,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.86980990371\",\"135.5886143023\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nuy"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nung1290"
+            }
+        ],
         "alternateName": "Wubuy, Yingkwira, Nangabuya, Ningburia, Nuggaboju, Nugubuyu, Nungabuju, Nungabuya, Nungabuyu, Nungbuju, Nunggaboju, Nungguboiju, Nungguboiyu, Nunggubuju, Nunguboiyu, Nungubuju, Nungubuyu, Nunggabuyu, Nungkubuyu, Nun guboiyu, Gunwinyguan"
     },
     {
@@ -8299,7 +9140,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.758549539672\",\"130.27162799195\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/zmr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mara1386"
+            }
+        ],
         "alternateName": "Ami, Amijangal, Emmi, Emmiyangal, Manhthi Yangal, Maranjwarrgat, Menhtha, Merranunggu, Maramanunggu, Maranunga, Maranunggo, Maranungo, Maringar, Maringa, Marinunggo, Marranunga, Maranungku, Maranungo, Western Daly language."
     },
     {
@@ -8313,7 +9161,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/lja"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/golp1234"
+            }
+        ],
         "alternateName": "Gorlpa, Gorlba, Gorlbu, Guba, Gulba, Kolpa, Korlpa, Miliwuru, Nango, Girrkirr, Golbu, Golba"
     },
     {
@@ -8383,7 +9238,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bvr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bura1267"
+            }
+        ],
         "alternateName": "Burera, Burratha"
     },
     {
@@ -8411,7 +9273,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mang1385"
+            }
+        ],
         "alternateName": "Gumatj"
     },
     {
@@ -8425,7 +9291,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.36136511663\",\"136.04571314844\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/binb1242"
+            }
+        ],
         "alternateName": "Gudanji, Binbinga, Binbingha, Pinbinga, Leepitbinga, Bing Binga"
     },
     {
@@ -8467,7 +9337,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.233269244543\",\"130.82520898536\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ggk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kung1259"
+            }
+        ],
         "alternateName": "Gungarakanj, Kungarakany, Gungarakayn, Cunerakan, Gundrakan, Gunerakan, Kangarraga, Kangarranga, Kumerakainj, Kungarakan, Ungnakan, Warnunger, Gungaraganj, Gungaragany, Koongurrukuñ"
     },
     {
@@ -8481,7 +9358,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/rirr1238"
+            }
+        ],
         "alternateName": "Dhangu, Riraidjangu, Rirraljinga, Riraidjango, Wurrulul, Woralul, Urorlurl"
     },
     {
@@ -8495,7 +9376,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gnn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guma1253"
+            }
+        ],
         "alternateName": "Gomaidj, Grumatj, Gumad, Gumadji, Gumady, Gumaidji, Gumait, Kainyao, Komaits, Kumait, Kumatj, Gumadj, Duwala, Gumaitj, Gumaidj, Go maid"
     },
     {
@@ -8509,7 +9397,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/marr1258"
+            }
+        ],
         "alternateName": "Dhuwal, Marragulu, Marrakula, Maragulu, Duwal"
     },
     {
@@ -8537,7 +9429,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhal1246"
+            }
+        ],
         "alternateName": "Dayi, Dalwangu, Daii, Taii Tai, Dalwango, Dalwongo, Dalwongu, Darlwongo, Djawark, Djarlwa:g"
     },
     {
@@ -8565,7 +9461,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djap1238"
+            }
+        ],
         "alternateName": "Dhuwal, Djabu, Tjapu, Jabu, Darmaramiri, Dhamalam irr, Maradungimi, Maradanggimiri, Marrathanggi mir"
     },
     {
@@ -8677,7 +9577,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.931088898354\",\"136.58538816163\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/aoi"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/anin1240"
+            }
+        ],
         "alternateName": "Anandilyakwa, Aninhdhilyagwa, Yingguru, Warnindilyakwa, Enindilyakwa, Ingura, Amakurupa, Andilagwa, Andiljaugwa, Andiljaukwa, Andilyaugwa, Anindiljaugwa, Anindilyaugwa, Awarikpa, En Indiljaugwa, Endiljaugwa, Enindiljaugwa, Enindilyaugwa, Groote Eylandt, Lamadalpu, Wani Ndiljaugwa, Wanindilyaugwa, Enindhilyagwa, Anindhilyakwa, Eninhdhilyagwa, Wanindilyaugwa Ingura, Gunwinyguan"
     },
     {
@@ -8705,7 +9612,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.802081068674\",\"136.807861124\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jao"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yany1243"
+            }
+        ],
         "alternateName": "Yanyula, Wadirri, Yanuwa, Janjula, Wadere, Walu, Wardiri, Yanyula, anjula; Aniula, Anjula, Anula, Anuwa, Anyoola, Anyula, Anyuwa, Djirukurumbant, Iangkala, Leanawa, Leeanuwa, Njangga, Njangkala, Unalla, Yangala, Yanula, Yanular, Yuckamurri, Yuggamurra, Janjula; Aniula, Janyula, Leealowa, Leeanwa, Wadidi, Wadiri, Yanngula, Wadeira, Yanyuwa; Aniula, Yanyuwa; Anyula, Aniula, Waderi, Yanguwa, Yuggamurra for Janjula, Waderi for Wadere"
     },
     {
@@ -8788,7 +9702,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.405140184258\",\"129.81694907136\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/murr1260"
+            }
+        ],
         "alternateName": "Murrinh patha"
     },
     {
@@ -8872,7 +9790,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.721021641961\",\"130.05130789713\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/zmy"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mari1423"
+            }
+        ],
         "alternateName": "Marijedi, Murijadi, Marijadi"
     },
     {
@@ -8979,7 +9904,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.678797006489\",\"133.42947679694\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kund1258"
+            }
+        ],
         "alternateName": "Gundedjnjenghmi, Deynegmi, Deynekmi"
     },
     {
@@ -9006,7 +9935,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.267661517906\",\"134.04142237348\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mura1269"
+            }
+        ],
         "alternateName": "Guninjku, Bininj Bulkay, Kunwinjku Kunrayek, Kun rayek, kayakki, Na kerlk, Buboyen, an kerlk, Kune"
     },
     {
@@ -9101,7 +10034,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.154028288381\",\"130.39030229891\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/jami1236"
+            }
+        ],
         "alternateName": "Djamindjung/Ngaliwuru, Djamindjung, Alura, Jaminjang, Tjaminjun, Djamundon, Murinyuwen, Djamindjun, Tjamindjung, Djamunjun, Kaminjung, Djamadjong, Murinyuwan"
     },
     {
@@ -9170,7 +10107,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.07092598047\",\"132.90742242194\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ilga1238"
+            }
+        ],
         "alternateName": "Yilga, Ilgarr, Iwaidjan"
     },
     {
@@ -9211,7 +10152,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.24584450928\",\"132.41840722713\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gari1254"
+            }
+        ],
         "alternateName": "Garik, Iwaidja, Gaari, Adawuli, Djalakuru, Garrig, Jaako, Jiwadza, Marlgu, Oitbi, Uruku, Wurango, Gurik, Gari, Iwaidjan"
     },
     {
@@ -9238,7 +10183,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.07262772334\",\"130.54232721557\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngal1294"
+            }
+        ],
         "alternateName": "DjamindjungINgaliwuru, Djamindjung, Ngaliwuru, Ngaliwerun"
     },
     {
@@ -9252,7 +10201,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.127895268284\",\"134.66192125409\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gunn1248"
+            }
+        ],
         "alternateName": "Gunarda, Gu-jingarliya, Gujingaliya, Gidjingali, Martay, Burarra"
     },
     {
@@ -9266,7 +10219,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.107131304473\",\"134.48837780654\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gunn1247"
+            }
+        ],
         "alternateName": "Gu-jingarliya, Gidjingali, An-barra, Anbara, Burarra, Burrara"
     },
     {
@@ -9280,7 +10237,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.426984404463\",\"136.60732559292\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dhg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhan1270"
+            }
+        ],
         "alternateName": "Dangu, Yirgala, Thangu"
     },
     {
@@ -9294,7 +10258,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/golu1238"
+            }
+        ],
         "alternateName": "Dhangu, Dangu"
     },
     {
@@ -9360,7 +10328,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.71246520501\",\"136.00985748366\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/duj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhuw1249"
+            }
+        ],
         "alternateName": "Dhuwal/Dhuwala, possibly also Dhuwaya, Duwal, Murngin, Wulamba, Balamumu, Barlamomo, Barlamumu, Malag, Marlark, Arrawiya, Banjarrpuma, Bilamandji Dhurili, Durilji, Tuwal\r\n"
     },
     {
@@ -9402,7 +10377,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.563361220759\",\"130.75974911356\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/tiw"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/tiwi1244"
+            }
+        ],
         "alternateName": "Tunuvivi, Diwi, Nguiu, Nimara, Wonga:k, Wongak, Woranguwe, Wunguk, Wunuk, Yeimbi, Ni mara"
     },
     {
@@ -9416,7 +10398,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/muny1238"
+            }
+        ],
         "alternateName": "Gupapuyngu"
     },
     {
@@ -9458,7 +10444,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/many1257"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/N204",
@@ -9471,7 +10461,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mild1238"
+            }
+        ],
         "alternateName": "Djinang"
     },
     {
@@ -9499,7 +10493,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djad1244"
+            }
+        ],
         "alternateName": "Djardiwitjibi, Djinang"
     },
     {
@@ -9580,7 +10578,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.85322092545\",\"135.70220743368\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jay"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yann1237"
+            }
+        ],
         "alternateName": "Nango, Nangu, Murungga, Miarrmiarr"
     },
     {
@@ -9877,7 +10882,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.163241744303\",\"131.25381620883\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wrz"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wara1290"
+            }
+        ],
         "alternateName": "Waray, Awara, Parlamarnyin, Warai, Wolwonga, Arwur, Awarai, Awarra, Awarrai, Warei, Warrai, Wulwongga, Woolwonga, Gunwinyguan"
     },
     {
@@ -9919,7 +10931,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.590178428466\",\"130.85709333183\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nug"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nung1291"
+            }
+        ],
         "alternateName": "Nungulu, Jilngali, Ilngali"
     },
     {
@@ -9989,7 +11008,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.641713801431\",\"132.05463210846\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wulw1234"
+            }
+        ],
         "alternateName": "Beriguruk, Aggradundi, Aggrakundi, Agigondin, Agikwala, Agiqwolla, Agiwallem, Agoguila, Agrakundi, Agrikondi, Aquguila, Awinmil, Awinmul, Awinnmull, Giyuk, Oolawunga, Oolwunga, Peron Island, Wia willam, Wilwangga, Wolna, Wolonga, Wolwanga, Wolwongga, Woolwonga, Wulna, Wulnar, Wulwanga, Wulwonga, Wulwullam, Wuna, Wailwullam, Oola wunga, Gunwinyguan."
     },
     {
@@ -10003,7 +11026,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.612558220435\",\"130.77845772138\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xmu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kamu1258"
+            }
+        ],
         "alternateName": "Malak Malak, Gamu/Kamor, Gamu, Junggor, Kamor, Madngela, Matngela, Mulluk Mulluk, Ngulul Wanggar, Wooliana, Yunggor, Gamor, Gamy, Kamorrkir, Komorrkir, Murra Kamangee, Ngangigmor, Eastern Daly language"
     },
     {
@@ -10031,7 +11061,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.356928062799\",\"131.52699746908\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wrr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ward1246"
+            }
+        ],
         "alternateName": "Wadaman, Wadderman, Waderman, Waduman, Warduman, Wartaman, Wordaman, Wardeman"
     },
     {
@@ -10045,7 +11082,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.966859566959\",\"130.74496547137\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bili1250"
+            }
+        ],
         "alternateName": "Pilinara, Ngarinman, Bunara, Bilinara, Bilinurra, Bilyanarra, Bilyanurra, Plinara, Pillenurra, Billianera, Bulinara, Bringara, Boonarra"
     },
     {
@@ -10059,7 +11100,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.36143458276\",\"132.09312361872\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wur"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wurr1238"
+            }
+        ],
         "alternateName": "Popham Bay language, Iyi, Limpapiu, Wurango, Iji, Jarle, Lyi, Urugu, Warange, Warragu, Warrka, Warrooka, Wurengo, Wurruga, Yarlo, Wurangu, Wurrunga, Wurrango, Wuruku, Uruku, Auwul warwak, Wareidbug, Woreidbug, Warooko, Jalo, Limba Karadjee, iwaidjan"
     },
     {
@@ -10073,7 +11121,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.311520478115\",\"131.77548042017\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/uwin1234"
+            }
+        ],
         "alternateName": "Uwinjmil, Awinjmil, Winjmil, Limilngan, Norweilemil, Beriguruk, Djowei, Lemil, Minidja, naWinjmil, Noalanji, Norweilimil, Awinmul, Uwiynmirr, Awinymil, Ngalwenmil, Agiwallem, Noalanji for Norweilemil, Awinnmull, Awinmil for Awinmul, Gunwinyguan."
     },
     {
@@ -10087,7 +11139,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.441000044493\",\"131.87759795897\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dgn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dago1245"
+            }
+        ],
         "alternateName": "Wagiman, Tagoman, Airiman, Wagoman, Wogba, Togeman, Dogeman, Togiman"
     },
     {
@@ -10101,7 +11160,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.612947182736\",\"132.69622018507\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ibd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/iwai1244"
+            }
+        ],
         "alternateName": "Iwaydja, Adawuli, Djalakuru, Gaari, Garrig, Jaako, Jiwadza, Marlgu, Oitbi, Uruku, Wurango, Eae warge ga, Eaewandja, Eaewardja, Eaewarga, Eawaitja, Eewardja, Eiwaja, Gari, Idjduwa, Ilkar, Iwaidji, Iwaija, Iwaiji, Iwaji, Iyi, Jewitcha, Ji:wadja, Jiwadja, Jiwaidja, Juwadja, Limba Kar adjee, Limba karadjee, Limbakaraja, Manduwid, Ngadalwuli, Oidbi, Tarula, Unalla, Uwaidja, Yiwadja, Yiwadya, Yiwayja, Yiwaidja, Iwaja, Limba Karadjee, Iwadja, Yiwaydja, Iwaidjan"
     },
     {
@@ -10143,7 +11209,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.525601826077\",\"131.72401076624\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/lmc"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nucl1327"
+            }
+        ],
         "alternateName": "Limit, Minitja, Beriguruk, Djowei, Lemil, Minidja, naWinjmil, Norweilemil, Baneidja, Banidja, Banindja, Buneidja, Buneidya, Manidya, Minnitji, Peneitja, Punaka, Puneitja, Punuurlu, Manidja, Menassie, Buneitja"
     },
     {
@@ -10227,7 +11300,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.950287363885\",\"132.87361226866\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/amg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/amar1271"
+            }
+        ],
         "alternateName": "Amurdag, Wardadjbak, Amooridiyu, Amarag, Amarak, Amurrag, Amurag, Amurrak, Amurtak, Amuruk, Mamurug, Monobar, Namurug, Ngamrrak, Ngamurag, Ngamurak, Umoordak, Umoreo, Umoriu, Amardak, A'moordiyu, Woraidbug, Mono bar, Iwaidjan"
     },
     {
@@ -10282,7 +11362,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.434077327456\",\"132.671608496\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gbu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gaga1251"
+            }
+        ],
         "alternateName": "Gagadu, Gagudju, Kakadu, Kakudju, Ngardok, A:rwu:r, Abedal, Abiddul, Arwur, Auwur, Awur, Gagadju, Gagadyu, Ka:ka:dju, Kadadju, Kakakta, Kakata, Kakatu, Karkadoo, Karkardoo, Kukata, Katata, Abedal, Gaguju, Kakaju, Awoy, Kakadju"
     },
     {
@@ -10337,7 +11424,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.42608346237\",\"133.0652285137\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/err"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/erre1238"
+            }
+        ],
         "alternateName": "Rereri, Erei, Eri, Arra"
     },
     {
@@ -10364,7 +11458,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.897300406584\",\"133.03846083302\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/djn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djau1244"
+            }
+        ],
         "alternateName": "Jawonj, Adowen, Gundjawan, Djauan, Djauwuny, Djawin, Charmong, Chau an, Chauan, Djauun, Djauwung, Djawan, Djawanj, Djawun, Djouan, Djowan, Djowei, Jauan, Jawin, Juauan, Kumertuo, Lebryryd, Nggandindmi, Tjauen, Tjawen, Tjouen, Tweinbol, Wonborngu, Jawony"
     },
     {
@@ -10434,7 +11535,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.813898254873\",\"133.36400767602\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/mph"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/maun1240"
+            }
+        ],
         "alternateName": "Maung, Mawung, Gun marung, Gunmarung, Managari, Manangari, Marung, Mau, Maw, Men ngai, Kunmarung, Mauung, Gunmarang, Iwaidjan"
     },
     {
@@ -10448,7 +11556,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.173506301911\",\"133.48273449547\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guma1252"
+            }
+        ],
         "alternateName": "Gunwinjgu, Mayali, Bininj Gun wok, Neinggu, Gunwinggu, Mangeri, Mengerrdji, Menngarr, Gumawurag, Gunawitji, Gundeidjeme, Gundeijeme, Gundjajeimi, Gundjeibmi, Gundjeipmi, Gunei, Gunrerg, Gunwinghu, Gunwingo, Gunwingu, Gunwinngu, Gunwinygu, Gunwunei, Gurmadja madja, Koorunge, Koorungo, Kulunglutchi, Kulunglutji, Kulungutchi, Kuninjku, Mangaridji, Margulitban, Muralidan, Neing gu, Neinggu, Neinngu, Unigangk, Urnigangg, Wengei, Wengej, Wengi, Wunei, Gunwiggu, Witji, Maielli, Majali, Gundja jeimi, Kunwinku"
     },
     {
@@ -10476,7 +11588,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.414291460469\",\"132.49948283474\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/jng"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yang1288"
+            }
+        ],
         "alternateName": "Jangman, Yungman, Jongman, Jungman, Yungmanni, Yungmun, Yungmunee, Yungmunnee, Yungmunni, Yung munni"
     },
     {
@@ -10490,7 +11609,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.932246158271\",\"133.89389112265\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wlg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kunb1251"
+            }
+        ],
         "alternateName": "Gunbarlang, Gunbalang, Gambalanga, Walang, Gambalang, Geimbio, Gimbarlang, Gunba:lang, Gunbalag, Gunbalong, Gunbulan, Gurmadja madja, Warlang, Gunba:lan"
     },
     {
@@ -10518,7 +11644,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.398006797043\",\"134.38659890372\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gune1238"
+            }
+        ],
         "alternateName": "Gunwinggu"
     },
     {
@@ -10532,7 +11662,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.925860559178\",\"132.87456038763\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gund1246"
+            }
+        ],
         "alternateName": "Kundjeymi, Djeibmi, Gundjeibmi, Mayali, Gundeidjeme, Gundeidjemi, Gundjeipmi, Djebmi, Gunwinggu, Gundjepmi, Gundjipmi, Gundeij e me, Djeihmi, Djepmi, Maiali, Gunwingu, Gunwingo, Wengi, Wengei, Wengej, Kulunglutji, Kulunglutchi, Gundja jeimi, Gundeijeme, Margulitban, Unigangk, Urnigangg, Koorungo, Neinggu, Neinngu, Mangaridji, Mangeri, Mirarr"
     },
     {
@@ -10546,7 +11680,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.007678358496\",\"135.23641689697\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yann1238"
+            }
+        ],
         "alternateName": "Yannhangu, Jarnango, Jaernungo, Janango, Jandango, Janjango, Jannangu, Jarnangu, Jarrangu, Kokolango, Yaernungo, Yandango, Yarnango, Yarrnangu, Yorngar, Nango, Yanna?u, Yaerungo, Murru?un, Djina?, Gunbirri, Mälarrai, Malarra, Malara, Yalnumata"
     },
     {
@@ -10560,7 +11698,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.231028553937\",\"134.45410813993\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rmb"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/remb1249"
+            }
+        ],
         "alternateName": "Rembarunga, Rembarnga, Rainbarngo, Rambarrnga, Ranjbarngo, Ranjbarngu, Reinbaranga, Rembaranga, Rembarn nga, Rembarrna, Rembarrngu, Rembranga, Rainbarno, Remberanga, Rambarrna, Rem branga, Rem barrna, Maia:li, Maieli, Majali, Maiali, Maielli, Gunwinyguan"
     },
     {
@@ -10616,7 +11761,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.283992459345\",\"134.27075294971\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nig"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngal1293"
+            }
+        ],
         "alternateName": "Ngalakan, Hongalla/Hongalla, Nala nalagen, Nalagen, Nalakan, Ngalagan, Ngalagkan, Ngalarkan, Ngulkpun, Nullakum, Nullakun, Nullikan, Nullikin, Ngalbon, Hongalla, Nallakum, Ngalar kan, Gunwinyguan"
     },
     {
@@ -10630,7 +11782,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.891246591934\",\"133.61915448548\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/mpc"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mang1381"
+            }
+        ],
         "alternateName": "Ngarrabadji, Mangarayi, Mungarai, Mangarai, Mangarei, Mangerei, Manggarai, Mungerry, Walooka, Mungari, Ngarrabadji, Mangarray, Mangarai"
     },
     {
@@ -10644,7 +11803,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wala1273"
+            }
+        ],
         "alternateName": "Wallamungo, Wolamangu, Wollamungo, Nango, Walama?u"
     },
     {
@@ -10686,7 +11849,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.219203821555\",\"134.55025026897\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gunn1249"
+            }
+        ],
         "alternateName": "Gu-jingaliya, Gujingaliya, Gudjarlabiya, Burarra, Guadba, Gunaidbe, Gunardba, Kun nartpi, Mugali, Mu-golarra, Mukarli"
     },
     {
@@ -10700,7 +11867,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.161770746066\",\"134.5807095628\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bvr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bura1267"
+            }
+        ],
         "alternateName": "Gu-jingaliya, Gujingaliya, Anbarra, Gadjalivia, Gidjingali, Bara, Barada, Barara, Barea, Barera, Baurera, Bawera, Birarra, Burada, Burara, Burera, Gidjingale, Gudjalayia, Gurmadja madja, Jikai, Ku jarlapiyi, Tchikai, Tha ra ra burra, Thar ar ra burra, Toolginburra, Anbara, Burrara"
     },
     {
@@ -10742,7 +11916,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.746236748197\",\"134.83074376228\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ygu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yugu1250"
+            }
+        ],
         "alternateName": "Arnhem Land, Daly River Region Languages, Jugul, Mara, Yukul, Jokul, Yikil, Yookil, Yookull, Yookala, Yikul"
     },
     {
@@ -10770,7 +11951,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://collection.aiatsis.gov.au/austlang/language/N203"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/many1257"
+            }
+        ],
         "alternateName": "Djinang Manharrngu"
     },
     {
@@ -10784,7 +11972,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wubu1238"
+            }
+        ],
         "alternateName": "Gupapuyngu, Ubulgara, Wulkara, Wobulgarra, Wowulkarra, Ob ulgara, Wolgara"
     },
     {
@@ -10826,7 +12018,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.008594882317\",\"134.90638889763\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nid"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngan1295"
+            }
+        ],
         "alternateName": "Ngundi, Nagandi, Nagandji, Nanda, Nandi, Ngalbon, Ngalgbun, Gunwinyguan"
     },
     {
@@ -10854,7 +12053,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.523673824618\",\"134.47958643695\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/alh"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/alaw1244"
+            }
+        ],
         "alternateName": "Galawa, Warliburru, Wilingura, Ngewin, Alawa; Alaua, Allaua, Allaura, Allawa, Allowa, Allowiri, Allua, Alowa, Galleewo, Kallaua, Leealowa, Woolooami, Kallana, Walkonda, Walooka, Alaua, Galleewa, Woo looami"
     },
     {
@@ -10896,7 +12102,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.33789405962\",\"134.86349777477\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dji"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/djin1253"
+            }
+        ],
         "alternateName": "Djinang dialects, Yolngu, Ritharngu, Daii, Diakui, Djinba, Jandjinung, Yandijinang, Yandjinung, Jinang, Jandji:nangc, Jandjinang, Jand jinung, Yandjinning, Yandjinang, Djinnang, Djinhang, Milingimbi, Millingimbi, Wulllakki, Wulaki, Ullaki, Wulagi, Balmbi, Balmawi, Barlmawi, Manjarngi, Manyarrngi, Mun narngo, Manarrngu"
     },
     {
@@ -10980,7 +12193,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/rop"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/krio1252"
+            }
+        ],
         "alternateName": "Creole, Northern Kriol, Kriol NT, Timber Creek Kriol, Westside Kriol"
     },
     {
@@ -10994,7 +12214,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/torr1263"
+            }
+        ],
         "alternateName": "Yumplatok, Yumblatok, Torres Strait Islander language, Torres Strait Islander people"
     },
     {
@@ -11008,7 +12232,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.929955022136\",\"122.29890057998\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bpl"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/broo1238"
+            }
+        ],
         "alternateName": "Broom Creole, Koepang Talk, Malay Talk, Japanese Pidgin English"
     },
     {
@@ -11049,7 +12280,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gjr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guri1249"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/S1",
@@ -11104,7 +12342,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.267079105536\",\"140.53283477021\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yira1241"
+            }
+        ],
         "alternateName": "Meru, Erawirungand, Ngawait, Rankbirit, Ngintait, Ngaralta, Nganguruku, Ngaiawung, Eramwirrangu, Eraweerung, Erawirrangu, Erawiruck, Erawirung, Jeraruk, Jirau, Jirawirung, Juju, Pomp malkie, Willoo, Wilu, Yerraruck, Yiran, Yirau, You you, Yuyu, Eramwir rangu"
     },
     {
@@ -11369,7 +12611,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-34.777634567882\",\"142.83846342026\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dda"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dadi1251"
+            }
+        ],
         "alternateName": "Dardi Dardi, Tati Tati, Ta tati, Tatitati, Dadidadi, Tarte Tarte, Tar te tar te, Tar de Tarde, Darthy Darthy, Taa Tatty, Darthy darthy, Darty darty, Darty Darty, Ta ta thi, Tatati, Nimp mam wern, Tatathi, Tati tati thi, Tati tati tee, Tati tati ti, Darti Darti, Datti datti, Tartie tartie, Dhadatthee dialect, Ta Tathi, Tar tarthee, Darti darti, Ta Ta thi, Ta tathi, Euston tribe, Tata tata, Tati tati, Yitsa, Tathati, Tataty, Tatatha, Tatai, Taa tatty, Tunggut, Tati, Dadi dadi, Tati Tait, Dardidardi, Tharrthi-Tharrthi (Wafer & Lissarrague 2008)."
     },
     {
@@ -11481,7 +12730,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-38.459569464285\",\"145.57532287595\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/boon1243"
+            }
+        ],
         "alternateName": "Bun wurrung, Bunorong, Barrabool, Boonerwrung, Boon oor rong, Boongerong, Boonoor ong, Boonoorong, Boonurrong, Bunuron, Bunurong, Bunwurru, Bunwurung, Gippsland dialect, Mordialloc tribe, Putmaroo, Putnaroo, Thurung, Toturin, Boatnairo, Boatnarro, Bonurong, Bonnings, Boonnong, Boomerang, Port Phillip Aborigines, Bon gar rong, Bon ga rong, Boom ner wrong, Boomerong, Boonerong, Boong wer rong, Bounworong, Boonwoorong, Boonworong, Bonwarry, Westernport blacks, Boong, er, rong, ong, Bonwerong, Boormarong, Boonmerong, Bon worong, Boonmorong, Bon wrogon, Boonrong, Boongerang, Boon, ger, Boonwo rong, Western Port tribe, Boonurong, Bonwrong, Boungerong, Bournourong, Boongurong, Boonguerong, Boonwerung, Boonwerong, Boomeronge, Boon wurong, Coast tribe, Bun wurru, Boon wurung, Borawong, Bunoorong, Boonerang, Bunarong, Bunerong, Bunwurong, Bunwurra, Boonoorung, Boonworung, Boonwurrong, Bonourong, Bunerung, Boonooroong, Burinyung-balluk, Mayone-balluk, Ngaruk-willam, Yowenjerre, Yawen-djirra, Yallock-bullock, Yalukit Willam, Yalukit Willeem"
     },
     {
@@ -11495,7 +12748,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-37.742203254354\",\"145.29321753758\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/woiw1238"
+            }
+        ],
         "alternateName": "Wuy wurrung, Woiworung, Wurundjeri, Coolies, Coraloon, Djadjuwuru, Gungung willam, Gunungwillam, Kukuruk, Kurunjang, Mort Noular, Mortnoular, Ngarukwillam, Nuthergalla, Oorongie, Oorongir, Urunjeri, Waarengbadawa, Wainworra, Wairwaioo, Warerong, Warorong, Warwaroo, Wavoorong, Wawoo rong, Wawoorong, Wawurong, Wawurrong, Wciwurru, Woeewoorong, Woeewoorung, Woeworung, Woiwurong, Woiwurra, Woiwurrong, Woiwurru, Woiwuru, Woiwurung, Wooeewoorong, Wowerong, Wurrundyirra baluk, Wurrunjeri, Wurunjeri, Wurunjerri, Wurunjerri baluk, Yarra Yarra, Wuywurrung, Woi wurrung, Jagger jagger tribe, Jagger Jagger tribe, Dutigalla, Dutagall, Jaga Jaga tribe, Jacky Jacky tribe, Worworong, Port Phillip tribe, Jacka Jacka tribe, Wave ver rong, Waverong, Waverang, Waworong, Wavorong, Wavarong, Wavererong, Wawarong, Waoorong, Wa wo rong, Wa ver ong, Melbourne dialect, Douta Galla, Nuther Galla, Wooworong, Warworong, Wowoorong, Waworung, Woovoorong, Wayoerong, Woeworong, Wawaurrong, Yarra Yarra tribe, Doutta Galla tribe, Nuther Galla tribe, Melbourne tribe, Bayry Binip tribe, Yarra tribe, Jigga Jigga tribe, Port Phillip blacks, Wa woorong, Yarra River tribe, Woeywurong, Woe wurung, Woewurung, Woey wurung, Woi wurung, Woi wurru, Woi worung, Wawroonong, Woeworun, Woiwoeung tribe, Kukeruk, Warweroo, Woewurong, Woi Wurung, Wauerong, Woororong, Woe wu rrong, Waewarung, Woi wurrong, Woewo rung, Wavoo rong, Yarra Yarra Coolies, Yarra, N uther Galla"
     },
     {
@@ -11621,7 +12878,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-36.364168507212\",\"147.69259522264\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ddr"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhud1236"
+            }
+        ],
         "alternateName": "Djiningmiddang tribe, possible further name: Yaithmathang, Jaitmatang, Duduroa, Djilamatang, Kandangora, Omeo tribe, Theddora, Yaitmathang, Dhudhruwa, Dhuduroa, Do, dor, dee, Dodora, Dodoro, Toutourrite, Theddora mittung, Duduruwa, Tharamirttong, Tharamittong, Tharo mattay, Jeenong metong, Dyinning middhang, Ginning matong"
     },
     {
@@ -11761,7 +13025,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.619114492666\",\"150.09470604586\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/dhu"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/dhur1239"
+            }
+        ],
         "alternateName": "Yuin, Djiringanj, Dyirringan, Thaua, Thawa, Walbanga, Wandandian, Thurga, Thoorga, Tindale, Wurm, Dhu:rga, Oates, Durga, Bugellimanji, Bargalia, Moruya tribe, Thauaira, Du:rga, Tharawal, Tadera manji, Guyanagal, Guyangal yuin, Murring, Katungal, Baianga, Paiendra, Paienbera"
     },
     {
@@ -11956,7 +13227,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.055058071214\",\"151.52667363956\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/awk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/awab1243"
+            }
+        ],
         "alternateName": "Awabagal, Other Australian Indigenous Languages, Awaba, Kuri, Kuringgai, Lake Macquarie, Awarbukal, Arwarburkarl, Newcastle tribe"
     },
     {
@@ -12166,7 +13444,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.451318124135\",\"139.37551354072\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yara1254"
+            }
+        ],
         "alternateName": "Yaralde, Yaralde Tingar, Narrinyeri, Jaralde, Jaraldi, Jarildekald, Jarildi, Jarildikald, Lakalinyeri, Narrinyerree, Narrinjeri, Narrinyerrie, Pitta, Pitta pitta, Warawalde, Yalawarre, Yarilde, Yarildewallin, Yarrildie, Piccanini Murray people"
     },
     {
@@ -12291,7 +13573,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-35.724061376745\",\"142.99956321435\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xwt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wotj1234"
+            }
+        ],
         "alternateName": "Wutjabulak, Wudjubalug, Wotjoballuk, Wotjo baluk, Wotjo  balluk, Wotjoballaiuk, Wotjoballuck, Guli ballaiuk, Wutyuballeak tribes, Wuttyubullak, Wuttyabullak, Wotjo, Wotjobolak, Wotjobalek, Wutjubaluk, Wotjo tribe, Wotjo ba laiuruk, Wattyabullak, Woychibirik, Woitu bullar, Wotjobuluk, Watjo, Wudjubaluk, Wotjobalak, Wergaia, Wuttya bullak, Wuttyuballeak, Buibatjali, buibaty alli, Tjatijala, Tyatty alla, Djadjala, Iyattyala, Kurm me lak, Wimmera tribe, Gourrbaluk, Gnallba gootchyourl, Malikun ditj, Malleegunditch, Kulin"
     },
     {
@@ -12816,7 +14105,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-26.366889692615\",\"114.38349712828\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vml"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/malg1242"
+            }
+        ],
         "alternateName": "Malkana, Buluguda, Daguda, Damala, Tamala, Madjana, Majanna, Maldjana, Malyana, Marlgana"
     },
     {
@@ -12900,7 +14196,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.20949389547\",\"113.95209994077\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bxj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/bayu1240"
+            }
+        ],
         "alternateName": "Payungu, Baijungu, Binnigoora, Payu, Pinneegoora, Baijungo, Baiong, Baiung, Bajungu, Biong, Mulgarnoo, Paiunggu, Pajungu, Baiyungu"
     },
     {
@@ -12914,7 +14217,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.047941011966\",\"115.11520770261\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bxn"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/burd1238"
+            }
+        ],
         "alternateName": "Purduna, Boordoona, Buruna, Budina, Budoona, Buduna, Peedona, Pinneegooroo, Poodena, Poordoona, Puduna, Purduma, Wati Paruna, Bootena, Wati Puruna, Burdana"
     },
     {
@@ -12928,7 +14238,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-23.71156576435\",\"116.68011572516\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/iin"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/thii1234"
+            }
+        ],
         "alternateName": "Djiwarli, Denma, Dhiin, Tenma, Deen, Te:n, Teen, Teenma, Thenma, Thiinma"
     },
     {
@@ -12970,7 +14287,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.856929424119\",\"115.4378526273\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wxw"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ward1248"
+            }
+        ],
         "alternateName": "Wartanti, Other Australian Indigenous Languages, Doonin, Jabaru, Belliman, Bunbury tribe, Dornderupwongy, Dunanwongi, Geographe Bay tribe, Kardegur, Vasse tribe, Wadarndi, Wadjandi, Yabaroo, \"Bunbury tribe\", Dardanup, Dordenup, \"Geographe Bay, Vasse tribe\", Kaiali, Kardagur, Nghungar, Wa:dandi, Wadandi, Wadarandee, Wadarndee, Waddarndi, Wardandie, Warttandee, Geographe Bay, Dor denup"
     },
     {
@@ -12984,7 +14308,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.538836634658\",\"115.686013235\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nhf"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/nhuw1239"
+            }
+        ],
         "alternateName": "Ngoala, Noala, Nornamaronga, Jawanmala, Noalla, Noanamaronga, Noella, Nooanamaronga, Nooanamarongo, Nooela, Nuala, Nuela, Nunkaberi, Nuwala"
     },
     {
@@ -13040,7 +14371,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.405484350395\",\"116.45087969332\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vma"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mart1255"
+            }
+        ],
         "alternateName": "Other Australian Indigenous Languages, Martuyhunira, Mardathon, Mardatuna, Mardayunira, Mardudjungara, Mardudunera, Padupadu, Jawunmala, Maratunia, Mardadhunira, Mardadhuniya, Mardathoni, Mardathoonera, Mardathunera, Mardathunira, Mardatunera, Mardudhoonera, Mardudhunera, Mardudhunira, Marduduna, Marduthunira, Mardutunira, Marduyhunira, Martuthuniya, Martuyunira, Mardutunera"
     },
     {
@@ -13054,7 +14392,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-22.345409300705\",\"117.12525608201\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vku"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kurr1243"
+            }
+        ],
         "alternateName": "Other Australian Indigenous Languages, Gurama, Janari, Jardira, Kerama, Korima, Gurrama, Jana:ri, Jawunmara, Karama, Karima, Korama, Kurama, Yarnarri, Yinyjiwarnti Kurrama, Mijarranypa, Marntartka, Ngamangamara"
     },
     {
@@ -13068,7 +14413,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-21.737661452051\",\"117.86817738925\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yij"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yind1247"
+            }
+        ],
         "alternateName": "Yinjtjiparnrti, Burnugundi, Indjibandi, Jaurnmalu, Mandanjingu, Binjiebandie, Een ge pan ty, Indjiban, Indjibandje, Indjibandji, Ingibandi, Injibandi, Jana:ri, Jindiparndi, Jindjaparndi, Jindjibandi, Jindjibandji, Jindjibanji, Jindjiparndi, Kakardi, Mandanjong, Mardanjungu, Yanari, Yingiebandie, Yinjibarndi, Jindjibarndi, Yinytjiparnti, Ingi bandi, Mandanjongo"
     },
     {
@@ -13082,7 +14434,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.982239359049\",\"117.55639763374\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nrl"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1287"
+            }
+        ],
         "alternateName": "Kymurra, Ngaluma, Gnalluma, Gnalooma, Gnalouma, Jaburarra, Jaburrara ngarluma, Karira Ngaluma, Naluma, Ngalama, Ngallooma, Ngalluma, Ngalooma, \"Nickol Bay\" tribe, Paljari, Qualluana, Ngar luma, Nickol Bay tribe"
     },
     {
@@ -13096,7 +14455,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.870804946752\",\"118.4788128607\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vka"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kari1304"
+            }
+        ],
         "alternateName": "Kariera, Kudjunguru, Kariara, Gariera, Gariyarra, Kaierra, Karriara, Karriarra, Kyeara, Kyreara, Minjiburu, Minjirbururu, Minjubururu, Paljarri, Minjiburu:"
     },
     {
@@ -13110,7 +14476,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-33.984155118722\",\"116.69830213417\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kani1276"
+            }
+        ],
         "alternateName": "Nyungar, Kaneang, Nyunga, Ganeang, Jabururru, Kunyung, Ganajang, Harvey, Jaburu, Jabururu, Ka:lbaranggara, Kaleap, Kaniyan, Kunjung, Quailup, Qualeup, Qualup, Uduc, Waal, Yobberore, Ganiyang, Ka:lbar anggara, Uduc Harvey tribe, Qua lup, g"
     },
     {
@@ -13124,7 +14494,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-20.26323035168\",\"119.70523345191\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/nrk"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngar1296"
+            }
+        ],
         "alternateName": "Kudjunguru, Other Australian Indigenous Languages, Ngurla, Bedengo, Bidungo, Bidungu, Gnalla, Nga:la, Ngaea, Ngala, Ngalana, Ngerla, Ngirla, Ngoorla, Palatoj, Pardoo, Pedong, Peedona, Peedong, Pidungu, Pidong, Wanbarda"
     },
     {
@@ -13357,7 +14734,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/west2436"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/W57",
@@ -13370,7 +14751,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/east2375"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/W58",
@@ -13582,7 +14967,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-31.981489428617\",\"116.12390432562\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xwj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/waju1234"
+            }
+        ],
         "alternateName": "Nyungar, Whadjuk, Nyunga, Beelia, Beeloo, Derbal, Ilakuri wongi, Juadjag, Juadjek, Juadjuk, Karakata, Karrakatta, Minal njunga, Minalnjunga, Minnal Yungar, Mooro, Murram, Swan River Tribe, Wadjug, Whajak, Wadjuk, Wadjup, Whajook, Witja:ri, Witjari, Yooadda, Yooard, Yoongar, Yuard, Yuatjek, Yungar, Yungur, Minnal, Minaln junga:, Caractterup tribe"
     },
     {
@@ -13610,7 +15002,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.022134656447\",\"143.067117099\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wuth1237"
+            }
+        ],
         "alternateName": "Wuthati, Uradhi, Wotati, Wutati, Wotadi, Wudjadi"
     },
     {
@@ -13708,7 +15104,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.0096271893\",\"142.2228132259\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/aea"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/areb1238"
+            }
+        ],
         "alternateName": "Rip, Ngarap, Kurtjar, Araba/Areba/Rib, Araba, Kunggara, Rib, A:rap, Ariba, Aripa, Goodarra, Goongarra, Ngariba, Ngarab"
     },
     {
@@ -13820,7 +15223,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.961763753403\",\"145.91481455754\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gung1249"
+            }
+        ],
         "alternateName": "Yidiny, Yidinjdji, Gungganyji, Idindji, Kongkandji, Madjandji, Wanjuru, Garlngandji, Goonganjee, Goonganji, Gun Gaja, Jinggu, Koo gun ji, Kooganji, Koongangie, Kungandji, Kunggandji, Kunggandyi, Kungganji, Melroyji, Mook, Yellungie, Yettkie"
     },
     {
@@ -13834,7 +15241,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.264955959177\",\"145.07773954753\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/vmb"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mbab1239"
+            }
+        ],
         "alternateName": "Barbaram, Balbarum, Bar Barrum, Barbarem, Barbarum, Booburam, Gugu Mbabaram, Illagona, Kwearriburra, Mogmbabarum, Morruburra, Oombarbarum, Queeariburra, Umbarbaram, Warrialgona, Woombarbarram, Woombarrmbarra, Wumbabaram, Wumbarbaram, Koko Beberam  this is not equivalent of Mbabaram, Bar barum, Boobu ram, Bar-Barrum"
     },
     {
@@ -13903,7 +15317,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.928495760911\",\"142.11650351299\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/luth1234"
+            }
+        ],
         "alternateName": "Uradhi, Luthig, Okara, Oharra, Tepithiki, Teyepathiggi, Teppathiggi, Teepani"
     },
     {
@@ -13945,7 +15363,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-17.639984024027\",\"145.74851848387\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mamu1253"
+            }
+        ],
         "alternateName": "Dulgubarra Mamu, Dyirbal, Djirbalngan, Djiru, Giramay, Gulngai, Jirrbalngan, Keramai, Malanbara, Ngatjan, Dulgabara, Ma:mu, Ngirma, Njirma, Morruburra"
     },
     {
@@ -13987,7 +15409,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.1973276258\",\"142.96122717197\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/tgz"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/taga1279"
+            }
+        ],
         "alternateName": "Takalak, Thaypan, Tagalag, Dagalang, Da:galag, Targa lag, Tarkalag"
     },
     {
@@ -14029,7 +15458,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.690340786321\",\"145.23298721074\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gdc"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/gugu1253"
+            }
+        ],
         "alternateName": "Gudjal, Guridjal, Kokopatun, Kutjala, Warungu, Badun, Breaba, Breeaba, Jullanku, Koko Padun, KokoPatun, Koko Badun, Patun, Koko Patun"
     },
     {
@@ -14113,7 +15549,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-18.781422577031\",\"144.1411973235\"]}}"
         },
         "source": "Austlang",
-        "sameAs": []
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wmi"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wami1239"
+            }
+        ]
     },
     {
         "@id": "https://collection.aiatsis.gov.au/austlang/language/Y133",
@@ -14222,7 +15665,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.019926113023\",\"141.8711479851\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/tjj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yang1305"
+            }
+        ],
         "alternateName": "Tjungundji, Tjongkandji, Chinganji, Chongandji, Chunkunji, Djonggandji, Joongoonjie, Joonkoonjee, Ngucrand, Tjongangi, Tyongandyi, Tjunguntji, Chin ganji"
     },
     {
@@ -14684,7 +16134,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.189513726544\",\"141.90544162365\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/wif"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/wikk1239"
+            }
+        ],
         "alternateName": "Wik Keyenganh, Wik Kayngan"
     },
     {
@@ -14808,7 +16265,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.584849294384\",\"142.32873003712\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/amz"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/atam1239"
+            }
+        ],
         "alternateName": "Anggamudi, Ankamuti, Bawtjathi, Lotiga, Nggamadi, Uradhi, Utangikwathiya, Utudhanamu, Atambaya, Atambayag"
     },
     {
@@ -14836,7 +16300,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.711537418648\",\"141.82128787861\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/gwm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/awng1245"
+            }
+        ],
         "alternateName": "Mamngayt, Mamngayth, Winduwinda, Mamangathi, Mamangiti, Mamngaid"
     },
     {
@@ -14891,7 +16362,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.153510460909\",\"141.79462209227\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yupu1235"
+            }
+        ],
         "alternateName": "Yupangathi, Nggerikudi, Yupungati, Jupangati, Angadimi, Angutimi, Ba:tyana, Batjana, Gametty, Gamite, Jopngadi, Jupngit, Mbatyana, Ngerikudi, Nggirikudi, Niggerikudi, Ra:kudi, Wimaranga, Wimarangga, Wimarango, Wimmarango, Yopngadi, Yupangati, Yupnget, Yupngit, Yupungatti, Yuupngati, Nggerigudi, Yupngayth, Yupun gatti, Nigger ikudi"
     },
     {
@@ -14918,7 +16393,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-10.867276299765\",\"142.58789074767\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xgd"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/guda1244"
+            }
+        ],
         "alternateName": "Uradhi"
     },
     {
@@ -15026,7 +16508,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-9.352026425921\",\"142.4788069124\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/kala1378"
+            }
+        ],
         "alternateName": "Kalaw Kawaw Ya/Kalaw Lagaw Ya, Kala Lagaw Ya, Gudang, Kaurareg, Moait, Moalaig, Bo:gu, Buglial, Bulgai, Dauan Saibai, Kowrarega, Karualaig, Dauan, Boigu, Saibai, Torres Strait Islander language, Torres Strait Islander people"
     },
     {
@@ -15040,7 +16526,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.377732483631\",\"141.83609416592\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/awg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/angu1242"
+            }
+        ],
         "alternateName": "Adumakwithi, Baatjana, Bakwithi, Bwinitanikwithi, Jupangati, Lwipanadjini, Wimaranga, Anggadimi, Angudimi, Angutimi, Gautundi, Mbadjana, Mbahjana, Mbakudi, Mbugudi, Mpakwithi, Rakudi, Yupngayth, Awngthim, Yuupngati, Yupangati, Yupungati, Yupnget, Yupun gatti, Yopngadi, Nggerikudi, Nggirikudi, Ngerikudi, Nigger ikudi, Ra:kudi, Angadimi, Batjana, Mbatyana, Ba:tyana, Wimarangga, Wimarango, Wimmarango"
     },
     {
@@ -15068,7 +16561,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.073082509497\",\"143.00437948358\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ogha1238"
+            }
+        ],
         "alternateName": "Kawarrang, Okawarrangg, Kawarrang;, Kawarangg"
     },
     {
@@ -15096,7 +16593,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-15.81580944318\",\"141.4834197729\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/okg"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/koko1273"
+            }
+        ],
         "alternateName": "Kok Peponk"
     },
     {
@@ -15601,7 +17105,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mabu1248"
+            }
+        ],
         "alternateName": "Torres Strait Islander language, Torres Strait Islander people"
     },
     {
@@ -15629,7 +17137,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.102329913662\",\"142.27815669647\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/xpj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mpal1238"
+            }
+        ],
         "alternateName": "Uradhi, Atjinuri, Mbalidjan, Mpalitjan, Mpalityan, Mpalityanh, Winduwinda, Windawinda, Ngwatainggeti, Wikwija, Ndomdorin"
     },
     {
@@ -15643,7 +17158,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.172965673585\",\"141.82185453195\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/lnj"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/leni1238"
+            }
+        ],
         "alternateName": "Leningitij, Winda Winda, Linginiti, Adetingiti, Andyinit, Ndraangit, Cabati, Ladamngid, Latangeti, Latarngit, Leiningidi, Leningiti, Lenngeti, Lenngidgh, Lingitir, Linngithig, Linngiti, Onnatangnit, Umngnity, Winduwinda, Laini ngitti, not the same as Lengiti of Weipa, Leningit"
     },
     {
@@ -15685,7 +17207,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.700409741385\",\"142.72457265489\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/yxm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yinw1236"
+            }
+        ],
         "alternateName": "Uradhi, Ginwum, Jinwum, Tinwum, Yeemwoon, Jinwun, Yeemwoom"
     },
     {
@@ -15741,7 +17270,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.643632525572\",\"141.92671899575\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/aid"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/alng1239"
+            }
+        ],
         "alternateName": "Alingid, Alngid, Alingit, Laynngith, Winduwinda, Lengiti, Lenngiti, Limrett"
     },
     {
@@ -15783,7 +17319,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.827602221663\",\"142.0521321977\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/ngko1236"
+            }
+        ],
         "alternateName": "Ngkoth dialects, Uradhi, Nggod, Nggoth, Ngkot, Ngor, Ngot, Nkot, Winduwinda, Gott"
     },
     {
@@ -15867,7 +17407,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-12.968260083714\",\"142.17040555558\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/mbiy1238"
+            }
+        ],
         "alternateName": "Mbiywom, Uradhi, Mbewum, KokMbewam, Kok Mbewam, KokMbewan, Mbe:wum, M Berwum, Bywoom, Kokinno, Kokimoh, Mbeiwum"
     },
     {
@@ -15923,7 +17467,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-13.64420087024\",\"143.43143574801\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/ump"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/umpi1239"
+            }
+        ],
         "alternateName": "Cape York Peninsula Languages, Ompela, Djindjanagu, Djundjanagu, Koko umpilo, Ombila, Ompeila, Oombilla, Umbila, Umpile, Umpilo, umpila, Oom billa"
     },
     {
@@ -16203,7 +17754,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.475977159965\",\"144.59443977457\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/bpt"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/barr1247"
+            }
+        ],
         "alternateName": "Barrow Point language, Mutumui, Itu, Walmbaria, Basthom, Basthon, Baulam, Ebole, Eibole, Eipolin, Jugaiwatha, Karbungga, Mbambylmu, Mutumi, Njegudi, Ongwara, Mudumui"
     },
     {
@@ -16301,7 +17859,14 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.314463240555\",\"142.29415815403\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://www.ethnologue.com/language/avm"
+            },
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/angg1238"
+            }
+        ],
         "alternateName": "Anggamudi, Ankamuti, Atampaya, Bawtjathi, Lotiga, Nggamadi, Uradhi, Utangikwathiya, Utudhanamu, Aheanjadiddie, Am kemti, Ambaigan, Amkomti, Andengu, Apukwe, Apukwi, Atambaia, Gamete, Gametty, Gamiti, Gamuthi, Gomokudin, Goomkadeen, Goomkoding, Jamagundji, Joonkoonjee, Jumagundji, Ng kamadji, Ngamiti, Ngammatta, Ngammatti, Nggamiti, Ngkamadyi, Oiyamkwi, Oiyankwi, Ondaima, Oujamkiri, Oyemukui, Um yawil, Yumakundji, Yumikundji, Ngam matta"
     },
     {
@@ -16440,7 +18005,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-11.483775966648\",\"142.72575158749\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/yadh1237"
+            }
+        ],
         "alternateName": "Yadhaigana, Djagaraga, Gumakudin, Jadaikana, Ynduyamu, Yaraidyana, Yathaikeno, Galaigan, Induyames, Induyamo, Jadhaigana, Jaraidjana, Jathaikana, Jathaikeno, Uathaikama, Unduyarm, Yadaigan, Yadaikanu, Yagulles, Yaldaigan, Yandigan, Yaraidyena, Yaraikana, Yaraikanna, Yaraikkanna, Yarakino, Yardaikan, Yardigan, Yarudolaiga, Yarudolaigas, Yathaikano, Yathaikana, Yadhaikana, Yäraidyana"
     },
     {
@@ -16636,7 +18205,11 @@
             "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-16.050900536399\",\"141.80615325644\"]}}"
         },
         "source": "Austlang",
-        "sameAs": [],
+        "sameAs": [
+            {
+                "@id": "https://glottolog.org/resource/languoid/id/koko1272"
+            }
+        ],
         "alternateName": "Kok Thaw, a, Koko Petitj, Uw Inhal, Ogh Injigharr, Da:wa, Daua, Koka tabul, Koko daua, Tyor, Yabul, Yahwah, Gugu Dhaw, Kwantari, Uw Inal, Koko Pititj, Kuantari, Kundara, Gundara, Goondarra, Wangara, Wanggara, Kokowanggara, Kokawan gar, Kokatabul, Kokodaue, Oikand, Kok Thawa"
     },
     {
