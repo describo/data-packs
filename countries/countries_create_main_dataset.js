@@ -1,27 +1,32 @@
-var data_country = require("./ISO-639-6-country-data/iso-639-6-country-data-pack.json")
-var countryISOMapping = require("./ISO-639-6-country-data/mapping-iso3-iso2.json") // from https://github.com/vtex/country-iso-3-to-2
-const geoJSONfile = "./geoJSON-data/archive/countries.geojson"
-
-const countryPack = "./countries-main-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
 const fs = require('fs');
 
-fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
-  if (err) {
-    console.log("File read failed:", err);
-    return;
-  }
-  const geoJSON = JSON.parse(jsonString);
-  
-  for (let i = 0; i < geoJSON["features"].length; i++) {
+const countryISOMapping = require("./ISO-639-6-country-data/mapping-iso3-iso2.json") // from https://github.com/vtex/country-iso-3-to-2 
+const data_country = require("./ISO-639-6-country-data/iso-639-6-country-data-pack.json")
+const geoJSONFile = "https://datahub.io/core/geo-countries/r/countries.geojson";
+
+const countryPack = "./countries-main-data-pack.json";
+
+// We're using self-invoking function here as we want to use async-await syntax:
+
+
+(async () => {
+	console.log("fetching geoJSON data...")
+    let response = await fetch(geoJSONFile, { cache: "reload" });
+    if (response.status !== 200) {
+        throw new Error(response);
+    }
+    response = await response.text();
+	
+	const geoJSON = JSON.parse(response);
+	
+	for (let i = 0; i < geoJSON["features"].length; i++) {
 	  // add iso3 code to countries
-	  // add geodata to countries 
+	  // add geodata to countries 	  
 	  
 	  geoData = geoJSON["features"][i]//["geometry"]
-	  
-	  
-	  
+
 	  iso_3 = geoJSON["features"][i]["properties"]["ISO_A3"]
 	  iso_2 = countryISOMapping[iso_3]
 	  
@@ -41,6 +46,6 @@ fs.readFile(geoJSONfile, "utf8", (err, jsonString) => {
 		  }   		  
 	  } 
   };
-  console.log(data_country)
-  writeJson(countryPack, data_country, {"spaces":4});
-});
+
+    await writeJson(countryPack, data_country, {"spaces":4});
+})();

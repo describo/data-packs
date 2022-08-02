@@ -126,7 +126,7 @@ function CSVtoArray(strData, strDelimiter) {
 				
 				var geoj = {"type": "Feature",
 				  "geometry": {
-					"type": "Point",
+					"type": "GeoCoordinates",
 					"coordinates": [latitude, longitude]
 				  }}			
 				

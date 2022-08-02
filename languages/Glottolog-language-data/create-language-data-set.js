@@ -65,7 +65,7 @@ function get_alternative_names() {
 			
 			var geojson = {"type": "Feature",
 			  "geometry": {
-				"type": "Point",
+				"type": "GeoCoordinates",
 				"coordinates": [latitude, longitude]
 			  }}			
 			

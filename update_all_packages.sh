@@ -22,6 +22,9 @@ cd ..
 
 # update country data set
 cd countries
+cd ISO-639-6-country-data
+node create-country-data-pack
+cd ..
 node countries_create_main_dataset.js
-cd..
+cd ..
 
