@@ -25,51 +25,45 @@ function get_alternative_names() {
 
 
 (async () => {
+	
     let response = await fetch(data, { cache: "reload" });
     if (response.status !== 200) {
         throw new Error(response);
     }
     response = await response.text();
 
-    var alternativeNameDict  = get_alternative_names()
-	
-    console.log(alternativeNameDict);
-
+    const alternativeNameDict  = get_alternative_names()
     const languageData = [];
+	
     for (let line of response.split("\n")) {
         if (line.match("ID")) continue;
 
-        let components, code, name, macroarea, latitude, longitude, glottocode, iso639Code, country, sameAsList, sameAsDict;
+        let components, languageCode, name, macroarea, latitude, longitude, glottocode, iso639Code, country, sameAsList, sameAsDict, geojson, geoLocation;
+		
         try {
             components = line.split(",");
-            code = components.shift();
+            languageCode = components.shift();
             name = components.shift();
             macroarea = components.shift();
 			latitude = components.shift()
 			longitude = components.shift()
 			glottocode = components.shift()
 			
+			// get alternative names
 			if ((name in alternativeNameDict) && (!alternativeNameDict == "undefined")) {
 				alternateName = alternativeNameDict[name].replaceAll(",", ", ")
 			} else {
 				alternateName = "";
 			}
 			
-			/*
-			"geojson": {
-             @id: "#{name},
-             @type: "GeoCoordinates",
-             geojson: "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-14.475977159965\",\"144.59443977457\"]}}",
-	},
-    */
-			
-			var geojson = {"type": "Feature",
+			geojson = {"type": "Feature",
+			  "name": name,
 			  "geometry": {
 				"type": "GeoCoordinates",
 				"coordinates": [latitude, longitude]
 			  }}			
 			
-			var geoLocation = {
+			geoLocation = {
 			  "@id": "#" + name,
 			  "@type": "GeoCoordinates",
 			  "geojson": JSON.stringify(geojson)};
@@ -77,24 +71,24 @@ function get_alternative_names() {
 			// add iso 639 codes as links to the ethnologue source
 			iso639Code = components.shift()
 			sameAsList = []
+			
 			if (iso639Code) {
 				sameAsDict = {}
 			    sameAsDict["@id"] =  "https://www.ethnologue.com/language/" + iso639Code;
 				sameAsList.push(sameAsDict)
 			}
 
-			
 			country = components.shift()   // glottolog uses the ISO 3166-1 alpha-2 codes
-            //name = components[0]//.replace("\r", "");
-            if (name && code) {
+
+            if (name && languageCode) {
                 languageData.push({
-					"@id": `https://glottolog.org/resource/languoid/id/${code}`,
+					"@id": `https://glottolog.org/resource/languoid/id/${languageCode}`,
 					"@type": "Language",
-					languageCode: code,
+					languageCode,
 					name,
 					geojson: geoLocation,
 					source: "Glottolog",
-					containtInPlace: macroarea,
+					containtInPlace: macroarea,  // needed to compare to austlang data which is limited to Australia
 					sameAs: sameAsList,
                     alternateName,
                 });

@@ -111,11 +111,11 @@ function CSVtoArray(strData, strDelimiter) {
     for (let item of responseArray) {
 		if (item[0] == "language_code") continue;
 
-        let code, name, alternativeNames, latitude, geojson, longitude;
+        let languageCode, name, alternativeNames, latitude, geojson, longitude;
         try {
 			if (item[0]) {  // ignore empty line in the dataset
 
-				code = item[0];
+				languageCode = item[0];
 				console.log(item[1])
 				name = item[1].trim();
 				alternativeNames = item[2];
@@ -125,6 +125,7 @@ function CSVtoArray(strData, strDelimiter) {
 				longitude = item[6] || ""  // some languages don't have a longitude property
 				
 				var geoj = {"type": "Feature",
+				  "name": name,
 				  "geometry": {
 					"type": "GeoCoordinates",
 					"coordinates": [latitude, longitude]
@@ -135,11 +136,11 @@ function CSVtoArray(strData, strDelimiter) {
 				  "@type": "GeoCoordinates",
 				  "geojson": JSON.stringify(geoj)};
 				
-				if (name && code) {
+				if (name && languageCode) {
 					languageData.push({
-						"@id": `https://collection.aiatsis.gov.au/austlang/language/${code}`,
+						"@id": `https://collection.aiatsis.gov.au/austlang/language/${languageCode}`,
 						"@type": "Language",
-						languageCode: code,
+						languageCode,
 						name,
 						geojson: geoLocation,
 						source: "Austlang",
