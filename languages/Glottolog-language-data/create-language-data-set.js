@@ -38,7 +38,7 @@ function get_alternative_names() {
     for (let line of response.split("\n")) {
         if (line.match("ID")) continue;
 
-        let components, languageCode, name, macroarea, latitude, longitude, glottocode, iso639Code, country, sameAsList, sameAsDict, geojson, geoLocation;
+        let components, languageCode, name, macroarea, latitude, longitude, glottocode, iso639Code, country, sameAsList, sameAsDict, geojson, geoLocation,coverage;
 		
         try {
             components = line.split(",");
@@ -61,11 +61,14 @@ function get_alternative_names() {
 			  "geometry": {
 				"type": "GeoCoordinates",
 				"coordinates": [latitude, longitude]
-			  }}			
+			  }}	
+
+            			  
 			
 			geoLocation = {
 			  "@id": "#" + name,
 			  "@type": "GeoCoordinates",
+			  "name": `Geographical coverage for ${name}`,
 			  "geojson": JSON.stringify(geojson)};
 			
 			// add iso 639 codes as links to the ethnologue source
