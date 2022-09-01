@@ -87,6 +87,7 @@ function CSVtoArray(strData, strDelimiter) {
   }
 
   // Return the parsed data.
+
   return (arrData);
 }
 
@@ -116,9 +117,11 @@ function CSVtoArray(strData, strDelimiter) {
 			if (item[0]) {  // ignore empty line in the dataset
 
 				languageCode = item[0];
-				console.log(item[1])
+				//console.log(item[1])
 				name = item[1].trim();
 				alternativeNames = item[2];
+				if (!item[2]) {alternativeNames = ""}
+				
 				latitude = "";
 				
 				latitude = item[5] || ""   // some languages don't have a latitude property

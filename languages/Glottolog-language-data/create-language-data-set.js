@@ -91,7 +91,7 @@ function get_alternative_names() {
 					name,
 					geojson: geoLocation,
 					source: "Glottolog",
-					containtInPlace: macroarea,  // needed to compare to austlang data which is limited to Australia
+					containedInPlace: macroarea,  // needed to compare to austlang data which is limited to Australia
 					sameAs: sameAsList,
                     alternateName,
                 });

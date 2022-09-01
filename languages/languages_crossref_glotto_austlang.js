@@ -16,7 +16,7 @@ const austlangOut = "./Austlang-language-data/austlang-language-data-pack.json";
 (async () => {
 	for (let i = 0; i < glottolog.length; i++) {
 		
-		if (glottolog[i]["containtInPlace"] == "Australia") {  // just in case if some other language has the same name as an Australian language
+		if (glottolog[i]["containedInPlace"] == "Australia") {  // just in case if some other language has the same name as an Australian language
 			
 			for (let j = 0; j < austlang.length; j++) {
 					

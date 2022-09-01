@@ -1,71 +1,87 @@
-const fetch = require("cross-fetch");
-const _ = require("lodash")
-const { datapacks } = require("./index.js")
+const fetchURL = require("cross-fetch");
+//const dataPackList = ["https://raw.githubusercontent.com/Arkisto-Platform/describo-data-packs/698c16a6b35dc9179cac7c6d794186e10396649c/Glottolog-language-data/glottolog-language-data-pack.json"]
+const dataPackList = ["https://raw.githubusercontent.com/Arkisto-Platform/describo-data-packs/698c16a6b35dc9179cac7c6d794186e10396649c/Austlang-language-data/austlang-language-data-pack.json", "https://raw.githubusercontent.com/Arkisto-Platform/describo-data-packs/698c16a6b35dc9179cac7c6d794186e10396649c/Glottolog-language-data/glottolog-language-data-pack.json"]
 
-
-function lookup( { packName, find, fields = ['@id', 'name', 'alternateName' ], filter = {}} ) {
-  /** 
-   * find a substring within the objects in the data pack and list the matches
-   * packName: name of dataset in json format 
-   * find: string to be found in the object
-   * fields: list of fields where "find" should be searched
-   * filter: dictionary of filters:  {"field":"value"}
-   */
-
+class Lookup {
   
-  function findInField(item, field) {	
-	// fields need to exist and need to be defined to be searched
-	if ((field in item) && (!_.isNil(item[field])))	{
-      if (item[field].includes(find)) {
-		matchedItems.push(item); 
-	  };
-	};	   
-  };
-	
+  constructor({ dataPacks = [], indexFields = [] }) {
+    this.dataPacks = dataPacks;
+    this.indexFields = indexFields;
+    this.dataArray = []	
+	this.index = []
+  }
 
-  let matchedItems = [];  // for search results
+  // fetch data and creat index and dataArray
+  // there are one or more urls. All data from all urls are added to a single array
+  async fetch() {
+    
+    this.indexFields.forEach((field) => (this.index[field] = {}));
+
+    for (const url of this.dataPacks) {
+
+      try {
+        const res = await fetchURL(url);
+
+        if (res.status >= 400) {
+          throw new Error("Bad response from server");
+        }
+
+        const response = await res.json();
+      
+        for (const object of response) {
+		  
+          // populate data array	  
+          this.dataArray.push(object);
+	  
+	      // creat index. One dict per indexField
+          for (const field of this.indexFields) {
+			  
+		    if (field == "name") {
+
+              this.index["name"][object["name"].trim()] = object;
+
+            } else if ((field == "alternateName") && object["alternateName"]) {
+
+              // alternateName is a sting-list of names. Each name becomes an index
+              for (const altName of object['alternateName'].split(",")) {
+
+                this.index[field][altName.trim()] = object;
+				
+              }
+            }
+          } 
+        } 
+      } catch (err) {
+        console.error(err);
+      }  
+    }
+	console.log("No. of Objects: " + this.dataArray.length);
+    console.log("No. of Indices: " + Object.keys(this.index).length);
+  }
   
-  // get array into consistent type: list of strings
-  let datapackList = _.flatten([datapacks[packName]]); 
-  let urls = datapackList.map(pack => datapacks[pack] ||= pack);
+  async get({ field, value }) {
 
-  // open each file
-  // get the actual JSON data out of each file
-  let dataJSON = Promise.all(urls.map(url => fetch(url)
-  .then(e => e.json())))
+    return this.index[field][value];
+  }
   
-  // flatten the data into a single list object
-  .then(data => {return data.flat()})
-
-  // filter data pack for each of the set key, value pairs in filter
-  .then(function(dataFull) {
-    if (typeof filter !== 'undefined') {
-	  for (const [key, value] of Object.entries(filter)) {
-	    result = _.filter(dataFull, function(o) { 
-		  return o[key] == value; 
-		});
-	  };
-	};
-    return result;
-  })
+  // perform a query against an elastic search index
+  query({ elastic, query }) {
+	  // TO DO 
+  }
   
-  // find each field where the query string is searched
-  .then(function(result) {
-	_.forEach(result, function(item) {
-	  _.forEach(fields, function(field) {
-		findInField(item, field);
-	  });
-	});	
-	return _.uniq(matchedItems);
-  });	  
-  return dataJSON;	
-};
+  
+}
+module.exports = Lookup;
 
-/*
-let promise = Promise.resolve(lookup({ packName: "Languages", find: "Matukar", filter: {"source": "Glottolog", "@type": "Language"}}))
- 
-promise.then(function(val) {
-    console.log(val);
-});
-*/
-module.exports = lookup
+let langus = new Lookup({ dataPacks: dataPackList, indexFields: ['name', 'alternateName']})
+langus.fetch()
+
+
+
+setTimeout(function(){
+	//console.log(langus.index)
+	//writeJson(outfile, langus.index, {"spaces":4});
+	let found = langus.get({'field': "name", 'value': 'Linngithigh'})
+    //let found = langus.get({'field': "alternateName", 'value': 'Koko papung'})
+	console.log(found)
+}, 4000);
