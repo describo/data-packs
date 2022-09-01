@@ -1,11 +1,13 @@
-# describo-data-packs
+# Describo Data Packs
 
-A repository to host data packs for use in Describo
+- [Describo Data Packs](#describo-data-packs)
+  - [Update the packages](#update-the-packages)
+  - [Working with the package](#working-with-the-package)
 
-- languages
-- countries
+A repository to host data packs for use in Describo. A data pack is simply a pre-defined array of
+JSON-LD objects that can be used as the value of a property.
 
-## Update the data packages 
+## Update the packages
 
 To update all data packs run the script update_all_packages.sh:
 
@@ -13,37 +15,21 @@ To update all data packs run the script update_all_packages.sh:
 bash update_all_packages.sh
 ```
 
-then push the updated packages to github
-
-## Data structure
-
-A data pack is simply a pre-defined array of JSON-LD objects that can be used as the value of a property. Consider a language definition:
+## Working with the package
 
 ```
-[
-    {
-        "@id": "https://collection.aiatsis.gov.au/austlang/language/A38",
-        "@type": "Language",
-        "languageCode": "A38",
-        "name": "Ngaanyatjarra",
-        "geojson": {
-            "@id": "#Ngaanyatjarra",
-            "@type": "GeoCoordinates",
-            "geojson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-25.80043240336\",\"127.35345751349\"]}}"
-        },
-        "source": "Austlang",
-        "sameAs": [
-            {
-                "@id": "https://www.ethnologue.com/language/ntj"
-            },
-            {
-                "@id": "https://glottolog.org/resource/languoid/id/ngaa1240"
-            }
-        ],
-        "alternateName": "Ngaanjatjarra, Nana, I:nabadanggural, Jumudjara, Kalgonei, Kalgoneidjara, Kalguni, Kuwaratjara, Nangandjara, Nangaridjara, Ngaanjadjara, Ngan:adjara, Ngana, Nganadjara, Ngatari, Nona, Warburton Ranges, Ngadadjara, Ngaanyatjara, Warburton Ranges Dialect, Jabungadja, Ku:rara, Nadadjara, Nga:da, Nga:dapitjardi, Ngad adara, Ngadatara, Ngadatjara, Ngadawongga, Ngadjatara, Ngatatara, Ngatatjara, Rumudjara, Teitudjara, Wan:udjara, Warara, Wirtjandja, Witjandja"
-    },
-]
+npm install --save arkisto/describo-data-packs
+
+
+const { DataPack } = require('arkisto/describo-data-packs')
+let datapack = new DataPack({ dataPacks: ['Austlang', 'Glottolog'], indexFields: ['@id', 'name']})
+await datapack.load()
+
+
+ let language = datapack.get({
+    field: "name",
+    value: "Nyaki Nyaki / Njaki Njaki",
+});
 ```
 
-Rather than have a user enter in a language definition we can pre-populate a list of entries they can select from. 
-
+Returns a JSON-LD snippet if a match is found.
