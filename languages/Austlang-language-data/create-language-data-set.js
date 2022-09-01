@@ -71,24 +71,8 @@ function CSVtoArray(strData, strDelimiter) {
         arrData[arrData.length - 1].push(strMatchedValue);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Now that we have our value string, let's add
-    // it to the data array.
-    arrData[arrData.length - 1].push(strMatchedValue);
-  }
-
-  // Return the parsed data.
-
-  return (arrData);
-=======
     // Return the parsed data.
     return arrData;
->>>>>>> update
-=======
-    // Return the parsed data.
-    return arrData;
->>>>>>> update
 }
 
 (async () => {
@@ -108,44 +92,50 @@ function CSVtoArray(strData, strDelimiter) {
 
         let languageCode, name, alternativeNames, latitude, geojson, longitude;
         try {
-			if (item[0]) {  // ignore empty line in the dataset
+            if (item[0]) {
+                // ignore empty line in the dataset
 
-				languageCode = item[0];
-				//console.log(item[1])
-				name = item[1].trim();
-				alternativeNames = item[2];
-				if (!item[2]) {alternativeNames = ""}
-				
-				latitude = "";
-				
-				latitude = item[5] || ""   // some languages don't have a latitude property
-				longitude = item[6] || ""  // some languages don't have a longitude property
-				
-				var geoj = {"type": "Feature",
-				  "name": name,
-				  "geometry": {
-					"type": "GeoCoordinates",
-					"coordinates": [latitude, longitude]
-				  }}			
-				
-				var geoLocation = {
-				  "@id": "#" + name,
-				  "@type": "GeoCoordinates",
-				  "geojson": JSON.stringify(geoj)};
-				
-				if (name && languageCode) {
-					languageData.push({
-						"@id": `https://collection.aiatsis.gov.au/austlang/language/${languageCode}`,
-						"@type": "Language",
-						languageCode,
-						name,
-						geojson: geoLocation,
-						source: "Austlang",
-						sameAs: [],
-						alternateName: alternativeNames,
-					});
-				}
-			}
+                languageCode = item[0];
+                //console.log(item[1])
+                name = item[1].trim();
+                alternativeNames = item[2];
+                if (!item[2]) {
+                    alternativeNames = "";
+                }
+
+                latitude = "";
+
+                latitude = item[5] || ""; // some languages don't have a latitude property
+                longitude = item[6] || ""; // some languages don't have a longitude property
+
+                var geoj = {
+                    type: "Feature",
+                    name: name,
+                    geometry: {
+                        type: "GeoCoordinates",
+                        coordinates: [latitude, longitude],
+                    },
+                };
+
+                var geoLocation = {
+                    "@id": "#" + name,
+                    "@type": "GeoCoordinates",
+                    geojson: JSON.stringify(geoj),
+                };
+
+                if (name && languageCode) {
+                    languageData.push({
+                        "@id": `https://collection.aiatsis.gov.au/austlang/language/${languageCode}`,
+                        "@type": "Language",
+                        languageCode,
+                        name,
+                        geojson: geoLocation,
+                        source: "Austlang",
+                        sameAs: [],
+                        alternateName: alternativeNames,
+                    });
+                }
+            }
         } catch (error) {
             console.log(error.message);
         }
