@@ -71,6 +71,7 @@ function CSVtoArray(strData, strDelimiter) {
         arrData[arrData.length - 1].push(strMatchedValue);
     }
 
+<<<<<<< HEAD
     // Now that we have our value string, let's add
     // it to the data array.
     arrData[arrData.length - 1].push(strMatchedValue);
@@ -79,6 +80,10 @@ function CSVtoArray(strData, strDelimiter) {
   // Return the parsed data.
 
   return (arrData);
+=======
+    // Return the parsed data.
+    return arrData;
+>>>>>>> update
 }
 
 (async () => {
