@@ -13,6 +13,8 @@ To update all data packs run the script update_all_packages.sh:
 bash update_all_packages.sh
 ```
 
+then push the updated packages to github
+
 ## Data structure
 
 A data pack is simply a pre-defined array of JSON-LD objects that can be used as the value of a property. Consider a language definition:
