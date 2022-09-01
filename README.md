@@ -21,7 +21,7 @@ bash update_all_packages.sh
 npm install --save arkisto/describo-data-packs
 
 
-const { DataPack } = require('arkisto/describo-data-packs')
+const { DataPack } = require('@arkisto/describo-data-packs')
 let datapack = new DataPack({ dataPacks: ['Austlang', 'Glottolog'], indexFields: ['@id', 'name']})
 await datapack.load()
 
