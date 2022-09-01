@@ -4,7 +4,7 @@
         "dictionaries": ["jsdoc", "closure"]
     },
     "source": {
-        "include": ["README.md", "./src/datapack.js", "./src/index.js"]
+        "include": ["README.md", "./src/datapack.js", "./src/index.js", "./src/index-datapacks.js"]
     },
     "plugins": ["plugins/markdown"],
     "sourceType": "module",
