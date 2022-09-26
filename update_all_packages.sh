@@ -1,32 +1,34 @@
 #!/bin/sh
 
-cd languages
+HOME=$PWD
 
 # update Austlang data pack
-echo "Getting Austlang Data"
-cd Austlang-language-data
+echo "Austlang Data"
+cd data-packs/languages/Austlang-language-data
 node create-language-data-set.js
-cd ..
+cd $HOME
 
 # update Glottolog dataset
 echo "Getting Glottolog Data"
-cd Glottolog-language-data
+cd data-packs/languages/Glottolog-language-data
 node create-language-data-set.js
-cd ..
+cd $HOME
 
 # update ethnologue dataset
 echo "Getting Ethnologue Data"
-cd ISO-639-3-language-data
+cd data-packs/languages/ISO-639-3-language-data
 node create-language-data-pack.js
-cd ..
+cd $HOME
 
 # crossreference austlang and glottolog data packs and
 echo "Cross referencing language datasets"
+cd data-packs/languages
 node cross-reference-languages.js
-cd ..
+cd $HOME
 
 # update country data set
 echo "Getting Country Data"
-cd countries
+cd data-packs/countries
 node create-country-data-pack
+
 
