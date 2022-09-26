@@ -1,24 +1,18 @@
 const data = "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master/cldf/languages.csv";
 //var alternativeNames = "./languages/Glottolog-language-data/alternativeNames.csv"
-var alternativeNames = "./alternativeNames.csv";
+const alternativeNames = "./alternativeNames.json";
 const languagePack = "./glottolog-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
 const fs = require("fs");
+const { join } = require("path");
 
 function get_alternative_names() {
-    var altDict = {};
-    var alternativeList = fs
-        .readFileSync(alternativeNames)
-        .toString() // convert Buffer to string
-        .split("\n") // split string to lines
-        .map((e) => e.trim()) // remove white spaces for each line
-        .map((e) => e.split("\t").map((e) => e.trim())); // split each line to array
-
-    for (let i = 0; i < alternativeList.length; i++) {
-        altDict[alternativeList[i][0]] = alternativeList[i][1];
-    }
-    return altDict;
+    let rawdata = fs.readFileSync(alternativeNames);
+    let altNames = JSON.parse(rawdata);
+    //console.log(altNames)
+    return altNames;
+    
 }
 
 (async () => {
@@ -29,6 +23,7 @@ function get_alternative_names() {
     response = await response.text();
 
     const alternativeNameDict = get_alternative_names();
+    
     const languageData = [];
 
     for (let line of response.split("\n")) {
@@ -47,22 +42,28 @@ function get_alternative_names() {
             sameAsDict,
             geojson,
             geoLocation,
-            coverage;
+            alternateName;
 
         try {
             components = line.split(",");
             languageCode = components.shift();
             name = components.shift();
             macroarea = components.shift();
+            console.log(macroarea)
             latitude = components.shift();
             longitude = components.shift();
             glottocode = components.shift();
 
             // get alternative names
-            if (name in alternativeNameDict && !alternativeNameDict == "undefined") {
-                alternateName = alternativeNameDict[name].replaceAll(",", ", ");
+            if (name in alternativeNameDict) {
+                
+                if (alternativeNameDict[name].join().length > 0) { // some entries have a empty string 
+                    alternateName = alternativeNameDict[name];
+                } else {
+                    alternateName = [];
+                }
             } else {
-                alternateName = "";
+                alternateName = [];
             }
 
             geojson = {
@@ -111,5 +112,5 @@ function get_alternative_names() {
         }
     }
 
-    await writeJson(languagePack, languageData);
+    await writeJson(languagePack, languageData, {"spaces":4});
 })();

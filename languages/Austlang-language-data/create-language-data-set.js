@@ -98,12 +98,13 @@ function CSVtoArray(strData, strDelimiter) {
                 languageCode = item[0];
                 //console.log(item[1])
                 name = item[1].trim();
-                alternativeNames = item[2];
-                if (!item[2]) {
-                    alternativeNames = "";
+                
+                if (item[2] != null) {
+                    alternativeNames = item[2].split(", ");
+                } else {
+                    alternativeNames = [];
                 }
 
-                latitude = "";
 
                 latitude = item[5] || ""; // some languages don't have a latitude property
                 longitude = item[6] || ""; // some languages don't have a longitude property
@@ -141,5 +142,5 @@ function CSVtoArray(strData, strDelimiter) {
         }
     }
 
-    await writeJson(languagePack, languageData);
+    await writeJson(languagePack, languageData, {spaces: 4});
 })();
