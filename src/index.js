@@ -1,10 +1,13 @@
 /**
+ * @global
+ *
+ * @description The data packs that are available in this repository.
+ *
  * @property {object}  packs - the available data packs
  * @property {String}  packs.Austlang - The Austlang language data pack
  * @property {String}  packs.Glottolog - The Glottolog language data pack
- * @property {String}  packs.Ethnologue - The Ethnologue language data pack
  * @property {String}  packs.Country - The Countries data pack
- * @property {String}  packs.Languages - All languages data pack
+ * @property {String}  packs.Languages - All languages data pack = ["Austlang", "Glottolog" ]
  */
 const datapacks = {
     Austlang: "languages/austlang-language-data-pack.json",
