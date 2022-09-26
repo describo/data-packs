@@ -6,15 +6,15 @@
  *  is constructed from the {@link https://www.ethnologue.com/sites/default/files/CountryCodes.tab Country data} along with
  *  {@Link https://datahub.io/core/geo-countries/r/countries.geojson GeoJSON data}.
  * 
- * Note (in this example) the properties `iso2` and `iso3`. You can use these properties as lookup countries by either their ISO 2 and 3 letter codes respectively.
+ * Note (in this example) the properties `isoA2` and `isoA3`. You can use these properties as lookup countries by either their ISO 2 and 3 letter codes respectively.
  * 
  * @example
  * {
     '@id': 'https://www.ethnologue.com/country/AD',
     '@type': 'Country',
     name: 'Andorra',
-    iso2: 'AD',
-    iso3: 'AND',
+    isoA2: 'AD',
+    isoA3: 'AND',
     geojson: {
       '@id': '#Andorra',
       '@type': 'GeoShape',

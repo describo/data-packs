@@ -23,8 +23,8 @@ async function main() {
                     "@id": `https://www.ethnologue.com/country/${code}`,
                     "@type": "Country",
                     name,
-                    iso2: code,
-                    iso3: iso2to3Mapping[code],
+                    isoA2: code,
+                    isoA3: iso2to3Mapping[code],
                 });
             }
         } catch (error) {
@@ -42,7 +42,7 @@ async function main() {
                 geojson: {
                     "@id": "#" + country.name,
                     "@type": "GeoShape",
-                    geojson: JSON.stringify(countryGeoJSONGroupedByName[country.iso3][0]),
+                    geojson: JSON.stringify(countryGeoJSONGroupedByName[country.isoA3][0]),
                 },
             };
         } catch (error) {
