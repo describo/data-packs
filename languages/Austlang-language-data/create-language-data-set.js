@@ -5,142 +5,60 @@ const languagePack = "./austlang-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
 
-// Return array of string values, or NULL if CSV string not well formed.
-// https://gist.github.com/rakeden/508ca124fabe97eba6d5734f2efcea32
-
-function CSVtoArray(strData, strDelimiter) {
-    // Check to see if the delimiter is defined. If not,
-    // then default to comma.
-    strDelimiter = strDelimiter || ",";
-
-    // Create a regular expression to parse the CSV values.
-    var objPattern = new RegExp(
-        // Delimiters.
-        "(\\" +
-            strDelimiter +
-            "|\\r?\\n|\\r|^)" +
-            // Quoted fields.
-            '(?:"([^"]*(?:""[^"]*)*)"|' +
-            // Standard fields.
-            '([^"\\' +
-            strDelimiter +
-            "\\r\\n]*))",
-        "gi"
-    );
-
-    // Create an array to hold our data. Give the array
-    // a default empty first row.
-    var arrData = [[]];
-
-    // Create an array to hold our individual pattern
-    // matching groups.
-    var arrMatches = null;
-
-    // Keep looping over the regular expression matches
-    // until we can no longer find a match.
-    while ((arrMatches = objPattern.exec(strData))) {
-        // Get the delimiter that was found.
-        var strMatchedDelimiter = arrMatches[1];
-
-        // Check to see if the given delimiter has a length
-        // (is not the start of string) and if it matches
-        // field delimiter. If id does not, then we know
-        // that this delimiter is a row delimiter.
-        if (strMatchedDelimiter.length && strMatchedDelimiter !== strDelimiter) {
-            // Since we have reached a new row of data,
-            // add an empty row to our data array.
-            arrData.push([]);
-        }
-
-        var strMatchedValue;
-
-        // Now that we have our delimiter out of the way,
-        // let's check to see which kind of value we
-        // captured (quoted or unquoted).
-        if (arrMatches[2]) {
-            // We found a quoted value. When we capture
-            // this value, unescape any double quotes.
-            strMatchedValue = arrMatches[2].replace(new RegExp('""', "g"), '"');
-        } else {
-            // We found a non-quoted value.
-            strMatchedValue = arrMatches[3];
-        }
-
-        // Now that we have our value string, let's add
-        // it to the data array.
-        arrData[arrData.length - 1].push(strMatchedValue);
-    }
-
-    // Return the parsed data.
-    return arrData;
-}
-
-(async () => {
+main();
+async function main() {
     let response = await fetch(data, { cache: "reload" });
     if (response.status !== 200) {
         throw new Error(response);
     }
     response = await response.text();
+    const lines = response.split("\n").map((l) => l.trim());
+    let columns = lines[0].split(",").map((c) => c.replace(/"/g, "").trim());
 
-    responseArray = CSVtoArray(response, ",");
-
-    //console.log(responseArray)
     const languageData = [];
+    for (let item of lines.slice(1, lines.length)) {
+        item = item.split('",').map((c) => c.replace(/"/g, ""));
 
-    for (let item of responseArray) {
-        if (item[0] == "language_code") continue;
-
-        let languageCode, name, alternativeNames, latitude, geojson, longitude;
+        let data = {};
+        columns.forEach((column, index) => {
+            data[column] = item[index];
+        });
         try {
-            if (item[0]) {
-                // ignore empty line in the dataset
+            const geoj = {
+                type: "Feature",
+                name: data.language_name,
+                geometry: {
+                    type: "GeoCoordinates",
+                    name: `Geographical coverage for ${data.language_name}`,
+                    coordinates: [
+                        data.approximate_latitude_of_language_variety,
+                        data.approximate_longitude_of_language_variety,
+                    ],
+                },
+            };
 
-                languageCode = item[0];
-                //console.log(item[1])
-                name = item[1].trim();
-                
-                if (item[2] != null) {
-                    alternativeNames = item[2].split(", ");
-                } else {
-                    alternativeNames = [];
-                }
+            const geoLocation = {
+                "@id": "#" + data.language_name,
+                "@type": "GeoCoordinates",
+                geojson: JSON.stringify(geoj),
+            };
 
-
-                latitude = item[5] || ""; // some languages don't have a latitude property
-                longitude = item[6] || ""; // some languages don't have a longitude property
-
-                var geoj = {
-                    type: "Feature",
-                    name: name,
-                    geometry: {
-                        type: "GeoCoordinates",
-                        coordinates: [latitude, longitude],
-                    },
-                };
-
-                var geoLocation = {
-                    "@id": "#" + name,
-                    "@type": "GeoCoordinates",
-                    geojson: JSON.stringify(geoj),
-                };
-
-                if (name && languageCode) {
-                    languageData.push({
-                        "@id": `https://collection.aiatsis.gov.au/austlang/language/${languageCode}`,
-                        "@type": "Language",
-                        languageCode,
-                        name,
-                        geojson: geoLocation,
-                        source: "Austlang",
-                        sameAs: [],
-                        alternateName: alternativeNames,
-                    });
-                }
+            if (data.language_name && data.language_code) {
+                languageData.push({
+                    "@id": data.uri,
+                    "@type": "Language",
+                    languageCode: data.language_code,
+                    name: data.language_name,
+                    geojson: geoLocation,
+                    source: "Austlang",
+                    sameAs: [],
+                    alternateName: data.language_synonym,
+                });
             }
         } catch (error) {
             console.log(error.message);
         }
     }
 
-    await writeJson(languagePack, languageData, {spaces: 4});
-})();
+    await writeJson(languagePack, languageData);
+}

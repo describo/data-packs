@@ -1,25 +1,32 @@
 #!/bin/sh
 
-# update Austlang data pack
 cd languages
+
+# update Austlang data pack
+echo "Getting Austlang Data"
 cd Austlang-language-data
 node create-language-data-set.js
 cd ..
 
 # update Glottolog dataset
+echo "Getting Glottolog Data"
 cd Glottolog-language-data
 node create-language-data-set.js
 cd ..
 
+# update ethnologue dataset
+echo "Getting Ethnologue Data"
+cd ISO-639-3-language-data
+node create-language-data-pack.js
+cd ..
+
 # crossreference austlang and glottolog data packs and
-# create main language data pack
-node languages_crossref_glotto_austlang.js
+echo "Cross referencing language datasets"
+node cross-reference-languages.js
 cd ..
 
 # update country data set
-cd countries/ISO-639-6-country-data
+echo "Getting Country Data"
+cd countries
 node create-country-data-pack
-cd ..
-node countries_create_main_dataset.js
-cd ..
 

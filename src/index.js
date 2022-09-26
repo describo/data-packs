@@ -7,11 +7,10 @@
  * @property {String}  packs.Languages - All languages data pack
  */
 const datapacks = {
-    Austlang: "languages/Austlang-language-data/austlang-language-data-pack.json",
-    Glottolog: "languages/Glottolog-language-data/glottolog-language-data-pack.json",
-    Ethnologue: "languages/ISO-639-6-language-data/iso-639-6-language-data-pack.json",
-    Country: "countries/countries-main-data-pack.json",
-    Languages: ["Austlang", "Glottolog", "Ethnologue"],
+    Austlang: "languages/austlang-language-data-pack.json",
+    Glottolog: "languages/glottolog-language-data-pack.json",
+    Country: "countries/ISO-639-6-country-data/iso-639-6-country-data-pack.json",
+    Languages: ["Austlang", "Glottolog"],
 };
 
 module.exports = {

@@ -1,1 +1,0 @@
-To re-create this data pack do `node ./create-language-data-pack.js`

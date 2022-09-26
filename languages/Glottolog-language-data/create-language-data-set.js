@@ -3,17 +3,7 @@ const data = "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master/
 const alternativeNames = "./alternativeNames.json";
 const languagePack = "./glottolog-language-data-pack.json";
 const fetch = require("cross-fetch");
-const { writeJson } = require("fs-extra");
-const fs = require("fs");
-const { join } = require("path");
-
-function get_alternative_names() {
-    let rawdata = fs.readFileSync(alternativeNames);
-    let altNames = JSON.parse(rawdata);
-    //console.log(altNames)
-    return altNames;
-    
-}
+const { writeJson, readJSON } = require("fs-extra");
 
 (async () => {
     let response = await fetch(data, { cache: "reload" });
@@ -22,8 +12,8 @@ function get_alternative_names() {
     }
     response = await response.text();
 
-    const alternativeNameDict = get_alternative_names();
-    
+    const alternativeNameDict = await readJSON(alternativeNames);
+
     const languageData = [];
 
     for (let line of response.split("\n")) {
@@ -49,15 +39,14 @@ function get_alternative_names() {
             languageCode = components.shift();
             name = components.shift();
             macroarea = components.shift();
-            console.log(macroarea)
             latitude = components.shift();
             longitude = components.shift();
             glottocode = components.shift();
 
             // get alternative names
             if (name in alternativeNameDict) {
-                
-                if (alternativeNameDict[name].join().length > 0) { // some entries have a empty string 
+                if (alternativeNameDict[name].join().length > 0) {
+                    // some entries have a empty string
                     alternateName = alternativeNameDict[name];
                 } else {
                     alternateName = [];
@@ -108,9 +97,9 @@ function get_alternative_names() {
                 });
             }
         } catch (error) {
-            console.log(error.message, components);
+            console.log("here", error.message, components);
         }
     }
 
-    await writeJson(languagePack, languageData, {"spaces":4});
+    await writeJson(languagePack, languageData);
 })();
