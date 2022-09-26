@@ -1,27 +1,17 @@
-# Describo Data Packs
-
-- [Describo Data Packs](#describo-data-packs)
-  - [Working on the package - tests](#working-on-the-package---tests)
-  - [Update the packages](#update-the-packages)
+- [For users](#for-users)
   - [Install the package](#install-the-package)
   - [Loading the data packs into elastic search](#loading-the-data-packs-into-elastic-search)
   - [Working with the package](#working-with-the-package)
+- [For Developers](#for-developers)
+  - [Working on the package - writing tests](#working-on-the-package---writing-tests)
+  - [Updating the JSDoc documentation](#updating-the-jsdoc-documentation)
+  - [Adding a data pack to this repository](#adding-a-data-pack-to-this-repository)
+  - [Building and publishing an update](#building-and-publishing-an-update)
 
 A repository to host data packs for use in Describo. A data pack is simply a pre-defined array of
 JSON-LD objects that can be used as the value of a property.
 
-## Working on the package - tests
-
--   start elastic search docker container: `docker compose up`
--   Run the tests in watch mode: `npm run test:watch`
-
-## Update the packages
-
-To update all data packs run the script update_all_packages.sh:
-
-```
-bash update_all_packages.sh
-```
+# For users
 
 ## Install the package
 
@@ -63,3 +53,35 @@ await datapack.load()
 ```
 
 Returns a JSON-LD snippet if a match is found.
+
+# For Developers
+
+## Working on the package - writing tests
+
+-   start elastic search docker container: `docker compose up`
+-   Run the tests in watch mode: `npm run test:watch`
+
+## Updating the JSDoc documentation
+
+-   npm run generate-docs
+-   Then commit the docs and push to github
+
+## Adding a data pack to this repository
+
+-   add a folder in the `data-packs` top level folder named as your data pack.
+-   create an update script inside that folder named like: `create-data-pack.js`.
+    -   Your script should be self contained and retrieve the data it needs. That is, don't check a
+        datasource into this repo if you can avoid it. Get it from the web so that the data pack is
+        updated from the main version online. Whatever, and wherever, that is.
+-   add a reference to that script in `update-all-packages.sh` so that your data pack is updated
+    when the others are.
+-   document the data structure by adding a file in your data pack folder called:
+    `datapack-entry-format.js`. Follow the example in `languages/datapack-entry-format.js`.
+
+## Building and publishing an update
+
+-   `bash ./update_all_packages.sh`
+-   `npm run generate-docs`
+-   Commit all of the changes
+-   Bump the version: `npm version minor`
+-   Publish `npm publish`

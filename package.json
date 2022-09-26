@@ -13,7 +13,7 @@
         "type": "git",
         "url": "git+https://github.com/Arkisto-Platform/describo-data-packs.git"
     },
-    "homepage": "https://github.com/Arkisto-Platform/describo-data-packs#readme",
+    "homepage": "https://github.com/Arkisto-Platform/describo-data-packs",
     "author": "Marco La Rosa",
     "license": "ISC",
     "bugs": {
