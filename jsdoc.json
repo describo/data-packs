@@ -9,8 +9,8 @@
             "./src/datapack.js",
             "./src/index.js",
             "./src/index-datapacks.js",
-            "./languages/datapack-entry-format.js",
-            "./countries/datapack-entry-format.js"
+            "./data-packs/languages/datapack-entry-format.js",
+            "./data-packs/countries/datapack-entry-format.js"
         ]
     },
     "plugins": ["plugins/markdown"],
