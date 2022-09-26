@@ -68,7 +68,7 @@ class DataPack {
      */
     get({ field, value }) {
         const result = this.indexes[field][value];
-        if (result.length === 0) {
+        if (!result || result.length === 0) {
             return undefined;
         } else if (result.length === 1) {
             return result.pop();
