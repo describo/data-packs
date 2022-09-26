@@ -45,7 +45,8 @@ async function main() {
 
             if (data.language_name && data.language_code) {
                 languageData.push({
-                    "@id": data.uri,
+                    // "@id": data.uri,
+                    "@id": `https://collection.aiatsis.gov.au/austlang/language/${data.language_code}`,
                     "@type": "Language",
                     languageCode: data.language_code,
                     name: data.language_name,
