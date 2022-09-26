@@ -1,6 +1,7 @@
 # Describo Data Packs
 
 - [Describo Data Packs](#describo-data-packs)
+  - [Working on the package - tests](#working-on-the-package---tests)
   - [Update the packages](#update-the-packages)
   - [Install the package](#install-the-package)
   - [Loading the data packs into elastic search](#loading-the-data-packs-into-elastic-search)
@@ -8,6 +9,11 @@
 
 A repository to host data packs for use in Describo. A data pack is simply a pre-defined array of
 JSON-LD objects that can be used as the value of a property.
+
+## Working on the package - tests
+
+-   start elastic search docker container: `docker compose up`
+-   Run the tests in watch mode: `npm run test:watch`
 
 ## Update the packages
 
