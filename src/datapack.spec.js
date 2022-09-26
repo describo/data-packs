@@ -87,4 +87,46 @@ describe(`Test looking up data using the lookup class`, () => {
         expect(language.name).toBe("Yam");
         expect(language.languageCode).toBe("more1255");
     });
+    it(`Should be able to load glottolog and get something using ethnologue and austlang codes`, async () => {
+        let datapack = new DataPack({
+            dataPacks: ["Glottolog"],
+            indexFields: ["@id", "name", "iso639-3", "austlangCode"],
+        });
+        await datapack.load();
+
+        let language = datapack.get({
+            field: "iso639-3",
+            value: "rxd",
+        });
+        expect(language.name).toBe("Ngardi");
+        expect(language.languageCode).toBe("ngar1288");
+
+        language = datapack.get({
+            field: "austlangCode",
+            value: "A121",
+        });
+        expect(language.name).toBe("Ngardi");
+        expect(language.languageCode).toBe("ngar1288");
+    });
+    it(`Should be able to load austlang and get something using an ethnologue and glottolog codes`, async () => {
+        let datapack = new DataPack({
+            dataPacks: ["Austlang"],
+            indexFields: ["@id", "name", "iso639-3", "glottologCode"],
+        });
+        await datapack.load();
+
+        let language = datapack.get({
+            field: "iso639-3",
+            value: "rxd",
+        });
+        expect(language.name).toBe("Ngardi");
+        expect(language.languageCode).toBe("A121");
+
+        language = datapack.get({
+            field: "glottologCode",
+            value: "ngar1288",
+        });
+        expect(language.name).toBe("Ngardi");
+        expect(language.languageCode).toBe("A121");
+    });
 });
