@@ -4,7 +4,7 @@ describe(`Test looking up data using the lookup class`, () => {
     it(`Should be able to load the country datapack and get something`, async () => {
         let datapack = new DataPack({
             dataPacks: "Country",
-            indexFields: ["@id", "name", "iso2", "iso3"],
+            indexFields: ["@id", "name", "isoA2", "isoA3"],
         });
         await datapack.load();
         let country = datapack.get({
@@ -12,15 +12,15 @@ describe(`Test looking up data using the lookup class`, () => {
             value: "https://www.ethnologue.com/country/AD",
         });
         expect(country.name).toBe("Andorra");
-        expect(country.iso2).toBe("AD");
+        expect(country.isoA2).toBe("AD");
 
         country = datapack.get({ field: "name", value: "Andorra" });
         expect(country.name).toBe("Andorra");
-        expect(country.iso2).toBe("AD");
+        expect(country.isoA2).toBe("AD");
 
-        country = datapack.get({ field: "iso2", value: "AD" });
+        country = datapack.get({ field: "isoA2", value: "AD" });
         expect(country.name).toBe("Andorra");
-        expect(country.iso2).toBe("AD");
+        expect(country.isoA2).toBe("AD");
     });
     it(`Should be able to load the austlang datapack and get something`, async () => {
         let datapack = new DataPack({ dataPacks: "Austlang" });
