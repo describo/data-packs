@@ -3,7 +3,7 @@
 HOME=$PWD
 
 # update Austlang data pack
-echo "Austlang Data"
+echo "Getting Austlang Data"
 cd data-packs/languages/Austlang-language-data
 node create-language-data-set.js
 cd $HOME
@@ -21,13 +21,13 @@ node create-language-data-pack.js
 cd $HOME
 
 # crossreference austlang and glottolog data packs and
-echo "Cross referencing language datasets"
+echo "Cross referencing language datasets and making data packs"
 cd data-packs/languages
 node cross-reference-languages.js
 cd $HOME
 
 # update country data set
-echo "Getting Country Data"
+echo "Getting Country Data and making data pack"
 cd data-packs/countries
 node create-country-data-pack
 
