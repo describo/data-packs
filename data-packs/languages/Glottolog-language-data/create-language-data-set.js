@@ -14,36 +14,26 @@ const { writeJson, readJSON } = require("fs-extra");
 
     const alternativeNameDict = await readJSON(alternativeNames);
 
+    let components;
     const languageData = [];
-
     for (let line of response.split("\n")) {
         if (line.match("ID")) continue;
 
-        let components,
-            languageCode,
-            name,
-            macroarea,
-            latitude,
-            longitude,
-            glottocode,
-            iso639Code,
-            country,
-            sameAsList,
-            sameAsDict,
-            geojson,
-            geoLocation,
-            alternateName;
-
         try {
             components = line.split(",");
-            languageCode = components.shift();
-            name = components.shift();
-            macroarea = components.shift();
-            latitude = components.shift();
-            longitude = components.shift();
-            glottocode = components.shift();
+            const [
+                languageCode,
+                name,
+                macroarea,
+                latitude,
+                longitude,
+                glottocode,
+                iso639,
+                country,
+            ] = components;
 
             // get alternative names
+            let alternateName;
             if (name in alternativeNameDict) {
                 if (alternativeNameDict[name].join().length > 0) {
                     // some entries have a empty string
@@ -55,7 +45,7 @@ const { writeJson, readJSON } = require("fs-extra");
                 alternateName = [];
             }
 
-            geojson = {
+            const geojson = {
                 type: "Feature",
                 name: name,
                 geometry: {
@@ -64,40 +54,35 @@ const { writeJson, readJSON } = require("fs-extra");
                 },
             };
 
-            geoLocation = {
+            const geoLocation = {
                 "@id": "#" + name,
                 "@type": "GeoCoordinates",
                 name: `Geographical coverage for ${name}`,
                 geojson: JSON.stringify(geojson),
             };
 
-            // add iso 639 codes as links to the ethnologue source
-            iso639Code = components.shift();
-            sameAsList = [];
-
-            if (iso639Code) {
-                sameAsDict = {};
-                sameAsDict["@id"] = "https://www.ethnologue.com/language/" + iso639Code;
-                sameAsList.push(sameAsDict);
-            }
-
-            country = components.shift(); // glottolog uses the ISO 3166-1 alpha-2 codes
+            let sameAsList = [];
 
             if (name && languageCode) {
-                languageData.push({
+                let language = {
                     "@id": `https://glottolog.org/resource/languoid/id/${languageCode}`,
                     "@type": "Language",
                     languageCode,
                     name,
                     geojson: geoLocation,
                     source: "Glottolog",
-                    containtInPlace: macroarea, // needed to compare to austlang data which is limited to Australia
+                    // containtInPlace: macroarea, // needed to compare to austlang data which is limited to Australia
                     sameAs: sameAsList,
                     alternateName,
-                });
+                };
+                if (iso639) {
+                    language.sameAs = [{ "@id": `https://www.ethnologue.com/language/${iso639}` }];
+                    language["iso639-3"] = iso639;
+                }
+                languageData.push(language);
             }
         } catch (error) {
-            console.log("here", error.message, components);
+            console.log(error.message, components);
         }
     }
 
