@@ -26,6 +26,7 @@ class DataPack {
             }
         });
         this.dataPacks = flattenDeep(dataPacks);
+        this.packData = [];
         this.indexFields = indexFields;
         this.indexes = {};
     }
@@ -40,6 +41,7 @@ class DataPack {
             pack = await this.fetchDataPack({ pack: path.join(host, datapacks[pack]) });
             packs = [...packs, ...pack];
         }
+        this.packData = packs;
 
         for (let field of this.indexFields) {
             this.indexes[field] = groupBy(packs, field);
