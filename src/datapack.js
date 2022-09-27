@@ -1,7 +1,7 @@
 const { datapacks, host } = require("./index.js");
 const path = require("path");
 const { fetch } = require("cross-fetch");
-const { isString, groupBy, flattenDeep } = require("lodash");
+const { isString, groupBy, flattenDeep, cloneDeep } = require("lodash");
 
 /** Class to interact with data packs . */
 class DataPack {
@@ -73,9 +73,9 @@ class DataPack {
         if (!result || result.length === 0) {
             return undefined;
         } else if (result.length === 1) {
-            return result.pop();
+            return cloneDeep(result[0]);
         } else {
-            return result;
+            return cloneDeep(result);
         }
     }
 }
