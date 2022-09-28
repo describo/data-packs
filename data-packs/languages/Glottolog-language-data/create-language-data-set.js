@@ -47,9 +47,9 @@ const { writeJson, readJSON } = require("fs-extra");
 
             const geojson = {
                 type: "Feature",
-                name: name,
+                properties: { name },
                 geometry: {
-                    type: "GeoCoordinates",
+                    type: "Point",
                     coordinates: [latitude, longitude],
                 },
             };

@@ -26,10 +26,11 @@ async function main() {
         try {
             const geoj = {
                 type: "Feature",
-                name: data.language_name,
+                properties: {
+                    name: data.language_name,
+                },
                 geometry: {
-                    type: "GeoCoordinates",
-                    name: `Geographical coverage for ${data.language_name}`,
+                    type: "Point",
                     coordinates: [
                         data.approximate_latitude_of_language_variety,
                         data.approximate_longitude_of_language_variety,
@@ -40,6 +41,7 @@ async function main() {
             const geoLocation = {
                 "@id": "#" + data.language_name,
                 "@type": "GeoCoordinates",
+                name: `Geographical coverage for ${data.language_name}`,
                 geojson: JSON.stringify(geoj),
             };
 
