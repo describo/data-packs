@@ -50,7 +50,7 @@ const { writeJson, readJSON } = require("fs-extra");
                 properties: { name },
                 geometry: {
                     type: "Point",
-                    coordinates: [latitude, longitude],
+                    coordinates: [longitude, latitude],
                 },
             };
 

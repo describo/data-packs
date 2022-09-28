@@ -32,8 +32,8 @@ async function main() {
                 geometry: {
                     type: "Point",
                     coordinates: [
-                        data.approximate_latitude_of_language_variety,
                         data.approximate_longitude_of_language_variety,
+                        data.approximate_latitude_of_language_variety,
                     ],
                 },
             };
