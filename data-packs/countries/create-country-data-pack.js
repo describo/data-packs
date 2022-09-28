@@ -42,6 +42,7 @@ async function main() {
                 geojson: {
                     "@id": "#" + country.name,
                     "@type": "GeoShape",
+                    name: `Geographical coverage for ${country.name}`,
                     geojson: JSON.stringify(countryGeoJSONGroupedByName[country.isoA3][0]),
                 },
             };
