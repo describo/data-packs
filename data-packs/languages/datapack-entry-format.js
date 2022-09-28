@@ -18,6 +18,7 @@
         "geojson": {
             "@id": "#Ngardi",
             "@type": "GeoCoordinates",
+            "name": "Geographical coverage for Ngardi",
             "geojson": "{\"type\":\"Feature\",\"name\":\"Ngardi\",\"geometry\":{\"type\":\"GeoCoordinates\",\"coordinates\":[\"\",\"\"]}}"
         },
         "source": "Austlang",
