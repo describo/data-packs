@@ -38,7 +38,7 @@ class IndexDataPacks {
                 let chunks = chunk(data, this.chunkSize);
                 for (let chunk of chunks) {
                     chunk = chunk.map((c) => {
-                        return [{ index: { _id: c["@id"], _index: "data" } }, { c }];
+                        return [{ index: { _id: c["@id"], _index: "data" } }, c];
                     });
                     chunk = flattenDeep(chunk);
 
