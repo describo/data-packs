@@ -1,6 +1,6 @@
 {
     "name": "@arkisto/describo-data-packs",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "A set of data packs for describo to load content from.",
     "main": "index.js",
     "scripts": {
