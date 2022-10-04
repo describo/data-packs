@@ -18,7 +18,7 @@ Github: [https://github.com/describo/data-packs](https://github.com/describo/dat
 ## Install the package
 
 ```
-npm install --save @arkisto/describo-data-packs
+npm install --save @describo/data-packs
 ```
 
 ## Loading the data packs into elastic search
@@ -32,7 +32,7 @@ docker compose up -d ; docker compose logs -f ; docker compose stop ; docker com
 Then in your application you can trigger a load of all of the data packs:
 
 ```
-const { IndexDataPacks } = require('@arkisto/describo-data-packs')
+const { IndexDataPacks } = require('@describo/data-packs')
 const index = new IndexDataPacks({ elasticUrl: "http://localhost:9200" });
 await index.load();
 ```
@@ -43,7 +43,7 @@ Or to do it once somewhere outside of your app with something like the script
 ## Working with the package
 
 ```
-const { DataPack } = require('@arkisto/describo-data-packs')
+const { DataPack } = require('@describo/data-packs')
 let datapack = new DataPack({ dataPacks: ['Austlang', 'Glottolog'], indexFields: ['@id', 'name']})
 await datapack.load()
 
