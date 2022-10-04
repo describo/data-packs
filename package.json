@@ -1,5 +1,5 @@
 {
-    "name": "@arkisto/describo-data-packs",
+    "name": "@describo/describo-data-packs",
     "version": "0.6.2",
     "description": "A set of data packs for describo to load content from.",
     "main": "index.js",
@@ -11,13 +11,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Arkisto-Platform/describo-data-packs.git"
+        "url": "git+https://github.com/describo/data-packs.git"
     },
-    "homepage": "https://github.com/Arkisto-Platform/describo-data-packs",
+    "homepage": "https://github.com/describo/data-packs.git",
     "author": "Marco La Rosa",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Arkisto-Platform/describo-data-packs/issues"
+        "url": "https://github.com/describo/data-packs.git/issues"
     },
     "devDependencies": {
         "clean-jsdoc-theme": "^4.1.7",

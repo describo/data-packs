@@ -11,6 +11,8 @@
 A repository to host data packs for use in Describo. A data pack is simply a pre-defined array of
 JSON-LD objects that can be used as the value of a property.
 
+Github: [https://github.com/describo/data-packs](https://github.com/describo/data-packs)
+
 # For users
 
 ## Install the package
