@@ -17,6 +17,6 @@ const datapacks = {
 };
 
 module.exports = {
-    host: "https://raw.githubusercontent.com/Arkisto-Platform/describo-data-packs/master/data-packs",
+    host: "https://raw.githubusercontent.com/describo/data-packs/master/data-packs",
     datapacks,
 };
