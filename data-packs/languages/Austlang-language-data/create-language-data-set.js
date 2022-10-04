@@ -55,7 +55,7 @@ async function main() {
                     geojson: geoLocation,
                     source: "Austlang",
                     sameAs: [],
-                    alternateName: data.language_synonym,
+                    alternateName: data.language_synonym.split(",").map((name) => name.trim()),
                 });
             }
         } catch (error) {
