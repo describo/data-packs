@@ -30,14 +30,14 @@ describe(`Test looking up data using the lookup class`, () => {
             value: "https://collection.aiatsis.gov.au/austlang/language/A1",
         });
         expect(language.name).toBe("Nyaki Nyaki / Njaki Njaki");
-        expect(language.alternateName).toMatch("Nyungar");
+        expect(language.alternateName).toContain("Nyungar");
 
         language = datapack.get({
             field: "name",
             value: "Nyaki Nyaki / Njaki Njaki",
         });
         expect(language.name).toBe("Nyaki Nyaki / Njaki Njaki");
-        expect(language.alternateName).toMatch("Nyungar");
+        expect(language.alternateName).toContain("Nyungar");
     });
     it(`Should be able to load the austlang and glottolog datapacks and get something from each`, async () => {
         let datapack = new DataPack({ dataPacks: ["Austlang", "Glottolog"] });
@@ -47,7 +47,7 @@ describe(`Test looking up data using the lookup class`, () => {
             value: "https://collection.aiatsis.gov.au/austlang/language/A1",
         });
         expect(language.name).toBe("Nyaki Nyaki / Njaki Njaki");
-        expect(language.alternateName).toMatch("Nyungar");
+        expect(language.alternateName).toContain("Nyungar");
 
         language = datapack.get({
             field: "@id",
@@ -78,7 +78,7 @@ describe(`Test looking up data using the lookup class`, () => {
             value: "https://collection.aiatsis.gov.au/austlang/language/A1",
         });
         expect(language.name).toBe("Nyaki Nyaki / Njaki Njaki");
-        expect(language.alternateName).toMatch("Nyungar");
+        expect(language.alternateName).toContain("Nyungar");
 
         language = datapack.get({
             field: "@id",
