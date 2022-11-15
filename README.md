@@ -48,13 +48,30 @@ let datapack = new DataPack({ dataPacks: ['Austlang', 'Glottolog'], indexFields:
 await datapack.load()
 
 
- let language = datapack.get({
-    field: "name",
-    value: "Nyaki Nyaki / Njaki Njaki",
+let language = datapack.get({
+  field: "name",
+  value: "Nyaki Nyaki / Njaki Njaki",
 });
 ```
 
 Returns a JSON-LD snippet if a match is found.
+
+If you only want a subset of the properties try:
+
+```
+const { DataPack } = require('@describo/data-packs')
+let datapack = new DataPack({ dataPacks: ['Austlang', 'Glottolog'], indexFields: ['@id', 'name']})
+await datapack.load()
+
+
+let language = datapack.get({
+  field: "name",
+  value: "Nyaki Nyaki / Njaki Njaki",
+  properties: ['name', 'languageCode']
+});
+```
+
+And you will get only those (along with @id and @type which are always returned).
 
 # For Developers
 
