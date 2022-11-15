@@ -52,7 +52,7 @@ async function main() {
                     "@type": "Language",
                     languageCode: data.language_code,
                     name: data.language_name,
-                    geojson: geoLocation,
+                    geo: geoLocation,
                     source: "Austlang",
                     sameAs: [],
                     alternateName: data.language_synonym.split(",").map((name) => name.trim()),

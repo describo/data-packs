@@ -69,7 +69,7 @@ const { writeJson, readJSON } = require("fs-extra");
                     "@type": "Language",
                     languageCode,
                     name,
-                    geojson: geoLocation,
+                    geo: geoLocation,
                     source: "Glottolog",
                     // containtInPlace: macroarea, // needed to compare to austlang data which is limited to Australia
                     sameAs: sameAsList,
