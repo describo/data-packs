@@ -1,7 +1,7 @@
 const { datapacks, host } = require("./index.js");
 const path = require("path");
 const { fetch } = require("cross-fetch");
-const { isString, groupBy, flattenDeep, cloneDeep } = require("lodash");
+const { isString, groupBy, flattenDeep, cloneDeep, uniq } = require("lodash");
 
 /** Class to interact with data packs . */
 class DataPack {
@@ -9,7 +9,7 @@ class DataPack {
      * Interact with data packs
      * @constructor
      * @param {Object} params
-     * @param {string|String[]} params.dataPacks - the data packs you wish to load
+     * @param {string|string[]} params.dataPacks - the data packs you wish to load
      * @param {string[]} [params.indexFields=@id, name, alternateName, languageCode] - the fields you wish to index over
      */
     constructor({
@@ -66,17 +66,48 @@ class DataPack {
      * Get something from the datapacks
      * @param {Object} params
      * @param {string} params.field - the field to search on, e.g.: '@id'
-     * @param {string} params.valye - the string to search for
+     * @param {string} params.value - the string to search for
+     * @param {string[]} params.properties - the properties to include in the search results
      */
-    get({ field, value }) {
-        const result = this.indexes[field][value];
+    get({ field, value, properties = [] }) {
+        const defaultProperties = ["@id", "@type"];
+        let result;
+        try {
+            result = this.indexes[field][value];
+        } catch (error) {
+            if (error.message.match(/Cannot read properties of undefined \(reading/)) {
+                console.log(`No match found for '${value}' in '${field}'`);
+                return undefined;
+            }
+        }
         if (!result || result.length === 0) {
             return undefined;
         } else if (result.length === 1) {
-            return cloneDeep(result[0]);
+            result = cloneDeep(result[0]);
+            if (properties.length)
+                result = this.pluckProperties({
+                    properties: [...defaultProperties, ...properties],
+                    entry: result,
+                });
+            return result;
         } else {
-            return cloneDeep(result);
+            result = cloneDeep(result);
+            result = result.map((entry) =>
+                this.pluckProperties({
+                    properties: [...defaultProperties, ...properties],
+                    entry,
+                })
+            );
+            return result;
         }
+    }
+
+    pluckProperties({ properties, entry }) {
+        properties = uniq(properties);
+        for (let property of Object.keys(entry)) {
+            if (!properties.includes(property)) delete entry[property];
+        }
+        return entry;
     }
 }
 

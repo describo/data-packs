@@ -129,4 +129,48 @@ describe(`Test looking up data using the lookup class`, () => {
         expect(language.name).toBe("Ngardi");
         expect(language.languageCode).toBe("A121");
     });
+    it.only(`Should be able to load data and pluck only specified properties`, async () => {
+        let datapack = new DataPack({ dataPacks: "Austlang" });
+        await datapack.load();
+
+        let language = datapack.get({
+            field: "@id",
+            value: "https://collection.aiatsis.gov.au/austlang/language/A1",
+            properties: ["name", "source"],
+        });
+        expect(Object.keys(language).sort()).toEqual(["@id", "@type", "name", "source"]);
+
+        datapack = new DataPack({ dataPacks: "Country" });
+        await datapack.load();
+
+        let country = datapack.get({
+            field: "@id",
+            value: "https://www.ethnologue.com/country/AD",
+            properties: ["@id", "@type", "name"],
+        });
+        expect(Object.keys(country).sort()).toEqual(["@id", "@type", "name"]);
+
+        // search again - make sure we haven't removed the country!
+        country = datapack.get({
+            field: "@id",
+            value: "https://www.ethnologue.com/country/AD",
+            properties: ["@id", "@type"],
+        });
+        expect(country).toEqual({
+            "@id": "https://www.ethnologue.com/country/AD",
+            "@type": "Country",
+        });
+
+        // test plucking from multiple hits
+        datapack = new DataPack({ dataPacks: "Austlang", indexFields: ["source"] });
+        await datapack.load();
+
+        languages = datapack.get({
+            field: "source",
+            value: "Austlang",
+            properties: ["@id", "@type"],
+        });
+        expect(Object.keys(languages[0])).toEqual(["@id", "@type"]);
+        expect(Object.keys(languages[10])).toEqual(["@id", "@type"]);
+    });
 });
