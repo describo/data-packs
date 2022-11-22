@@ -1,6 +1,8 @@
 const { datapacks, host } = require("./index.js");
+const { cwd } = require("process");
 const path = require("path");
 const { fetch } = require("cross-fetch");
+const { pathExists, ensureDir, stat: fileStat, readJSON, writeJSON } = require("fs-extra");
 const { isString, groupBy, flattenDeep, cloneDeep, uniq } = require("lodash");
 
 /** Class to interact with data packs . */
@@ -11,10 +13,12 @@ class DataPack {
      * @param {Object} params
      * @param {string|string[]} params.dataPacks - the data packs you wish to load
      * @param {string[]} [params.indexFields=@id, name, alternateName, languageCode] - the fields you wish to index over
+     * @param {boolean} [params.cache = true] - whether to cache the data file for repeated lookups. The cache will automatically invalidate after 1 hour
      */
     constructor({
         dataPacks = [],
         indexFields = ["@id", "name", "alternateName", "languageCode"],
+        cache = true,
     }) {
         if (isString(dataPacks)) dataPacks = [dataPacks];
 
@@ -29,6 +33,8 @@ class DataPack {
         this.packData = [];
         this.indexFields = indexFields;
         this.indexes = {};
+        this.cache = cache;
+        this.cachePath = path.join(cwd(), "node_modules", ".cache", "describo-data-packs");
     }
 
     /**
@@ -36,6 +42,7 @@ class DataPack {
      * @async
      */
     async load() {
+        await ensureDir(this.cachePath);
         let packs = [];
         for (let pack of this.dataPacks) {
             pack = await this.fetchDataPack({ pack: path.join(host, datapacks[pack]) });
@@ -52,9 +59,19 @@ class DataPack {
      * @private
      */
     async fetchDataPack({ pack }) {
+        const dataPack = path.basename(pack);
+        const cachedDataPack = path.join(this.cachePath, dataPack);
+        if (this.cache && (await pathExists(cachedDataPack))) {
+            let stat = await fileStat(cachedDataPack);
+            let now = new Date().getTime();
+            if ((now - stat.mtimeMs) / 1000 < 3600) {
+                return await readJSON(cachedDataPack);
+            }
+        }
         let response = await fetch(pack);
         if (response.status === 200) {
             let data = await response.json();
+            await writeJSON(cachedDataPack, data);
             return data;
         } else {
             console.error(`Unable to fetch data pack: '${pack}'`);

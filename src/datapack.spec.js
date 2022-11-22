@@ -129,7 +129,7 @@ describe(`Test looking up data using the lookup class`, () => {
         expect(language.name).toBe("Ngardi");
         expect(language.languageCode).toBe("A121");
     });
-    it.only(`Should be able to load data and pluck only specified properties`, async () => {
+    it(`Should be able to load data and pluck only specified properties`, async () => {
         let datapack = new DataPack({ dataPacks: "Austlang" });
         await datapack.load();
 
