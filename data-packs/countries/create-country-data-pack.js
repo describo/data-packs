@@ -39,7 +39,7 @@ async function main() {
         try {
             country = {
                 ...country,
-                geojson: {
+                geo: {
                     "@id": "#" + country.name,
                     "@type": "GeoShape",
                     name: `Geographical coverage for ${country.name}`,
