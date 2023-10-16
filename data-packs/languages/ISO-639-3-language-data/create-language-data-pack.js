@@ -1,4 +1,4 @@
-const data = "https://www.ethnologue.com/sites/default/files/LanguageCodes.tab";
+const data = "https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3.tab";
 const languagePack = "./iso-639-3-language-data-pack.json";
 const fetch = require("cross-fetch");
 const { writeJson } = require("fs-extra");
