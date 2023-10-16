@@ -55,7 +55,7 @@ const { writeJson, readJSON } = require("fs-extra");
             };
 
             const geoLocation = {
-                "@id": "#" + name,
+                "@id": encodeURIComponent(`#${name}`),
                 "@type": "GeoCoordinates",
                 name: `Geographical coverage for ${name}`,
                 geojson: JSON.stringify(geojson),
