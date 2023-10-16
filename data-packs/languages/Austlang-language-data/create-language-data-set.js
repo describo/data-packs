@@ -21,7 +21,7 @@ async function main() {
 
         let data = {};
         columns.forEach((column, index) => {
-            data[column] = item[index];
+            data[column] = item[index]?.trim();
         });
         try {
             const geoj = {
