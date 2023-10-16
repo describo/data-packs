@@ -1,12 +1,12 @@
-- [For users](#for-users)
-  - [Install the package](#install-the-package)
-  - [Loading the data packs into elastic search](#loading-the-data-packs-into-elastic-search)
-  - [Working with the package](#working-with-the-package)
-- [For Developers](#for-developers)
-  - [Working on the package - writing tests](#working-on-the-package---writing-tests)
-  - [Updating the JSDoc documentation](#updating-the-jsdoc-documentation)
-  - [Adding a data pack to this repository](#adding-a-data-pack-to-this-repository)
-  - [Building and publishing an update](#building-and-publishing-an-update)
+-   [For users](#for-users)
+    -   [Install the package](#install-the-package)
+    -   [Loading the data packs into elastic search](#loading-the-data-packs-into-elastic-search)
+    -   [Working with the package](#working-with-the-package)
+-   [For Developers](#for-developers)
+    -   [Working on the package - writing tests](#working-on-the-package---writing-tests)
+    -   [Updating the JSDoc documentation](#updating-the-jsdoc-documentation)
+    -   [Adding a data pack to this repository](#adding-a-data-pack-to-this-repository)
+    -   [Building and publishing an update](#building-and-publishing-an-update)
 
 A repository to host data packs for use in Describo. A data pack is simply a pre-defined array of
 JSON-LD objects that can be used as the value of a property.
@@ -103,4 +103,5 @@ And you will get only those (along with @id and @type which are always returned)
 -   `npm run generate-docs`
 -   Commit all of the changes
 -   Bump the version: `npm version minor`
+-   Push to github: `git push origin master --tags`
 -   Publish `npm publish`
