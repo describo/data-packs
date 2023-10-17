@@ -28,7 +28,7 @@ async function main() {
             country = {
                 ...country,
                 geo: {
-                    "@id": encodeURIComponent(`#${country.name}`),
+                    "@id": `#${encodeURIComponent(country.name)}`,
                     "@type": "GeoShape",
                     name: `Geographical coverage for ${country.name}`,
                     geojson: JSON.stringify(countryGeoJSONGroupedByName[country.isoA3][0]),

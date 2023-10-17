@@ -39,7 +39,7 @@ async function main() {
             };
 
             const geoLocation = {
-                "@id": encodeURIComponent(`#${data.language_name}`),
+                "@id": `#${encodeURIComponent(data.language_name)}`,
                 "@type": "GeoCoordinates",
                 name: `Geographical coverage for ${data.language_name}`,
                 geojson: JSON.stringify(geoj),
