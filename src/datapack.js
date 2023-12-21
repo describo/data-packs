@@ -3,7 +3,7 @@ const { cwd } = require("process");
 const path = require("path");
 const { fetch } = require("cross-fetch");
 const { pathExists, ensureDir, stat: fileStat, readJSON, writeJSON } = require("fs-extra");
-const { isString, groupBy, flattenDeep, cloneDeep, uniq } = require("lodash");
+const { isString, isPlainObject, groupBy, flattenDeep, cloneDeep, uniq } = require("lodash");
 
 /** Class to interact with data packs . */
 class DataPack {
@@ -23,7 +23,7 @@ class DataPack {
         if (isString(dataPacks)) dataPacks = [dataPacks];
 
         dataPacks = dataPacks.map((pack) => {
-            if (isString(datapacks[pack]) && datapacks[pack].match(/.*\.json$/)) {
+            if (isPlainObject(datapacks[pack]) && datapacks[pack].path.match(/.*\.json$/)) {
                 return pack;
             } else {
                 return datapacks[pack].map((p) => p);
@@ -45,7 +45,7 @@ class DataPack {
         await ensureDir(this.cachePath);
         let packs = [];
         for (let pack of this.dataPacks) {
-            pack = await this.fetchDataPack({ pack: path.join(host, datapacks[pack]) });
+            pack = await this.fetchDataPack({ pack: path.join(host, datapacks[pack].path) });
             packs = [...packs, ...pack];
         }
         this.packData = packs;
