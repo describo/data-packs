@@ -15,7 +15,7 @@
     },
     "homepage": "https://github.com/describo/data-packs.git",
     "author": "Marco La Rosa",
-    "license": "GPLv3",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/describo/data-packs.git/issues"
     },
