@@ -1,6 +1,6 @@
 {
     "name": "@describo/data-packs",
-    "version": "0.11.3",
+    "version": "0.11.4",
     "description": "A set of data packs for describo to load content from.",
     "main": "index.js",
     "scripts": {
