@@ -15,7 +15,7 @@ async function main() {
         countryData.push({
             "@id": `https://www.ethnologue.com/country/${country["ISO3166-1-Alpha-2"]}`,
             "@type": "Country",
-            name: country.official_name_en,
+            name: country.official_name_en ?? country["CLDR display name"],
             isoA2: country["ISO3166-1-Alpha-2"],
             isoA3: country["ISO3166-1-Alpha-3"],
         });
