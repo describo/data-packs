@@ -32,8 +32,8 @@ class IndexDataPacks {
             if (this.log) {
                 console.log(`Loading ${pack}`);
             }
-            if (isString(datapacks[pack]) && datapacks[pack].match(/.*\.json$/)) {
-                pack = path.join(host, datapacks[pack]);
+            if (isString(datapacks[pack]?.path) && datapacks[pack]?.path?.match(/.*\.json$/)) {
+                pack = path.join(host, datapacks[pack].path);
                 let data = await this.fetchDataPack({ pack });
                 let chunks = chunk(data, this.chunkSize);
                 for (let chunk of chunks) {
